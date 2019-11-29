@@ -1,6 +1,7 @@
 # Introduction to Semantic Systems - WS 2019
 
 ## Participants
+0125536 Gerald Weber
 
 ## App
 
