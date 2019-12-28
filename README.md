@@ -1,10 +1,10 @@
 # Introduction to Semantic Systems - WS 2019
 
 ## Participants
-8725866 Helmuth Breitenfellner
-09227679 Laszlo Kiraly
-0125536 Gerald Weber  
-01425692 Cem Bicer  
+* 8725866 Helmuth Breitenfellner
+* 09227679 Laszlo Kiraly
+* 0125536 Gerald Weber  
+* 01425692 Cem Bicer  
 
 ## App
 
