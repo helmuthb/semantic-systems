@@ -54,3 +54,8 @@ Which role should I aspire to earn the most money with age (XX) in (country)?
 ## Learning
 
 [OpenRefine](https://www.youtube.com/watch?v=XdpzmGxA33U)
+
+## app
+
+- web ui with rest endpoints to jena
+- cli with click/python https://click.palletsprojects.com/en/7.x/
