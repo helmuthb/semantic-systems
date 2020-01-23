@@ -1,0 +1,477 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/sws/ws2019/group1#"
+     xml:base="http://www.semanticweb.org/sws/ws2019/group1"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:group1="http://www.semanticweb.org/sws/ws2019/group1#"
+     xmlns:schema="https://schema.org/">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/sws/ws2019/group1"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/sws/ws2019/group1#ageHasDevelopers -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sws/ws2019/group1#ageHasDevelopers">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/sws/ws2019/group1#hasAgeRange"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sws/ws2019/group1#AgeRange"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sws/ws2019/group1#Developer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sws/ws2019/group1#dealsWith -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sws/ws2019/group1#dealsWith">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/sws/ws2019/group1#isDealtIn"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sws/ws2019/group1#TU-Lecture"/>
+        <rdfs:range rdf:resource="http://schema.org/ComputerLanguage"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sws/ws2019/group1#developsIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sws/ws2019/group1#developsIn">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/sws/ws2019/group1#isUsedBy"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sws/ws2019/group1#Developer"/>
+        <rdfs:range rdf:resource="http://schema.org/ComputerLanguage"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sws/ws2019/group1#hasAgeRange -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sws/ws2019/group1#hasAgeRange">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sws/ws2019/group1#Developer"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sws/ws2019/group1#AgeRange"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sws/ws2019/group1#hasDeveloperRole -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sws/ws2019/group1#hasDeveloperRole">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sws/ws2019/group1#Developer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sws/ws2019/group1#hasExperienceYears -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sws/ws2019/group1#hasExperienceYears">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sws/ws2019/group1#Developer"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sws/ws2019/group1#ExperienceRange"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sws/ws2019/group1#hasRole -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sws/ws2019/group1#hasRole">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/sws/ws2019/group1#roleHasDevelopers"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sws/ws2019/group1#Developer"/>
+        <rdfs:range rdf:resource="https://schema.org/EmployeeRole"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sws/ws2019/group1#isDealtIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sws/ws2019/group1#isDealtIn">
+        <rdfs:domain rdf:resource="http://schema.org/ComputerLanguage"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sws/ws2019/group1#TU-Lecture"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sws/ws2019/group1#isDevelopedIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sws/ws2019/group1#isDevelopedIn">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/sws/ws2019/group1#isUsedIn"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sws/ws2019/group1#GitHubRepository"/>
+        <rdfs:range rdf:resource="http://schema.org/ComputerLanguage"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sws/ws2019/group1#isUsedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sws/ws2019/group1#isUsedBy">
+        <rdfs:domain rdf:resource="http://schema.org/ComputerLanguage"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sws/ws2019/group1#Developer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sws/ws2019/group1#isUsedIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sws/ws2019/group1#isUsedIn">
+        <rdfs:domain rdf:resource="http://schema.org/ComputerLanguage"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sws/ws2019/group1#GitHubRepository"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sws/ws2019/group1#roleHasDevelopers -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sws/ws2019/group1#roleHasDevelopers">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://schema.org/EmployeeRole"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sws/ws2019/group1#Developer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://schema.org/gender -->
+
+    <owl:ObjectProperty rdf:about="https://schema.org/gender">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sws/ws2019/group1#Developer"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sws/ws2019/group1#Gender"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://schema.org/homeLocation -->
+
+    <owl:ObjectProperty rdf:about="https://schema.org/homeLocation">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sws/ws2019/group1#Developer"/>
+        <rdfs:range rdf:resource="http://schema.org/Country"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://schema.org/instructor -->
+
+    <owl:ObjectProperty rdf:about="https://schema.org/instructor">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sws/ws2019/group1#TU-Lecture"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sws/ws2019/group1#Lecturer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/sws/ws2019/group1#description -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sws/ws2019/group1#description">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sws/ws2019/group1#TU-Lecture"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sws/ws2019/group1#ects -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sws/ws2019/group1#ects">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sws/ws2019/group1#TU-Lecture"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sws/ws2019/group1#issues -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sws/ws2019/group1#issues">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sws/ws2019/group1#GitHubRepository"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sws/ws2019/group1#maxAge -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sws/ws2019/group1#maxAge">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sws/ws2019/group1#AgeRange"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sws/ws2019/group1#minAge -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sws/ws2019/group1#minAge">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sws/ws2019/group1#AgeRange"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sws/ws2019/group1#popularity -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sws/ws2019/group1#popularity">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sws/ws2019/group1#GitHubRepository"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sws/ws2019/group1#salary -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sws/ws2019/group1#salary">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sws/ws2019/group1#Developer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://schema.org/name -->
+
+    <owl:DatatypeProperty rdf:about="https://schema.org/name">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://schema.org/ComputerLanguage"/>
+                    <rdf:Description rdf:about="http://schema.org/Country"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Gender"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/sws/ws2019/group1#GitHubRepository"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Lecturer"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://schema.org/ComputerLanguage -->
+
+    <owl:Class rdf:about="http://schema.org/ComputerLanguage"/>
+    
+
+
+    <!-- http://schema.org/Country -->
+
+    <owl:Class rdf:about="http://schema.org/Country"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sws/ws2019/group1#AgeRange -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sws/ws2019/group1#AgeRange">
+        <rdfs:subClassOf rdf:resource="https://schema.org/Enumeration"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sws/ws2019/group1#Developer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Developer">
+        <rdfs:subClassOf rdf:resource="https://schema.org/Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sws/ws2019/group1#ExperienceRange -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sws/ws2019/group1#ExperienceRange">
+        <rdfs:subClassOf rdf:resource="https://schema.org/Enumeration"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sws/ws2019/group1#Gender -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Gender">
+        <rdfs:subClassOf rdf:resource="https://schema.org/Enumeration"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sws/ws2019/group1#GitHubRepository -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sws/ws2019/group1#GitHubRepository"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sws/ws2019/group1#Lecturer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Lecturer">
+        <rdfs:subClassOf rdf:resource="https://schema.org/Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sws/ws2019/group1#TU-Lecture -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sws/ws2019/group1#TU-Lecture">
+        <rdfs:subClassOf rdf:resource="https://schema.org/Course"/>
+    </owl:Class>
+    
+
+
+    <!-- https://schema.org/Course -->
+
+    <owl:Class rdf:about="https://schema.org/Course"/>
+    
+
+
+    <!-- https://schema.org/EmployeeRole -->
+
+    <owl:Class rdf:about="https://schema.org/EmployeeRole"/>
+    
+
+
+    <!-- https://schema.org/Enumeration -->
+
+    <owl:Class rdf:about="https://schema.org/Enumeration"/>
+    
+
+
+    <!-- https://schema.org/Person -->
+
+    <owl:Class rdf:about="https://schema.org/Person"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/sws/ws2019/group1#ARAC -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#ARAC">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sws/ws2019/group1#TU-Lecture"/>
+        <dealsWith rdf:resource="http://www.semanticweb.org/sws/ws2019/group1#Python"/>
+        <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ARAC is the new version of ARAC, this time dealing with Python instead of R.</description>
+        <ects rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</ects>
+        <schema:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Advanced Super-Duper</schema:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sws/ws2019/group1#Austria -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Austria">
+        <rdf:type rdf:resource="http://schema.org/Country"/>
+        <schema:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Austria</schema:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sws/ws2019/group1#Laszlo_Kiraly -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Laszlo_Kiraly">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sws/ws2019/group1#Developer"/>
+        <developsIn rdf:resource="http://www.semanticweb.org/sws/ws2019/group1#Python"/>
+        <hasAgeRange rdf:resource="http://www.semanticweb.org/sws/ws2019/group1#25-35"/>
+        <hasRole rdf:resource="http://www.semanticweb.org/sws/ws2019/group1#Senior_Developer"/>
+        <schema:gender rdf:resource="http://www.semanticweb.org/sws/ws2019/group1#Male"/>
+        <schema:homeLocation rdf:resource="http://www.semanticweb.org/sws/ws2019/group1#Austria"/>
+        <salary rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">100000</salary>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sws/ws2019/group1#Male -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Male">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sws/ws2019/group1#Gender"/>
+        <schema:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Male</schema:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sws/ws2019/group1#Peter_Filzmoser -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Peter_Filzmoser">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sws/ws2019/group1#Lecturer"/>
+        <schema:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Peter Filzmoser</schema:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sws/ws2019/group1#Python -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Python">
+        <rdf:type rdf:resource="http://schema.org/ComputerLanguage"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sws/ws2019/group1#Senior_Developer -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Senior_Developer">
+        <rdf:type rdf:resource="https://schema.org/EmployeeRole"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sws/ws2019/group1#Super-Repository -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Super-Repository">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sws/ws2019/group1#GitHubRepository"/>
+        <issues rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">100</issues>
+        <popularity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">200</popularity>
+        <schema:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Super Repository</schema:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sws/ws2019/group1#25-35 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#25-35">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sws/ws2019/group1#AgeRange"/>
+        <maxAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">35</maxAge>
+        <minAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">25</minAge>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
