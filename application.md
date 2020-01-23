@@ -10,9 +10,9 @@ Is a service hub for interested persons and companies. Based on TU Vienna lectur
 
 ## Datasources
 
-Github [Repositories, Stars, Issues, Language, (Country?)]
-Kaggle [Users, Job-Role, Country, Salary, Language]
-Stackoverflow [Users, Job-Role, Country, Salary, Language]
+Github [Repositories, Stars, Issues, Programming-Language, (Country?)]
+Kaggle [Users, Job-Role, Country, Salary, Programming-Language]
+Stackoverflow [Users, Job-Role, Country, Salary, Programming-Language]
 TISS [Lectures(Title, Description, ECTS, Programming-Language), Lecturer (Name)]
 
 
