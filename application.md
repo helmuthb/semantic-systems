@@ -13,7 +13,7 @@ Is a service hub for interested persons and companies. Based on TU Vienna lectur
 Github [Repositories, Stars, Issues, Programming-Language, (Country?)]
 Kaggle [Users, Job-Role, Country, Salary, Programming-Language]
 Stackoverflow [Users, Job-Role, Country, Salary, Programming-Language]
-TISS [Lectures(Title, Description, ECTS, Programming-Language), Lecturer (Name)]
+TISS [Lectures(Course_ID, Title, Description, ECTS, Programming-Language, URL), Lecturer (Name, URL)]
 
 
 ## Queries
