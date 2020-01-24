@@ -1,0 +1,2354 @@
+@prefix ns1: <http://schema.org/> .
+@prefix ns2: <http://www.semanticweb.org/sws/ws2019/group1#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=015011&semester=2019W> a ns2:TU-Lecture ;
+    ns1:name "French for engineers I" ;
+    ns2:courseId "015.011" ;
+    ns2:description "2019W, VU, 2.0h, 3.0EC" ;
+    ns2:ects 3.0 ;
+    ns2:instructor ns2:Kadlecek_Sabrina .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=015012&semester=2020S> a ns2:TU-Lecture ;
+    ns1:name "French for engineers II" ;
+    ns2:courseId "015.012" ;
+    ns2:description "2020S, VU, 2.0h, 3.0EC" ;
+    ns2:ects 3.0 ;
+    ns2:instructor ns2:Kadlecek_Sabrina .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=015035&semester=2019W> a ns2:TU-Lecture ;
+    ns1:name "Spanish for engineers I" ;
+    ns2:courseId "015.035" ;
+    ns2:description "2019W, VU, 2.0h, 3.0EC" ;
+    ns2:ects 3.0 ;
+    ns2:instructor ns2:Saez_Garcia_Susana .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=015036&semester=2020S> a ns2:TU-Lecture ;
+    ns1:name "Spanish for engineers II" ;
+    ns2:courseId "015.036" ;
+    ns2:description "2020S, VU, 2.0h, 3.0EC" ;
+    ns2:ects 3.0 ;
+    ns2:instructor ns2:Saez_Garcia_Susana .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=015067&semester=2019W> a ns2:TU-Lecture ;
+    ns1:name "Russian für engineers I" ;
+    ns2:courseId "015.067" ;
+    ns2:description "2019W, VU, 2.0h, 3.0EC" ;
+    ns2:ects 3.0 ;
+    ns2:instructor ns2:Halanek_Vera .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=015068&semester=2020S> a ns2:TU-Lecture ;
+    ns1:name "Russian for engineers II" ;
+    ns2:courseId "015.068" ;
+    ns2:description "2020S, VU, 2.0h, 3.0EC" ;
+    ns2:ects 3.0 ;
+    ns2:instructor ns2:Halanek_Vera .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=015082&semester=2019W> a ns2:TU-Lecture ;
+    ns1:name "Technology exploitation" ;
+    ns2:courseId "015.082" ;
+    ns2:dealsWith ns2:R ;
+    ns2:description "2019W, VO, 1.0h, 1.5EC, to be held in blocked form" ;
+    ns2:ects 1.5 ;
+    ns2:instructor ns2:Grober_Gernot,
+        ns2:Hofmann_Karin,
+        ns2:Schmied_Gabriele .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=015087&semester=2019W> a ns2:TU-Lecture ;
+    ns1:name "E-Tutoring, Moderation of E-Learning" ;
+    ns2:courseId "015.087" ;
+    ns2:description "2019W, VU, 2.0h, 3.0EC, to be held in blocked form" ;
+    ns2:ects 3.0 ;
+    ns2:instructor ns2:Herbst_Ilona_Renate,
+        ns2:Rakoczi_Gergely .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=015088&semester=2019W> a ns2:TU-Lecture ;
+    ns1:name "Technisches Deutsch für Internationale Studierende" ;
+    ns2:courseId "015.088" ;
+    ns2:description "2019W, VU, 2.0h, 3.0EC" ;
+    ns2:ects 3.0 ;
+    ns2:instructor ns2:Pitzek_Mitar .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=015088&semester=2020S> a ns2:TU-Lecture ;
+    ns1:name "Technisches Deutsch für Internationale Studierende" ;
+    ns2:courseId "015.088" ;
+    ns2:description "2020S, VU, 2.0h, 3.0EC" ;
+    ns2:ects 3.0 ;
+    ns2:instructor ns2:Pitzek_Mitar .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=015098&semester=2019W> a ns2:TU-Lecture ;
+    ns1:name "Technical Chinese III" ;
+    ns2:courseId "015.098" ;
+    ns2:description "2019W, VU, 2.0h, 3.0EC" ;
+    ns2:ects 3.0 ;
+    ns2:instructor ns2:Li_Yan .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=015099&semester=2020S> a ns2:TU-Lecture ;
+    ns1:name "Technical Chinese IV" ;
+    ns2:courseId "015.099" ;
+    ns2:description "2020S, VU, 2.0h, 3.0EC" ;
+    ns2:ects 3.0 ;
+    ns2:instructor ns2:Li_Yan .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=015100&semester=2019W> a ns2:TU-Lecture ;
+    ns1:name "Creativity Engineering" ;
+    ns2:courseId "015.100" ;
+    ns2:description "2019W, VO, 2.0h, 3.0EC" ;
+    ns2:ects 3.0 ;
+    ns2:instructor ns2:Jerlich_Jutta,
+        ns2:Ostad_Hesamedin .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=015110&semester=2020S> a ns2:TU-Lecture ;
+    ns1:name "Entrepreneurship for innovative corporations and high-tech start-ups" ;
+    ns2:courseId "015.110" ;
+    ns2:description "2020S, VO, 2.0h, 3.0EC" ;
+    ns2:ects 3.0 ;
+    ns2:instructor ns2:Fernandez_De_Retana_Carlos,
+        ns2:Pietzka_Markus .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=015111&semester=2019W> a ns2:TU-Lecture ;
+    ns1:name "Technical English Presentation A" ;
+    ns2:courseId "015.111" ;
+    ns2:description "2019W, VU, 2.0h, 3.0EC" ;
+    ns2:ects 3.0 ;
+    ns2:instructor ns2:Crowder_Jeff .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=015111&semester=2020S> a ns2:TU-Lecture ;
+    ns1:name "Technical English Presentation A" ;
+    ns2:courseId "015.111" ;
+    ns2:description "2020S, VU, 2.0h, 3.0EC" ;
+    ns2:ects 3.0 ;
+    ns2:instructor ns2:Crowder_Jeff .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=015112&semester=2019W> a ns2:TU-Lecture ;
+    ns1:name "Technical English Communication A" ;
+    ns2:courseId "015.112" ;
+    ns2:description "2019W, VU, 2.0h, 3.0EC" ;
+    ns2:ects 3.0 ;
+    ns2:instructor ns2:Crowder_Jeff .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=015112&semester=2020S> a ns2:TU-Lecture ;
+    ns1:name "Technical English Communication A" ;
+    ns2:courseId "015.112" ;
+    ns2:description "2020S, VU, 2.0h, 3.0EC" ;
+    ns2:ects 3.0 ;
+    ns2:instructor ns2:Crowder_Jeff .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=015113&semester=2019W> a ns2:TU-Lecture ;
+    ns1:name "Technical English Presentation B" ;
+    ns2:courseId "015.113" ;
+    ns2:description "2019W, VU, 2.0h, 3.0EC" ;
+    ns2:ects 3.0 ;
+    ns2:instructor ns2:Crowder_Jeff .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=015113&semester=2020S> a ns2:TU-Lecture ;
+    ns1:name "Technical English Presentation B" ;
+    ns2:courseId "015.113" ;
+    ns2:description "2020S, VU, 2.0h, 3.0EC" ;
+    ns2:ects 3.0 ;
+    ns2:instructor ns2:Crowder_Jeff .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=015115&semester=2019W> a ns2:TU-Lecture ;
+    ns1:name "Technical English Communication B" ;
+    ns2:courseId "015.115" ;
+    ns2:description "2019W, VU, 2.0h, 3.0EC" ;
+    ns2:ects 3.0 ;
+    ns2:instructor ns2:Crowder_Jeff .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=015115&semester=2020S> a ns2:TU-Lecture ;
+    ns1:name "Technical English Communication B" ;
+    ns2:courseId "015.115" ;
+    ns2:description "2020S, VU, 2.0h, 3.0EC" ;
+    ns2:ects 3.0 ;
+    ns2:instructor ns2:Crowder_Jeff .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=015118&semester=2019W> a ns2:TU-Lecture ;
+    ns1:name "Further Education and Lifelong Learning" ;
+    ns2:courseId "015.118" ;
+    ns2:description "2019W, VU, 2.0h, 3.0EC, to be held in blocked form" ;
+    ns2:ects 3.0 ;
+    ns2:instructor ns2:Csanyi_Gottfried .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=015118&semester=2020S> a ns2:TU-Lecture ;
+    ns1:name "Further Education and Lifelong Learning" ;
+    ns2:courseId "015.118" ;
+    ns2:description "2020S, VU, 2.0h, 3.0EC, to be held in blocked form" ;
+    ns2:ects 3.0 ;
+    ns2:instructor ns2:Csanyi_Gottfried .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=015148&semester=2019W> a ns2:TU-Lecture ;
+    ns1:name "Communicating Science" ;
+    ns2:courseId "015.148" ;
+    ns2:description "2019W, VU, 3.0h, 4.5EC, to be held in blocked form" ;
+    ns2:ects 4.5 ;
+    ns2:instructor ns2:Weingartner_Bernhard .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=015148&semester=2020S> a ns2:TU-Lecture ;
+    ns1:name "Communicating Science" ;
+    ns2:courseId "015.148" ;
+    ns2:description "2020S, VU, 3.0h, 4.5EC, to be held in blocked form" ;
+    ns2:ects 4.5 ;
+    ns2:instructor ns2:Weingartner_Bernhard .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=015576&semester=2019W> a ns2:TU-Lecture ;
+    ns1:name "Technical Italien I" ;
+    ns2:courseId "015.576" ;
+    ns2:description "2019W, VU, 2.0h, 3.0EC" ;
+    ns2:ects 3.0 ;
+    ns2:instructor ns2:Leeb_Maria_Gabriella .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=015642&semester=2020S> a ns2:TU-Lecture ;
+    ns1:name "Technical Italien II" ;
+    ns2:courseId "015.642" ;
+    ns2:description "2020S, VU, 2.0h, 3.0EC" ;
+    ns2:ects 3.0 ;
+    ns2:instructor ns2:Leeb_Maria_Gabriella .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=015724&semester=2019W> a ns2:TU-Lecture ;
+    ns1:name "Das TU Talente - Programm" ;
+    ns2:courseId "015.724" ;
+    ns2:description "2019W, VU, 2.0h, 3.0EC, to be held in blocked form" ;
+    ns2:ects 3.0 ;
+    ns2:instructor ns2:Matyas_Kurt .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=015725&semester=2019W> a ns2:TU-Lecture ;
+    ns1:name "How to Illustrate Engineering by Means of Audiovisual Media" ;
+    ns2:courseId "015.725" ;
+    ns2:description "2019W, VU, 2.0h, 2.0EC, to be held in blocked form" ;
+    ns2:ects 2.0 ;
+    ns2:instructor ns2:Fiala_Norbert .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=015725&semester=2020S> a ns2:TU-Lecture ;
+    ns1:name "How to Illustrate Engineering by Means of Audiovisual Media" ;
+    ns2:courseId "015.725" ;
+    ns2:description "2020S, VU, 2.0h, 2.0EC, to be held in blocked form" ;
+    ns2:ects 2.0 ;
+    ns2:instructor ns2:Fiala_Norbert .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=015727&semester=2019W> a ns2:TU-Lecture ;
+    ns1:name "Mentoring - Mathematics (FaMe)" ;
+    ns2:courseId "015.727" ;
+    ns2:dealsWith ns2:R ;
+    ns2:description "2019W, SE, 1.0h, 2.0EC, to be held in blocked form" ;
+    ns2:ects 2.0 ;
+    ns2:instructor ns2:Körner_Andreas,
+        ns2:Winkler_Stefanie .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=015728&semester=2019W> a ns2:TU-Lecture ;
+    ns1:name "Accompanying seminar for mentors of the TUW mentoring program" ;
+    ns2:courseId "015.728" ;
+    ns2:dealsWith ns2:R ;
+    ns2:description "2019W, SE, 1.0h, 2.0EC" ;
+    ns2:ects 2.0 ;
+    ns2:instructor ns2:Matyas_Kurt .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=015729&semester=2019W> a ns2:TU-Lecture ;
+    ns1:name "Impact of technological development - Introduction to the theory and practice of technology assessment (TA)" ;
+    ns2:courseId "015.729" ;
+    ns2:description "2019W, VO, 1.0h, 2.0EC" ;
+    ns2:ects 2.0 ;
+    ns2:instructor ns2:Capari_Leo,
+        ns2:Gazsó_André,
+        ns2:Peissl_Walter,
+        ns2:Sotoudeh_Mahshid .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=034004&semester=2019W> a ns2:TU-Lecture ;
+    ns1:name "Was hat Gender mit dem Technikstudium zu tun?" ;
+    ns2:courseId "034.004" ;
+    ns2:dealsWith ns2:R ;
+    ns2:description "2019W, SE, 2.0h, 2.0EC, to be held in blocked form" ;
+    ns2:ects 2.0 ;
+    ns2:instructor ns2:Knoll_Bente .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=034007&semester=2019W> a ns2:TU-Lecture ;
+    ns1:name "Kettensägen, Codes, Roboter & Co: Diversität und Technikentwicklung" ;
+    ns2:courseId "034.007" ;
+    ns2:description "2019W, SE, 2.0h, 2.0EC" ;
+    ns2:ects 2.0 ;
+    ns2:instructor ns2:Hofmann_Roswitha .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=057011&semester=2019W> a ns2:TU-Lecture ;
+    ns1:name "Computer supported Japanese I" ;
+    ns2:courseId "057.011" ;
+    ns2:description "2019W, VO, 2.0h, 6.0EC" ;
+    ns2:ects 6.0 ;
+    ns2:instructor ns2:Guss_Christoph,
+        ns2:Rief_Thomas .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=057012&semester=2019W> a ns2:TU-Lecture ;
+    ns1:name "Computer supported Japanese I" ;
+    ns2:courseId "057.012" ;
+    ns2:description "2019W, UE, 3.0h, 6.0EC" ;
+    ns2:ects 6.0 ;
+    ns2:instructor ns2:Guss_Christoph,
+        ns2:Rief_Thomas .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=060002&semester=2020S> a ns2:TU-Lecture ;
+    ns1:name "Social skills for tutors" ;
+    ns2:courseId "060.002" ;
+    ns2:description "2020S, SE, 2.0h, 2.0EC" ;
+    ns2:ects 2.0 ;
+    ns2:instructor ns2:Dabringer_Maria .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=061001&semester=2020S> a ns2:TU-Lecture ;
+    ns1:name "Searching prior art based on patent applications" ;
+    ns2:courseId "061.001" ;
+    ns2:description "2020S, VU, 2.0h, 3.0EC" ;
+    ns2:ects 3.0 ;
+    ns2:instructor ns2:Hofmann_Karin,
+        ns2:Pföstl_Andreas,
+        ns2:Schlechter_Burkhard .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=061002&semester=2019W> a ns2:TU-Lecture ;
+    ns1:name "TU Wien alumni club excursion" ;
+    ns2:courseId "061.002" ;
+    ns2:description "2019W, EX, 1.0h, 1.0EC, to be held in blocked form" ;
+    ns2:ects 1.0 ;
+    ns2:instructor ns2:Schnürch_Michael .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=061006&semester=2020S> a ns2:TU-Lecture ;
+    ns1:name "Collaboration and Co-Creation" ;
+    ns2:courseId "061.006" ;
+    ns2:description "2020S, VU, 2.0h, 3.0EC" ;
+    ns2:ects 3.0 ;
+    ns2:instructor ns2:Jerlich_Jutta .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=061009&semester=2019W> a ns2:TU-Lecture ;
+    ns1:name "Foundations of scientific work" ;
+    ns2:courseId "061.009" ;
+    ns2:description "2019W, VU, 2.0h, 3.0EC" ;
+    ns2:ects 3.0 ;
+    ns2:instructor ns2:Linert_Wolfgang .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=061009&semester=2020S> a ns2:TU-Lecture ;
+    ns1:name "Foundations of scientific work" ;
+    ns2:courseId "061.009" ;
+    ns2:description "2020S, VU, 2.0h, 3.0EC" ;
+    ns2:ects 3.0 ;
+    ns2:instructor ns2:Linert_Wolfgang .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=104267&semester=2020S> a ns2:TU-Lecture ;
+    ns1:name "Analysis 2" ;
+    ns2:courseId "104.267" ;
+    ns2:description "2020S, VO, 3.0h, 3.0EC" ;
+    ns2:ects 3.0 ;
+    ns2:instructor ns2:Müllner_Clemens .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=104268&semester=2020S> a ns2:TU-Lecture ;
+    ns1:name "Analysis 2" ;
+    ns2:courseId "104.268" ;
+    ns2:dealsWith ns2:R ;
+    ns2:description "2020S, UE, 2.0h, 4.5EC" ;
+    ns2:ects 4.5 ;
+    ns2:instructor ns2:Müllner_Clemens .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=104564&semester=2019W> a ns2:TU-Lecture ;
+    ns1:name "Praktikum MORE: Fit für Mathematik" ;
+    ns2:courseId "104.564" ;
+    ns2:dealsWith ns2:R ;
+    ns2:description "2019W, PU, 2.0h, 3.0EC" ;
+    ns2:ects 3.0 ;
+    ns2:instructor ns2:Drmota_Michael .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=105147&semester=2019W> a ns2:TU-Lecture ;
+    ns1:name "Nonlinear Programming" ;
+    ns2:courseId "105.147" ;
+    ns2:description "2019W, VO, 2.0h, 3.0EC" ;
+    ns2:ects 3.0 ;
+    ns2:instructor ns2:Tragler_Gernot .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=105636&semester=2020S> a ns2:TU-Lecture ;
+    ns1:name "Financial Markets, Financial Intermediation and Capital Investment" ;
+    ns2:courseId "105.636" ;
+    ns2:description "2020S, VO, 2.5h, 3.5EC" ;
+    ns2:ects 3.5 ;
+    ns2:instructor ns2:Gartner_Martin,
+        ns2:Predota_Martin .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=105652&semester=2019W> a ns2:TU-Lecture ;
+    ns1:name "Nonlinear Programming" ;
+    ns2:courseId "105.652" ;
+    ns2:description "2019W, UE, 1.0h, 2.0EC" ;
+    ns2:ects 2.0 ;
+    ns2:instructor ns2:Tragler_Gernot .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=105707&semester=2019W> a ns2:TU-Lecture ;
+    ns1:name "Advanced Methods for Regression and Classification" ;
+    ns2:courseId "105.707" ;
+    ns2:dealsWith ns2:R ;
+    ns2:description "2019W, VU, 3.0h, 4.5EC" ;
+    ns2:ects 4.5 ;
+    ns2:instructor ns2:Filzmoser_Peter .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=105708&semester=2020S> a ns2:TU-Lecture ;
+    ns1:name "Data Acquisition and Survey Methods" ;
+    ns2:courseId "105.708" ;
+    ns2:dealsWith ns2:R ;
+    ns2:description "2020S, VU, 2.0h, 3.0EC" ;
+    ns2:ects 3.0 ;
+    ns2:instructor ns2:Nordhausen_Klaus .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=107106&semester=2020S> a ns2:TU-Lecture ;
+    ns1:name "Statistical Computing" ;
+    ns2:courseId "107.106" ;
+    ns2:dealsWith ns2:R ;
+    ns2:description "2020S, VO, 2.0h, 3.0EC" ;
+    ns2:ects 3.0 ;
+    ns2:instructor ns2:Posekany_Alexandra .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=107330&semester=2019W> a ns2:TU-Lecture ;
+    ns1:name "Statistical Simulation and Computerintensive Methods" ;
+    ns2:courseId "107.330" ;
+    ns2:dealsWith ns2:R ;
+    ns2:description "2019W, VU, 2.0h, 3.0EC" ;
+    ns2:ects 3.0 ;
+    ns2:instructor ns2:Nordhausen_Klaus .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=107388&semester=2019W> a ns2:TU-Lecture ;
+    ns1:name "Multivariate Statistics" ;
+    ns2:courseId "107.388" ;
+    ns2:dealsWith ns2:R ;
+    ns2:description "2019W, VO, 3.0h, 4.5EC" ;
+    ns2:ects 4.5 ;
+    ns2:instructor ns2:Filzmoser_Peter .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=107391&semester=2019W> a ns2:TU-Lecture ;
+    ns1:name "Multivariate Statistics" ;
+    ns2:courseId "107.391" ;
+    ns2:dealsWith ns2:R ;
+    ns2:description "2019W, UE, 1.0h, 1.5EC" ;
+    ns2:ects 1.5 ;
+    ns2:instructor ns2:Filzmoser_Peter .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=107395&semester=2020S> a ns2:TU-Lecture ;
+    ns1:name "Bayesian Statistics" ;
+    ns2:courseId "107.395" ;
+    ns2:dealsWith ns2:R ;
+    ns2:description "2020S, VO, 2.0h, 3.0EC" ;
+    ns2:ects 3.0 ;
+    ns2:instructor ns2:Felsenstein_Klaus .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=107397&semester=2020S> a ns2:TU-Lecture ;
+    ns1:name "Bayesian Statistics" ;
+    ns2:courseId "107.397" ;
+    ns2:description "2020S, UE, 1.0h, 2.0EC" ;
+    ns2:ects 2.0 ;
+    ns2:instructor ns2:Felsenstein_Klaus .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=120031&semester=2019W> a ns2:TU-Lecture ;
+    ns1:name "Introduction to Earth Observation" ;
+    ns2:courseId "120.031" ;
+    ns2:dealsWith ns2:R ;
+    ns2:description "2019W, VO, 1.0h, 1.5EC" ;
+    ns2:ects 1.5 ;
+    ns2:instructor ns2:Dorigo_Wouter_Arnoud,
+        ns2:Vreugdenhil_Mariette,
+        ns2:Wagner_Wolfgang .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=120034&semester=2020S> a ns2:TU-Lecture ;
+    ns1:name "Data Retrieval in Earth Observation" ;
+    ns2:courseId "120.034" ;
+    ns2:dealsWith ns2:R ;
+    ns2:description "2020S, VO, 1.0h, 1.5EC, to be held in blocked form" ;
+    ns2:ects 1.5 ;
+    ns2:instructor ns2:Vreugdenhil_Mariette,
+        ns2:Wagner_Wolfgang .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=123630&semester=2019W> a ns2:TU-Lecture ;
+    ns1:name "Management for civil engineers" ;
+    ns2:courseId "123.630" ;
+    ns2:description "2019W, VO, 2.0h, 3.0EC" ;
+    ns2:ects 3.0 ;
+    ns2:instructor ns2:Lederbauer_Stefan .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=136009&semester=2020S> a ns2:TU-Lecture ;
+    ns1:name "Relativity for the non-specialist" ;
+    ns2:courseId "136.009" ;
+    ns2:description "2020S, VO, 2.0h, 3.0EC" ;
+    ns2:ects 3.0 ;
+    ns2:instructor ns2:Balasin_Herbert .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=141599&semester=2019W> a ns2:TU-Lecture ;
+    ns1:name "Aspects of Radiation Physical Concepts and Socio-Economic Concepts in Radiation Protection" ;
+    ns2:courseId "141.599" ;
+    ns2:description "2019W, VO, 2.0h, 3.0EC, to be held in blocked form" ;
+    ns2:ects 3.0 ;
+    ns2:instructor ns2:Maringer_Franz_Josef .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=164225&semester=2020S> a ns2:TU-Lecture ;
+    ns1:name "Ecology and Sustainable Development" ;
+    ns2:courseId "164.225" ;
+    ns2:description "2020S, VO, 2.0h, 3.0EC" ;
+    ns2:ects 3.0 ;
+    ns2:instructor ns2:Grasserbauer_Manfred .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=164287&semester=2019W> a ns2:TU-Lecture ;
+    ns1:name "European Union - Institutions, Policies and Future Challenges" ;
+    ns2:courseId "164.287" ;
+    ns2:description "2019W, VO, 1.3h, 2.0EC" ;
+    ns2:ects 2.0 ;
+    ns2:instructor ns2:Grasserbauer_Manfred .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=166127&semester=2020S> a ns2:TU-Lecture ;
+    ns1:name "Ecological and Social Aspects in Chemistry" ;
+    ns2:courseId "166.127" ;
+    ns2:dealsWith ns2:R ;
+    ns2:description "2020S, VO, 2.0h, 3.0EC" ;
+    ns2:ects 3.0 ;
+    ns2:instructor ns2:Grothe_Hinrich,
+        ns2:Halbwirth_Heidrun,
+        ns2:Kasper-Giebl_Anneliese .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=180772&semester=2019W> a ns2:TU-Lecture ;
+    ns1:name "Seminar for Master Students in Data Science" ;
+    ns2:courseId "180.772" ;
+    ns2:description "2019W, SE, 1.0h, 1.5EC" ;
+    ns2:ects 1.5 ;
+    ns2:instructor ns2:Huemer_Christian,
+        ns2:Tellioglu_Hilda .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=180780&semester=2019W> a ns2:TU-Lecture ;
+    ns1:name "Bachelor with Honors Internship Project" ;
+    ns2:courseId "180.780" ;
+    ns2:description "2019W, PR, 4.0h, 6.0EC" ;
+    ns2:ects 6.0 ;
+    ns2:instructor ns2:Tellioglu_Hilda .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=180781&semester=2019W> a ns2:TU-Lecture ;
+    ns1:name "Summer/Winter School for Bachelor with Honors" ;
+    ns2:courseId "180.781" ;
+    ns2:description "2019W, VU, 2.0h, 3.0EC" ;
+    ns2:ects 3.0 ;
+    ns2:instructor ns2:Tellioglu_Hilda .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=181140&semester=2019W> a ns2:TU-Lecture ;
+    ns1:name "Database Theory" ;
+    ns2:courseId "181.140" ;
+    ns2:description "2019W, VU, 2.0h, 3.0EC, to be held in blocked form" ;
+    ns2:ects 3.0 ;
+    ns2:instructor ns2:Pichler_Reinhard .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=181200&semester=2019W> a ns2:TU-Lecture ;
+    ns1:name "Communication and rhetoric" ;
+    ns2:courseId "181.200" ;
+    ns2:description "2019W, SE, 2.0h, 3.0EC, to be held in blocked form" ;
+    ns2:ects 3.0 ;
+    ns2:instructor ns2:Pichlmair_Markus .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=181200&semester=2020S> a ns2:TU-Lecture ;
+    ns1:name "Communication and rhetoric" ;
+    ns2:courseId "181.200" ;
+    ns2:description "2020S, SE, 2.0h, 3.0EC, to be held in blocked form" ;
+    ns2:ects 3.0 ;
+    ns2:instructor ns2:Pichlmair_Markus .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=181204&semester=2019W> a ns2:TU-Lecture ;
+    ns1:name "Communication and rhetoric 2" ;
+    ns2:courseId "181.204" ;
+    ns2:description "2019W, SE, 2.0h, 3.0EC" ;
+    ns2:ects 3.0 ;
+    ns2:instructor ns2:Pichlmair_Markus .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=181208&semester=2019W> a ns2:TU-Lecture ;
+    ns1:name "Softskills for technicians" ;
+    ns2:courseId "181.208" ;
+    ns2:description "2019W, VU, 2.0h, 3.0EC, to be held in blocked form" ;
+    ns2:ects 3.0 ;
+    ns2:instructor ns2:Pichlmair_Markus .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=181208&semester=2020S> a ns2:TU-Lecture ;
+    ns1:name "Softskills for technicians" ;
+    ns2:courseId "181.208" ;
+    ns2:description "2020S, VU, 2.0h, 3.0EC, to be held in blocked form" ;
+    ns2:ects 3.0 ;
+    ns2:instructor ns2:Pichlmair_Markus .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=183234&semester=2019W> a ns2:TU-Lecture ;
+    ns1:name "Research methods" ;
+    ns2:courseId "183.234" ;
+    ns2:description "2019W, VU, 2.0h, 3.0EC, to be held in blocked form" ;
+    ns2:ects 3.0 ;
+    ns2:instructor ns2:Grechenig_Thomas .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=183618&semester=2020S> a ns2:TU-Lecture ;
+    ns1:name "Selected Topics of Computer Engineering Selected Topics of Computer Engineering" ;
+    ns2:courseId "183.618" ;
+    ns2:description "2020S, VO, 2.0h, 3.0EC" ;
+    ns2:ects 3.0 ;
+    ns2:instructor ns2:Blieberger_Johann,
+        ns2:Kastner_Wolfgang,
+        ns2:Schildt_Gerhard-Helge .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=183621&semester=2019W> a ns2:TU-Lecture ;
+    ns1:name "Computer Vision Seminar for Master students" ;
+    ns2:courseId "183.621" ;
+    ns2:description "2019W, SE, 2.0h, 2.0EC" ;
+    ns2:ects 2.0 ;
+    ns2:instructor ns2:Hollaus_Fabian,
+        ns2:Kampel_Martin,
+        ns2:Reiter_Michael,
+        ns2:Sablatnig_Robert,
+        ns2:Zambanini_Sebastian .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=183659&semester=2019W> a ns2:TU-Lecture ;
+    ns1:name "Theory and Praxis for Evaluating Innovative User Interfaces" ;
+    ns2:courseId "183.659" ;
+    ns2:description "2019W, SE, 2.0h, 3.0EC" ;
+    ns2:ects 3.0 ;
+    ns2:instructor ns2:Grechenig_Thomas .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=183668&semester=2019W> a ns2:TU-Lecture ;
+    ns1:name "Introduction into Connected Car IT" ;
+    ns2:courseId "183.668" ;
+    ns2:description "2019W, VU, 2.0h, 3.0EC" ;
+    ns2:ects 3.0 ;
+    ns2:instructor ns2:Banik_Detlef,
+        ns2:Grechenig_Thomas .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=183670&semester=2019W> a ns2:TU-Lecture ;
+    ns1:name "Cases in Engineering Connected Car IT Systems" ;
+    ns2:courseId "183.670" ;
+    ns2:description "2019W, PR, 4.0h, 6.0EC" ;
+    ns2:ects 6.0 ;
+    ns2:instructor ns2:Grechenig_Thomas .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=184004&semester=2019W> a ns2:TU-Lecture ;
+    ns1:name "Communication techniques" ;
+    ns2:courseId "184.004" ;
+    ns2:description "2019W, SE, 1.0h, 1.5EC, to be held in blocked form" ;
+    ns2:ects 1.5 ;
+    ns2:instructor ns2:Cerwinka_Gabriele .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=184205&semester=2019W> a ns2:TU-Lecture ;
+    ns1:name "Processing of Declarative Knowledge" ;
+    ns2:courseId "184.205" ;
+    ns2:description "2019W, VO, 2.0h, 3.0EC, to be held in blocked form" ;
+    ns2:ects 3.0 ;
+    ns2:instructor ns2:Eiter_Thomas .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=184228&semester=2019W> a ns2:TU-Lecture ;
+    ns1:name "Didactics in computer science education" ;
+    ns2:courseId "184.228" ;
+    ns2:dealsWith ns2:Python ;
+    ns2:description "2019W, SE, 2.0h, 3.0EC, to be held in blocked form" ;
+    ns2:ects 3.0 ;
+    ns2:instructor ns2:Weissenböck_Martin .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=184702&semester=2019W> a ns2:TU-Lecture ;
+    ns1:name "Machine Learning" ;
+    ns2:courseId "184.702" ;
+    ns2:dealsWith ns2:Python,
+        ns2:R ;
+    ns2:description "2019W, VU, 3.0h, 4.5EC" ;
+    ns2:ects 4.5 ;
+    ns2:instructor ns2:Mayer_Rudolf,
+        ns2:Musliu_Nysret,
+        ns2:Rauber_Andreas .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=184725&semester=2019W> a ns2:TU-Lecture ;
+    ns1:name "High Performance Computing" ;
+    ns2:courseId "184.725" ;
+    ns2:description "2019W, VU, 3.0h, 4.5EC" ;
+    ns2:ects 4.5 ;
+    ns2:instructor ns2:Hunold_Sascha,
+        ns2:Träff_Jesper_Larsson .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=184764&semester=2019W> a ns2:TU-Lecture ;
+    ns1:name "Seminar for Master Students" ;
+    ns2:courseId "184.764" ;
+    ns2:description "2019W, SE, 2.0h, 2.0EC" ;
+    ns2:ects 2.0 ;
+    ns2:instructor ns2:Hunold_Sascha,
+        ns2:Träff_Jesper_Larsson .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=184772&semester=2019W> a ns2:TU-Lecture ;
+    ns1:name "Description Logics and Ontologies" ;
+    ns2:courseId "184.772" ;
+    ns2:description "2019W, VU, 2.0h, 3.0EC" ;
+    ns2:ects 3.0 ;
+    ns2:instructor ns2:Ortiz_de_la_Fuente_Maria_Magdalena .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=184790&semester=2019W> a ns2:TU-Lecture ;
+    ns1:name "Data Modelling" ;
+    ns2:courseId "184.790" ;
+    ns2:description "2019W, VU, 2.0h, 3.0EC" ;
+    ns2:ects 3.0 ;
+    ns2:instructor ns2:Lanzinger_Matthias_Paul,
+        ns2:Okulmus_Cem,
+        ns2:Skritek_Sebastian .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=184791&semester=2019W> a ns2:TU-Lecture ;
+    ns1:name "Introduction to the Fundamentals of Programming for Students and Refugees" ;
+    ns2:courseId "184.791" ;
+    ns2:description "2019W, UE, 6.0h, 6.0EC" ;
+    ns2:ects 6.0 ;
+    ns2:instructor ns2:Musliu_Nysret,
+        ns2:Pichler_Reinhard .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=185190&semester=2019W> a ns2:TU-Lecture ;
+    ns1:name "Efficient Programs" ;
+    ns2:courseId "185.190" ;
+    ns2:description "2019W, VU, 2.0h, 3.0EC, to be held in blocked form" ;
+    ns2:ects 3.0 ;
+    ns2:instructor ns2:Ertl_Martin .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=185A34&semester=2019W> a ns2:TU-Lecture ;
+    ns1:name "" ;
+    ns2:courseId "no course id" ;
+    ns2:description "2019W, VU, 2.0h, 3.0EC, to be held in blocked form" ;
+    ns2:ects 3.0 ;
+    ns2:instructor ns2:Kühn_Eva .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=185A62&semester=2019W> a ns2:TU-Lecture ;
+    ns1:name "" ;
+    ns2:courseId "no course id" ;
+    ns2:description "2019W, VU, 2.0h, 3.0EC, to be held in blocked form" ;
+    ns2:ects 3.0 ;
+    ns2:instructor ns2:Freund_Rudolf .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=185A77&semester=2020S> a ns2:TU-Lecture ;
+    ns1:name "" ;
+    ns2:courseId "no course id" ;
+    ns2:description "2020S, SE, 2.0h, 3.0EC, to be held in blocked form" ;
+    ns2:ects 3.0 ;
+    ns2:instructor ns2:Ertl_Martin .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=185A82&semester=2019W> a ns2:TU-Lecture ;
+    ns1:name "" ;
+    ns2:courseId "no course id" ;
+    ns2:description "2019W, VU, 2.0h, 0.0EC, to be held in blocked form" ;
+    ns2:ects 0.0 ;
+    ns2:instructor ns2:Kogler_Jürgen,
+        ns2:Murzek_Marion,
+        ns2:Podlipnig_Stefan,
+        ns2:Tellioglu_Hilda .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=185A86&semester=2019W> a ns2:TU-Lecture ;
+    ns1:name "" ;
+    ns2:courseId "no course id" ;
+    ns2:description "2019W, VU, 2.0h, 0.0EC, to be held in blocked form" ;
+    ns2:ects 0.0 ;
+    ns2:instructor ns2:Kogler_Jürgen,
+        ns2:Murzek_Marion,
+        ns2:Podlipnig_Stefan,
+        ns2:Tellioglu_Hilda .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=185A93&semester=2019W> a ns2:TU-Lecture ;
+    ns1:name "" ;
+    ns2:courseId "no course id" ;
+    ns2:description "2019W, UE, 2.0h, 3.0EC" ;
+    ns2:ects 3.0 ;
+    ns2:instructor ns2:Dvorak_Wolfgang,
+        ns2:Egly_Uwe,
+        ns2:Kovacs_Laura,
+        ns2:Pagel_Jens,
+        ns2:Tran_Thanh_Hai,
+        ns2:Zuleger_Florian .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=186102&semester=2019W> a ns2:TU-Lecture ;
+    ns1:name "Approximation Algorithms" ;
+    ns2:courseId "186.102" ;
+    ns2:dealsWith ns2:R ;
+    ns2:description "2019W, VU, 2.0h, 3.0EC, to be held in blocked form" ;
+    ns2:ects 3.0 ;
+    ns2:instructor ns2:Kellerer_Hans .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=186112&semester=2019W> a ns2:TU-Lecture ;
+    ns1:name "Heuristic Optimization Techniques" ;
+    ns2:courseId "186.112" ;
+    ns2:description "2019W, VU, 2.0h, 3.0EC" ;
+    ns2:ects 3.0 ;
+    ns2:instructor ns2:Frohner_Nikolaus,
+        ns2:Obszelka_Daniel,
+        ns2:Raidl_Günther .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=186122&semester=2019W> a ns2:TU-Lecture ;
+    ns1:name "Algorithmic Geometry" ;
+    ns2:courseId "186.122" ;
+    ns2:description "2019W, VU, 2.0h, 3.0EC" ;
+    ns2:ects 3.0 ;
+    ns2:instructor ns2:Klute_Fabian,
+        ns2:Nöllenburg_Martin .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=186191&semester=2019W> a ns2:TU-Lecture ;
+    ns1:name "Realtime Visualization" ;
+    ns2:courseId "186.191" ;
+    ns2:description "2019W, VU, 2.0h, 3.0EC" ;
+    ns2:ects 3.0 ;
+    ns2:instructor ns2:Gröller_Eduard,
+        ns2:Kouril_David,
+        ns2:Mindek_Peter,
+        ns2:Purgathofer_Werner,
+        ns2:Raidou_Renata,
+        ns2:Waldner_Manuela,
+        ns2:Wu_Hsiang-Yun .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=186814&semester=2019W> a ns2:TU-Lecture ;
+    ns1:name "Algorithmics" ;
+    ns2:courseId "186.814" ;
+    ns2:description "2019W, VU, 4.0h, 6.0EC" ;
+    ns2:ects 6.0 ;
+    ns2:instructor ns2:Ganian_Robert,
+        ns2:Nöllenburg_Martin,
+        ns2:Obszelka_Daniel,
+        ns2:Raidl_Günther,
+        ns2:Slivovsky_Friedrich,
+        ns2:Szeider_Stefan .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=186855&semester=2019W> a ns2:TU-Lecture ;
+    ns1:name "Fixed-Parameter Algorithms and Complexity" ;
+    ns2:courseId "186.855" ;
+    ns2:description "2019W, VU, 2.0h, 3.0EC, to be held in blocked form" ;
+    ns2:ects 3.0 ;
+    ns2:instructor ns2:Ganian_Robert .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=186868&semester=2019W> a ns2:TU-Lecture ;
+    ns1:name "Visual Data Science" ;
+    ns2:courseId "186.868" ;
+    ns2:description "2019W, VU, 2.0h, 3.0EC" ;
+    ns2:ects 3.0 ;
+    ns2:instructor ns2:Schmidt_Johanna .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=187236&semester=2019W> a ns2:TU-Lecture ;
+    ns1:name "Communication and Moderation" ;
+    ns2:courseId "187.236" ;
+    ns2:description "2019W, VU, 2.0h, 3.0EC" ;
+    ns2:ects 3.0 ;
+    ns2:instructor ns2:Pohl_Margit .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=187250&semester=2019W> a ns2:TU-Lecture ;
+    ns1:name "Developing a career - coping with obstacles" ;
+    ns2:courseId "187.250" ;
+    ns2:description "2019W, VO, 2.0h, 3.0EC, to be held in blocked form" ;
+    ns2:ects 3.0 ;
+    ns2:instructor ns2:Birbaumer_Andrea .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=187A87&semester=2019W> a ns2:TU-Lecture ;
+    ns1:name "" ;
+    ns2:courseId "no course id" ;
+    ns2:description "2019W, SE, 2.0h, 3.0EC" ;
+    ns2:ects 3.0 ;
+    ns2:instructor ns2:Steinhardt_Gerald .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=188305&semester=2019W> a ns2:TU-Lecture ;
+    ns1:name "Information Visualization" ;
+    ns2:courseId "188.305" ;
+    ns2:description "2019W, VO, 2.0h, 3.0EC" ;
+    ns2:ects 3.0 ;
+    ns2:instructor ns2:Aigner_Wolfgang,
+        ns2:Arleo_Alessio,
+        ns2:Bors_Christian,
+        ns2:Ceneda_Davide,
+        ns2:Gschwandtner_Theresia,
+        ns2:Miksch_Silvia,
+        ns2:Schetinger_Victor .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=188308&semester=2019W> a ns2:TU-Lecture ;
+    ns1:name "Information Visualization" ;
+    ns2:courseId "188.308" ;
+    ns2:description "2019W, UE, 1.0h, 1.5EC" ;
+    ns2:ects 1.5 ;
+    ns2:instructor ns2:Almeida_Leite_Roger,
+        ns2:Filipov_Velitchko,
+        ns2:Gschwandtner_Theresia,
+        ns2:Miksch_Silvia .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=188312&semester=2019W> a ns2:TU-Lecture ;
+    ns1:name "Organizational Aspects of IT-Security" ;
+    ns2:courseId "188.312" ;
+    ns2:description "2019W, VU, 2.0h, 3.0EC" ;
+    ns2:ects 3.0 ;
+    ns2:instructor ns2:Stephanitsch_Michael,
+        ns2:Weippl_Edgar .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=188383&semester=2019W> a ns2:TU-Lecture ;
+    ns1:name "Leadership Competency Coaching 1" ;
+    ns2:courseId "188.383" ;
+    ns2:description "2019W, SE, 2.0h, 3.0EC, to be held in blocked form" ;
+    ns2:ects 3.0 ;
+    ns2:instructor ns2:Fischer_Gabriele .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=188383&semester=2020S> a ns2:TU-Lecture ;
+    ns1:name "Leadership Competency Coaching 1" ;
+    ns2:courseId "188.383" ;
+    ns2:description "2020S, SE, 2.0h, 3.0EC, to be held in blocked form" ;
+    ns2:ects 3.0 ;
+    ns2:instructor ns2:Fischer_Gabriele .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=188399&semester=2019W> a ns2:TU-Lecture ;
+    ns1:name "Introduction to Semantic Systems" ;
+    ns2:courseId "188.399" ;
+    ns2:description "2019W, VU, 2.0h, 3.0EC" ;
+    ns2:ects 3.0 ;
+    ns2:instructor ns2:Ekaputra_Fajar_Juang,
+        ns2:Kiesling_Elmar,
+        ns2:Sabou_Reka_Marta,
+        ns2:Tjoa_A_Min .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=188413&semester=2019W> a ns2:TU-Lecture ;
+    ns1:name "Self-Organizing Systems" ;
+    ns2:courseId "188.413" ;
+    ns2:description "2019W, VU, 3.0h, 4.5EC" ;
+    ns2:ects 4.5 ;
+    ns2:instructor ns2:Mayer_Rudolf,
+        ns2:Rauber_Andreas,
+        ns2:Taha_Abdel_Aziz .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=188429&semester=2019W> a ns2:TU-Lecture ;
+    ns1:name "Business Intelligence" ;
+    ns2:courseId "188.429" ;
+    ns2:description "2019W, VU, 4.0h, 6.0EC" ;
+    ns2:ects 6.0 ;
+    ns2:instructor ns2:Kiesling_Elmar,
+        ns2:Knees_Peter,
+        ns2:Rauber_Andreas,
+        ns2:Tjoa_A_Min .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=188472&semester=2020S> a ns2:TU-Lecture ;
+    ns1:name "Leadership Competency Coaching 2" ;
+    ns2:courseId "188.472" ;
+    ns2:description "2020S, SE, 2.0h, 3.0EC, to be held in blocked form" ;
+    ns2:ects 3.0 ;
+    ns2:instructor ns2:Fischer_Gabriele .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=188498&semester=2019W> a ns2:TU-Lecture ;
+    ns1:name "Similarity Modeling 2 - Computational Seeing and Hearing" ;
+    ns2:courseId "188.498" ;
+    ns2:dealsWith ns2:Java,
+        ns2:Python ;
+    ns2:description "2019W, VU, 2.0h, 3.0EC, to be held in blocked form" ;
+    ns2:ects 3.0 ;
+    ns2:instructor ns2:Eidenberger_Horst .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=188519&semester=2020S> a ns2:TU-Lecture ;
+    ns1:name "Ruby on Rails Business Programming" ;
+    ns2:courseId "188.519" ;
+    ns2:dealsWith ns2:Java ;
+    ns2:description "2020S, UE, 2.0h, 3.0EC" ;
+    ns2:ects 3.0 ;
+    ns2:instructor ns2:Eidenberger_Horst .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=188520&semester=2020S> a ns2:TU-Lecture ;
+    ns1:name "Virtual Reality Maker Lab" ;
+    ns2:courseId "188.520" ;
+    ns2:description "2020S, PR, 6.0h, 6.0EC" ;
+    ns2:ects 6.0 ;
+    ns2:instructor ns2:Eidenberger_Horst .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=188981&semester=2019W> a ns2:TU-Lecture ;
+    ns1:name "Strategy Game Programming" ;
+    ns2:courseId "188.981" ;
+    ns2:dealsWith ns2:Java ;
+    ns2:description "2019W, VU, 2.0h, 3.0EC, to be held in blocked form" ;
+    ns2:ects 3.0 ;
+    ns2:instructor ns2:Eidenberger_Horst .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=188990&semester=2019W> a ns2:TU-Lecture ;
+    ns1:name "Values as Leadership Tool" ;
+    ns2:courseId "188.990" ;
+    ns2:description "2019W, VU, 2.0h, 3.0EC, to be held in blocked form" ;
+    ns2:ects 3.0 ;
+    ns2:instructor ns2:Dorn_Jürgen,
+        ns2:Hahn_Gabriele .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=188992&semester=2019W> a ns2:TU-Lecture ;
+    ns1:name "Experiment Design for Data Science" ;
+    ns2:courseId "188.992" ;
+    ns2:description "2019W, VU, 2.0h, 3.0EC" ;
+    ns2:ects 3.0 ;
+    ns2:instructor ns2:Hanbury_Allan,
+        ns2:Knees_Peter,
+        ns2:Rauber_Andreas,
+        ns2:Schindler_Alexander .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=188995&semester=2019W> a ns2:TU-Lecture ;
+    ns1:name "Data-oriented Programming Paradigms" ;
+    ns2:courseId "188.995" ;
+    ns2:dealsWith ns2:Python ;
+    ns2:description "2019W, VU, 2.0h, 3.0EC" ;
+    ns2:ects 3.0 ;
+    ns2:instructor ns2:Böck_Sebastian,
+        ns2:Hanbury_Allan,
+        ns2:Kiesling_Elmar,
+        ns2:Piroi_Florina_Mihaela .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=192055&semester=2019W> a ns2:TU-Lecture ;
+    ns1:name "IT Projects for Youth" ;
+    ns2:courseId "192.055" ;
+    ns2:description "2019W, PR, 2.0h, 3.0EC" ;
+    ns2:ects 3.0 ;
+    ns2:instructor ns2:Musliu_Nysret,
+        ns2:Pichler_Reinhard .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=192058&semester=2019W> a ns2:TU-Lecture ;
+    ns1:name "IT Projects for Youth" ;
+    ns2:courseId "192.058" ;
+    ns2:description "2019W, UE, 1.0h, 1.5EC" ;
+    ns2:ects 1.5 ;
+    ns2:instructor ns2:Musliu_Nysret,
+        ns2:Pichler_Reinhard .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=192058&semester=2020S> a ns2:TU-Lecture ;
+    ns1:name "IT Projects for Youth" ;
+    ns2:courseId "192.058" ;
+    ns2:description "2020S, UE, 1.0h, 1.5EC" ;
+    ns2:ects 1.5 ;
+    ns2:instructor ns2:Musliu_Nysret,
+        ns2:Pichler_Reinhard .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=192063&semester=2019W> a ns2:TU-Lecture ;
+    ns1:name "Tutorial on Introduction to Modern Cryptography" ;
+    ns2:courseId "192.063" ;
+    ns2:description "2019W, VU, 2.0h, 3.0EC" ;
+    ns2:ects 3.0 ;
+    ns2:instructor ns2:Maffei_Matteo,
+        ns2:Pietrzak_Krzysztof,
+        ns2:Slamanig_Daniel .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=192067&semester=2019W> a ns2:TU-Lecture ;
+    ns1:name "Deductive Databases" ;
+    ns2:courseId "192.067" ;
+    ns2:description "2019W, VO, 2.0h, 3.0EC" ;
+    ns2:ects 3.0 ;
+    ns2:instructor ns2:Simkus_Mantas .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=192092&semester=2019W> a ns2:TU-Lecture ;
+    ns1:name "Capture The Flag" ;
+    ns2:courseId "192.092" ;
+    ns2:dealsWith ns2:Python ;
+    ns2:description "2019W, SE, 6.0h, 6.0EC" ;
+    ns2:ects 6.0 ;
+    ns2:instructor ns2:Maffei_Matteo,
+        ns2:Some_Doliere_Francis,
+        ns2:Squarcina_Marco,
+        ns2:Weippl_Edgar .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=192095&semester=2019W> a ns2:TU-Lecture ;
+    ns1:name "Describing Courses with Learning Outcomes" ;
+    ns2:courseId "192.095" ;
+    ns2:description "2019W, SE, 1.0h, 1.5EC, to be held in blocked form" ;
+    ns2:ects 1.5 ;
+    ns2:instructor ns2:Freund_Rudolf,
+        ns2:Matyas_Kurt .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=193055&semester=2019W> a ns2:TU-Lecture ;
+    ns1:name "User Research Methods" ;
+    ns2:courseId "193.055" ;
+    ns2:description "2019W, VU, 2.0h, 3.0EC" ;
+    ns2:ects 3.0 ;
+    ns2:instructor ns2:Fitzpatrick_Geraldine,
+        ns2:Schwaninger_Isabel .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=193056&semester=2019W> a ns2:TU-Lecture ;
+    ns1:name "User Research Methods Project" ;
+    ns2:courseId "193.056" ;
+    ns2:description "2019W, PR, 2.0h, 3.0EC" ;
+    ns2:ects 3.0 ;
+    ns2:instructor ns2:Fitzpatrick_Geraldine,
+        ns2:Schwaninger_Isabel .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=193057&semester=2019W> a ns2:TU-Lecture ;
+    ns1:name "Excursion" ;
+    ns2:courseId "193.057" ;
+    ns2:description "2019W, EX, 2.0h, 3.0EC" ;
+    ns2:ects 3.0 ;
+    ns2:instructor ns2:Fischer_Fabian,
+        ns2:Tellioglu_Hilda,
+        ns2:Wagner_Marlene .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=193060&semester=2019W> a ns2:TU-Lecture ;
+    ns1:name "Cognitive Foundations of Visualization" ;
+    ns2:courseId "193.060" ;
+    ns2:description "2019W, VO, 2.0h, 3.0EC" ;
+    ns2:ects 3.0 ;
+    ns2:instructor ns2:Pohl_Margit .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=193062&semester=2019W> a ns2:TU-Lecture ;
+    ns1:name "Design and Evaluation of Visulisations" ;
+    ns2:courseId "193.062" ;
+    ns2:description "2019W, UE, 2.0h, 3.0EC" ;
+    ns2:ects 3.0 ;
+    ns2:instructor ns2:Pohl_Margit .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=194039&semester=2019W> a ns2:TU-Lecture ;
+    ns1:name "Intelligent Audio and Music Analysis" ;
+    ns2:courseId "194.039" ;
+    ns2:description "2019W, VU, 3.0h, 4.5EC" ;
+    ns2:ects 4.5 ;
+    ns2:instructor ns2:Böck_Sebastian,
+        ns2:Knees_Peter,
+        ns2:Schindler_Alexander,
+        ns2:Vogl_Richard .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=194042&semester=2019W> a ns2:TU-Lecture ;
+    ns1:name "Informatics didactics" ;
+    ns2:courseId "194.042" ;
+    ns2:description "2019W, SE, 2.0h, 3.0EC, to be held in blocked form" ;
+    ns2:ects 3.0 ;
+    ns2:instructor ns2:Futschek_Gerald,
+        ns2:Prinzinger_Philipp .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=194046&semester=2019W> a ns2:TU-Lecture ;
+    ns1:name "Interdisciplinary Lecture Series on Data Science" ;
+    ns2:courseId "194.046" ;
+    ns2:description "2019W, VU, 1.0h, 1.0EC" ;
+    ns2:ects 1.0 ;
+    ns2:instructor ns2:Hanbury_Allan,
+        ns2:Rauber_Andreas .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=194047&semester=2019W> a ns2:TU-Lecture ;
+    ns1:name "Interdisciplinary Project in Data Science" ;
+    ns2:courseId "194.047" ;
+    ns2:description "2019W, PR, 4.0h, 5.0EC" ;
+    ns2:ects 5.0 ;
+    ns2:instructor ns2:Hanbury_Allan,
+        ns2:Rauber_Andreas .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=194050&semester=2019W> a ns2:TU-Lecture ;
+    ns1:name "Social Network Analysis" ;
+    ns2:courseId "194.050" ;
+    ns2:dealsWith ns2:R ;
+    ns2:description "2019W, VU, 2.0h, 3.0EC" ;
+    ns2:ects 3.0 ;
+    ns2:instructor ns2:Neidhardt_Julia .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=194052&semester=2019W> a ns2:TU-Lecture ;
+    ns1:name "State-of-the-Art Engineering Project Management via Adjusted Pragmatic Tool-Sets" ;
+    ns2:courseId "194.052" ;
+    ns2:description "2019W, VU, 2.0h, 3.0EC" ;
+    ns2:ects 3.0 ;
+    ns2:instructor ns2:Grechenig_Thomas .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=194067&semester=2019W> a ns2:TU-Lecture ;
+    ns1:name "Technical and Organizational Mechanisms of Payments" ;
+    ns2:courseId "194.067" ;
+    ns2:description "2019W, VU, 2.0h, 3.0EC" ;
+    ns2:ects 3.0 ;
+    ns2:instructor ns2:Grechenig_Thomas .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=194068&semester=2020S> a ns2:TU-Lecture ;
+    ns1:name "Domain-Specific Lectures in Data Science" ;
+    ns2:courseId "194.068" ;
+    ns2:description "2020S, VU, 2.0h, 3.0EC" ;
+    ns2:ects 3.0 ;
+    ns2:instructor ns2:Hanbury_Allan,
+        ns2:Rauber_Andreas .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=194072&semester=2019W> a ns2:TU-Lecture ;
+    ns1:name "Digital Humanism" ;
+    ns2:courseId "194.072" ;
+    ns2:dealsWith ns2:R ;
+    ns2:description "2019W, VU, 2.0h, 3.0EC" ;
+    ns2:ects 3.0 ;
+    ns2:instructor ns2:Knees_Peter,
+        ns2:Neidhardt_Julia,
+        ns2:Prem_Erich,
+        ns2:Sertkan_Mete,
+        ns2:Werthner_Hannes .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=194076&semester=2019W> a ns2:TU-Lecture ;
+    ns1:name "Modeling and Simulation" ;
+    ns2:courseId "194.076" ;
+    ns2:dealsWith ns2:Python ;
+    ns2:description "2019W, VU, 2.0h, 3.0EC" ;
+    ns2:ects 3.0 ;
+    ns2:instructor ns2:Bicher_Martin,
+        ns2:Breitenecker_Felix,
+        ns2:Popper_Nikolas .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=194077&semester=2019W> a ns2:TU-Lecture ;
+    ns1:name "Applied Deep Learning" ;
+    ns2:courseId "194.077" ;
+    ns2:description "2019W, VU, 2.0h, 3.0EC" ;
+    ns2:ects 3.0 ;
+    ns2:instructor ns2:Eidenberger_Horst,
+        ns2:Pacha_Alexander .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=194081&semester=2019W> a ns2:TU-Lecture ;
+    ns1:name "TechTalks - Industrial Digital Technologies Status 2020" ;
+    ns2:courseId "194.081" ;
+    ns2:description "2019W, PV, 2.0h, 3.0EC" ;
+    ns2:ects 3.0 ;
+    ns2:instructor ns2:Grechenig_Thomas .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=194082&semester=2019W> a ns2:TU-Lecture ;
+    ns1:name "Technology for People 2040" ;
+    ns2:courseId "194.082" ;
+    ns2:description "2019W, VU, 2.0h, 3.0EC" ;
+    ns2:ects 3.0 ;
+    ns2:instructor ns2:Huemer_Christian,
+        ns2:Schatten_Alexander .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=194083&semester=2019W> a ns2:TU-Lecture ;
+    ns1:name "Hackathon: Co-operative Open Source Development with Web of Needs" ;
+    ns2:courseId "194.083" ;
+    ns2:description "2019W, VU, 2.0h, 3.0EC" ;
+    ns2:ects 3.0 ;
+    ns2:instructor ns2:Huemer_Christian .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=194087&semester=2019W> a ns2:TU-Lecture ;
+    ns1:name "Unconventional Information Technology (U.IT), from Control Theory via Neural Networks to Quantum Algorithms and Cryptography: a Deep Dive" ;
+    ns2:courseId "194.087" ;
+    ns2:description "2019W, SE, 2.0h, 3.0EC" ;
+    ns2:ects 3.0 ;
+    ns2:instructor ns2:Grechenig_Thomas .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=195072&semester=2019W> a ns2:TU-Lecture ;
+    ns1:name "Current Trends in Computer Science" ;
+    ns2:courseId "195.072" ;
+    ns2:description "2019W, VU, 1.0h, 1.5EC" ;
+    ns2:ects 1.5 ;
+    ns2:instructor ns2:Steininger_Andreas .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=207011&semester=2019W> a ns2:TU-Lecture ;
+    ns1:name "Building for people" ;
+    ns2:courseId "207.011" ;
+    ns2:description "2019W, VO, 2.0h, 2.0EC" ;
+    ns2:ects 2.0 ;
+    ns2:instructor ns2:Fischer_Henriette_Susanne,
+        ns2:Hollands_Jutta,
+        ns2:Korjenic_Azra .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=234139&semester=2019W> a ns2:TU-Lecture ;
+    ns1:name "Multidisciplinary Planning" ;
+    ns2:courseId "234.139" ;
+    ns2:description "2019W, UE, 2.0h, 2.0EC" ;
+    ns2:ects 2.0 ;
+    ns2:instructor ns2:Kovacic_Iva,
+        ns2:Pibal_Sophia_Silvia,
+        ns2:Reisinger_Julia,
+        ns2:Schützenhofer_Stefan,
+        ns2:Sreckovic_Marijana .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=242009&semester=2019W> a ns2:TU-Lecture ;
+    ns1:name "Rhetoric, elocution and means of expression" ;
+    ns2:courseId "242.009" ;
+    ns2:description "2019W, SE, 2.0h, 2.0EC, to be held in blocked form" ;
+    ns2:ects 2.0 ;
+    ns2:instructor ns2:Martinez_Helmuth,
+        ns2:Schranz_Christian .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=242012&semester=2019W> a ns2:TU-Lecture ;
+    ns1:name "Elocution with video analysis" ;
+    ns2:courseId "242.012" ;
+    ns2:description "2019W, SE, 2.5h, 2.5EC, to be held in blocked form" ;
+    ns2:ects 2.5 ;
+    ns2:instructor ns2:Martinez_Helmuth,
+        ns2:Schranz_Christian .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=242016&semester=2019W> a ns2:TU-Lecture ;
+    ns1:name "Presentations I (for Civil Engineers)" ;
+    ns2:courseId "242.016" ;
+    ns2:description "2019W, SE, 3.0h, 3.0EC, to be held in blocked form" ;
+    ns2:ects 3.0 ;
+    ns2:instructor ns2:Bräuer-Veigel_Stefanie,
+        ns2:Deimel_Bernhard,
+        ns2:Schranz_Christian .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=242017&semester=2019W> a ns2:TU-Lecture ;
+    ns1:name "Presentations II (for Civil Engineers)" ;
+    ns2:courseId "242.017" ;
+    ns2:description "2019W, SE, 3.0h, 3.0EC, to be held in blocked form" ;
+    ns2:ects 3.0 ;
+    ns2:instructor ns2:Bräuer-Veigel_Stefanie,
+        ns2:Deimel_Bernhard,
+        ns2:Schranz_Christian .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=242026&semester=2019W> a ns2:TU-Lecture ;
+    ns1:name "Mediativ competence in Civil Engineering Practice 1" ;
+    ns2:courseId "242.026" ;
+    ns2:description "2019W, SE, 3.0h, 3.0EC, to be held in blocked form" ;
+    ns2:ects 3.0 ;
+    ns2:instructor ns2:Patera_Mario,
+        ns2:Schranz_Christian .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=251843&semester=2019W> a ns2:TU-Lecture ;
+    ns1:name "Building for people :: historic.smart" ;
+    ns2:courseId "251.843" ;
+    ns2:description "2019W, VO, 2.0h, 2.0EC, to be held in blocked form" ;
+    ns2:ects 2.0 ;
+    ns2:instructor ns2:Döring-Williams_Marina,
+        ns2:Stampfer_Lukas .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=253179&semester=2019W> a ns2:TU-Lecture ;
+    ns1:name "Sustainability Challenge" ;
+    ns2:courseId "253.179" ;
+    ns2:description "2019W, VO, 2.0h, 4.0EC, to be held in blocked form" ;
+    ns2:ects 4.0 ;
+    ns2:instructor ns2:Hirschler_Petra,
+        ns2:Stieldorf_Karin .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=259446&semester=2019W> a ns2:TU-Lecture ;
+    ns1:name "Science and the quest for knowledge Canceled" ;
+    ns2:courseId "259.446" ;
+    ns2:description "2019W, SE, 1.0h, 1.0EC, to be held in blocked form" ;
+    ns2:ects 1.0 ;
+    ns2:instructor ns2:Mahdavi_Ardeshir .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=260142&semester=2019W> a ns2:TU-Lecture ;
+    ns1:name "Basic Skills dealing with organizations" ;
+    ns2:courseId "260.142" ;
+    ns2:description "2019W, VU, 2.0h, 3.0EC" ;
+    ns2:ects 3.0 ;
+    ns2:instructor ns2:Handsteiner_Andrea,
+        ns2:Kasenbacher_Karl,
+        ns2:Kasenbacher_Michael .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=265003&semester=2019W> a ns2:TU-Lecture ;
+    ns1:name "Private Law" ;
+    ns2:courseId "265.003" ;
+    ns2:description "2019W, VO, 2.0h, 3.0EC" ;
+    ns2:ects 3.0 ;
+    ns2:instructor ns2:Weikinger_Simon .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=265074&semester=2019W> a ns2:TU-Lecture ;
+    ns1:name "Searching and Finding Legal Materials on the Internet" ;
+    ns2:courseId "265.074" ;
+    ns2:description "2019W, AG, 2.0h, 2.0EC" ;
+    ns2:ects 2.0 ;
+    ns2:instructor ns2:Sagmeister_Elke_Maria .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=265076&semester=2020S> a ns2:TU-Lecture ;
+    ns1:name "Contract and liability law" ;
+    ns2:courseId "265.076" ;
+    ns2:description "2020S, VU, 2.0h, 3.0EC, to be held in blocked form" ;
+    ns2:ects 3.0 ;
+    ns2:instructor ns2:Dillinger_Sophie .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=265079&semester=2019W> a ns2:TU-Lecture ;
+    ns1:name "Public European and Austrian Economic Law" ;
+    ns2:courseId "265.079" ;
+    ns2:dealsWith ns2:R ;
+    ns2:description "2019W, VO, 2.0h, 3.0EC" ;
+    ns2:ects 3.0 ;
+    ns2:instructor ns2:Mitterlehner_Reinhold .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=265727&semester=2020S> a ns2:TU-Lecture ;
+    ns1:name "Expert law" ;
+    ns2:courseId "265.727" ;
+    ns2:description "2020S, VO, 2.0h, 3.0EC" ;
+    ns2:ects 3.0 ;
+    ns2:instructor ns2:Sagmeister_Elke_Maria .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=280239&semester=2019W> a ns2:TU-Lecture ;
+    ns1:name "Law of IT-Contracts" ;
+    ns2:courseId "280.239" ;
+    ns2:description "2019W, VO, 1.0h, 1.5EC" ;
+    ns2:ects 1.5 ;
+    ns2:instructor ns2:Vinzenz_Ingmar .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=280239&semester=2020S> a ns2:TU-Lecture ;
+    ns1:name "Law of IT-Contracts" ;
+    ns2:courseId "280.239" ;
+    ns2:description "2020S, VO, 1.0h, 1.5EC" ;
+    ns2:ects 1.5 ;
+    ns2:instructor ns2:Vinzenz_Ingmar .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=280589&semester=2019W> a ns2:TU-Lecture ;
+    ns1:name "Focus: Law concerning - Basics of good scientific practice" ;
+    ns2:courseId "280.589" ;
+    ns2:description "2019W, VO, 1.0h, 2.0EC, to be held in blocked form" ;
+    ns2:ects 2.0 ;
+    ns2:instructor ns2:Weber_Stefan .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=280589&semester=2020S> a ns2:TU-Lecture ;
+    ns1:name "Focus: Law concerning - Basics of good scientific practice" ;
+    ns2:courseId "280.589" ;
+    ns2:description "2020S, VO, 1.0h, 2.0EC, to be held in blocked form" ;
+    ns2:ects 2.0 ;
+    ns2:instructor ns2:Weber_Stefan .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=314018&semester=2020S> a ns2:TU-Lecture ;
+    ns1:name "Gruppendynamisches Seminar" ;
+    ns2:courseId "314.018" ;
+    ns2:description "2020S, SE, 3.0h, 3.0EC, to be held in blocked form" ;
+    ns2:ects 3.0 ;
+    ns2:instructor ns2:Krainz_Ewald .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=314699&semester=2019W> a ns2:TU-Lecture ;
+    ns1:name "Rhetorical communication" ;
+    ns2:courseId "314.699" ;
+    ns2:description "2019W, SE, 2.0h, 2.0EC, to be held in blocked form" ;
+    ns2:ects 2.0 ;
+    ns2:instructor ns2:Knapp_Ilan .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=314699&semester=2020S> a ns2:TU-Lecture ;
+    ns1:name "Rhetorical communication" ;
+    ns2:courseId "314.699" ;
+    ns2:description "2020S, SE, 2.0h, 2.0EC, to be held in blocked form" ;
+    ns2:ects 2.0 ;
+    ns2:instructor ns2:Knapp_Ilan .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=330136&semester=2020S> a ns2:TU-Lecture ;
+    ns1:name "Organisational Lab" ;
+    ns2:courseId "330.136" ;
+    ns2:description "2020S, UE, 4.0h, 4.0EC" ;
+    ns2:ects 4.0 ;
+    ns2:instructor ns2:Krainz_Ewald,
+        ns2:Köszegi_Sabine_Theresia .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=330137&semester=2019W> a ns2:TU-Lecture ;
+    ns1:name "Team-Coaching" ;
+    ns2:courseId "330.137" ;
+    ns2:description "2019W, SE, 2.0h, 2.0EC" ;
+    ns2:ects 2.0 ;
+    ns2:instructor ns2:Knapp_Ilan .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=330138&semester=2019W> a ns2:TU-Lecture ;
+    ns1:name "Leadership Simulation" ;
+    ns2:courseId "330.138" ;
+    ns2:description "2019W, VU, 2.0h, 3.0EC" ;
+    ns2:ects 3.0 ;
+    ns2:instructor ns2:Zillner_Sonja .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=330139&semester=2019W> a ns2:TU-Lecture ;
+    ns1:name "Social Skills" ;
+    ns2:courseId "330.139" ;
+    ns2:description "2019W, SE, 2.0h, 2.0EC" ;
+    ns2:ects 2.0 ;
+    ns2:instructor ns2:Schneglberger-Lenglachner_Valerie .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=330140&semester=2020S> a ns2:TU-Lecture ;
+    ns1:name "Career Planning and Self-Management" ;
+    ns2:courseId "330.140" ;
+    ns2:description "2020S, SE, 2.0h, 2.0EC" ;
+    ns2:ects 2.0 ;
+    ns2:instructor ns2:Lenglachner_Maria-Elisabeth,
+        ns2:Schneglberger-Lenglachner_Valerie .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=330144&semester=2020S> a ns2:TU-Lecture ;
+    ns1:name "Management and Leadership" ;
+    ns2:courseId "330.144" ;
+    ns2:description "2020S, VU, 2.0h, 3.0EC" ;
+    ns2:ects 3.0 ;
+    ns2:instructor ns2:Linkeschova_Dana .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=330250&semester=2020S> a ns2:TU-Lecture ;
+    ns1:name "Innovation Lab - Smart Innovation" ;
+    ns2:courseId "330.250" ;
+    ns2:description "2020S, VU, 2.0h, 4.0EC, to be held in blocked form" ;
+    ns2:ects 4.0 ;
+    ns2:instructor ns2:Reischauer_Georg .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=330255&semester=2020S> a ns2:TU-Lecture ;
+    ns1:name "E&I Garage - Business Model Development" ;
+    ns2:courseId "330.255" ;
+    ns2:description "2020S, VU, 3.0h, 5.0EC, to be held in blocked form" ;
+    ns2:ects 5.0 ;
+    ns2:instructor ns2:Filzmoser_Michael,
+        ns2:Vasilescu_Dragos-Cristian .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=330260&semester=2019W> a ns2:TU-Lecture ;
+    ns1:name "Inspirational Leadership in the 21st century" ;
+    ns2:courseId "330.260" ;
+    ns2:description "2019W, VU, 2.0h, 3.0EC, to be held in blocked form" ;
+    ns2:ects 3.0 ;
+    ns2:instructor ns2:Kleestorfer_Erika .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=330263&semester=2019W> a ns2:TU-Lecture ;
+    ns1:name "Structured Problem Solving and Negotiation" ;
+    ns2:courseId "330.263" ;
+    ns2:description "2019W, SE, 2.0h, 3.0EC" ;
+    ns2:ects 3.0 ;
+    ns2:instructor ns2:Filzmoser_Michael .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=330264&semester=2020S> a ns2:TU-Lecture ;
+    ns1:name "Strukturiertes Problemlösen und Verhandlungsführung Canceled" ;
+    ns2:courseId "330.264" ;
+    ns2:description "2020S, SE, 2.0h, 3.0EC" ;
+    ns2:ects 3.0 ;
+    ns2:instructor ns2:Filzmoser_Michael .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=352031&semester=2019W> a ns2:TU-Lecture ;
+    ns1:name "Getting agreement in negotiations" ;
+    ns2:courseId "352.031" ;
+    ns2:dealsWith ns2:R ;
+    ns2:description "2019W, VU, 2.0h, 3.0EC, to be held in blocked form" ;
+    ns2:ects 3.0 ;
+    ns2:instructor ns2:Lendl_Peter,
+        ns2:Lukas_Günter .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=352490&semester=2019W> a ns2:TU-Lecture ;
+    ns1:name "Rhetoric body language and training in assertiveness and argumentation" ;
+    ns2:courseId "352.490" ;
+    ns2:description "2019W, VU, 2.0h, 3.0EC, to be held in blocked form" ;
+    ns2:ects 3.0 ;
+    ns2:instructor ns2:Lendl_Peter .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=360012&semester=2020S> a ns2:TU-Lecture ;
+    ns1:name "Industrial property rights for technicians" ;
+    ns2:courseId "360.012" ;
+    ns2:description "2020S, VO, 1.0h, 1.5EC, to be held in blocked form" ;
+    ns2:ects 1.5 ;
+    ns2:instructor ns2:Stadler_Michael .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=361163&semester=2019W> a ns2:TU-Lecture ;
+    ns1:name "Management questions and automation" ;
+    ns2:courseId "361.163" ;
+    ns2:description "2019W, VO, 1.0h, 1.5EC" ;
+    ns2:ects 1.5 ;
+    ns2:instructor ns2:Tritremmel_Wolfgang .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=376068&semester=2019W> a ns2:TU-Lecture ;
+    ns1:name "Product Development based on the Example of Robots" ;
+    ns2:courseId "376.068" ;
+    ns2:description "2019W, VU, 3.0h, 4.5EC, to be held in blocked form" ;
+    ns2:ects 4.5 ;
+    ns2:instructor ns2:Lammer_Lara,
+        ns2:Vincze_Markus .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=376070&semester=2020S> a ns2:TU-Lecture ;
+    ns1:name "Product Development based on the Example of Robots" ;
+    ns2:courseId "376.070" ;
+    ns2:description "2020S, VU, 3.0h, 4.5EC, to be held in blocked form" ;
+    ns2:ects 4.5 ;
+    ns2:instructor ns2:Lammer_Lara,
+        ns2:Vincze_Markus .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=384107&semester=2019W> a ns2:TU-Lecture ;
+    ns1:name "Planning of IT Projects and Public Procurement Law" ;
+    ns2:courseId "384.107" ;
+    ns2:description "2019W, VO, 1.5h, 2.25EC" ;
+    ns2:ects 2.25 ;
+    ns2:instructor ns2:Judmann_Kurt .
+
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=384176&semester=2019W> a ns2:TU-Lecture ;
+    ns1:name "Mikrocomputer für Informatiker_innen" ;
+    ns2:courseId "384.176" ;
+    ns2:description "2019W, VU, 1.0h, 1.0EC" ;
+    ns2:ects 1.0 ;
+    ns2:instructor ns2:Bauer_Friedrich,
+        ns2:Hauer_Daniel,
+        ns2:Jantsch_Axel .
+
+ns2:Aigner_Wolfgang a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/63348> ;
+    ns1:name "Aigner, Wolfgang" .
+
+ns2:Almeida_Leite_Roger a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/290000> ;
+    ns1:name "Almeida Leite, Roger" .
+
+ns2:Arleo_Alessio a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/317497> ;
+    ns1:name "Arleo, Alessio" .
+
+ns2:Balasin_Herbert a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/140606> ;
+    ns1:name "Balasin, Herbert" .
+
+ns2:Banik_Detlef a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/307947> ;
+    ns1:name "Banik, Detlef" .
+
+ns2:Bauer_Friedrich a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/40924> ;
+    ns1:name "Bauer, Friedrich" .
+
+ns2:Bicher_Martin a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/56395> ;
+    ns1:name "Bicher, Martin" .
+
+ns2:Birbaumer_Andrea a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/39788> ;
+    ns1:name "Birbaumer, Andrea" .
+
+ns2:Blieberger_Johann a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/143972> ;
+    ns1:name "Blieberger, Johann" .
+
+ns2:Bors_Christian a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/56607> ;
+    ns1:name "Bors, Christian" .
+
+ns2:Breitenecker_Felix a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/161640> ;
+    ns1:name "Breitenecker, Felix" .
+
+ns2:Capari_Leo a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/70172> ;
+    ns1:name "Capari, Leo" .
+
+ns2:Ceneda_Davide a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/289877> ;
+    ns1:name "Ceneda, Davide" .
+
+ns2:Cerwinka_Gabriele a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/39785> ;
+    ns1:name "Cerwinka, Gabriele" .
+
+ns2:Dabringer_Maria a ns2:Lecturer ;
+    ns1:name "Dabringer, Maria" .
+
+ns2:Dillinger_Sophie a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/315781> ;
+    ns1:name "Dillinger, Sophie" .
+
+ns2:Dorigo_Wouter_Arnoud a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/58101> ;
+    ns1:name "Dorigo, Wouter Arnoud" .
+
+ns2:Dorn_Jürgen a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/36920> ;
+    ns1:name "Dorn, Jürgen" .
+
+ns2:Drmota_Michael a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/135950> ;
+    ns1:name "Drmota, Michael" .
+
+ns2:Dvorak_Wolfgang a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/44925> ;
+    ns1:name "Dvorak, Wolfgang" .
+
+ns2:Döring-Williams_Marina a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/43511> ;
+    ns1:name "Döring-Williams, Marina" .
+
+ns2:Egly_Uwe a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/215880> ;
+    ns1:name "Egly, Uwe" .
+
+ns2:Eiter_Thomas a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/129556> ;
+    ns1:name "Eiter, Thomas" .
+
+ns2:Ekaputra_Fajar_Juang a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/269298> ;
+    ns1:name "Ekaputra, Fajar Juang" .
+
+ns2:Fernandez_De_Retana_Carlos a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/269133> ;
+    ns1:name "Fernandez De Retana, Carlos" .
+
+ns2:Filipov_Velitchko a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/58906> ;
+    ns1:name "Filipov, Velitchko" .
+
+ns2:Fischer_Fabian a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/39022> ;
+    ns1:name "Fischer, Fabian" .
+
+ns2:Fischer_Henriette_Susanne a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/242834> ;
+    ns1:name "Fischer, Henriette Susanne" .
+
+ns2:Frohner_Nikolaus a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/49451> ;
+    ns1:name "Frohner, Nikolaus" .
+
+ns2:Futschek_Gerald a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/154644> ;
+    ns1:name "Futschek, Gerald" .
+
+ns2:Gartner_Martin a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/290274> ;
+    ns1:name "Gartner, Martin" .
+
+ns2:Gazsó_André a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/311713> ;
+    ns1:name "Gazsó, André" .
+
+ns2:Grober_Gernot a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/85899> ;
+    ns1:name "Grober, Gernot" .
+
+ns2:Grothe_Hinrich a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/41082> ;
+    ns1:name "Grothe, Hinrich" .
+
+ns2:Gröller_Eduard a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/143572> ;
+    ns1:name "Gröller, Eduard" .
+
+ns2:Hahn_Gabriele a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/300253> ;
+    ns1:name "Hahn, Gabriele" .
+
+ns2:Halbwirth_Heidrun a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/41528> ;
+    ns1:name "Halbwirth, Heidrun" .
+
+ns2:Handsteiner_Andrea a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/288637> ;
+    ns1:name "Handsteiner, Andrea" .
+
+ns2:Hauer_Daniel a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/229933> ;
+    ns1:name "Hauer, Daniel" .
+
+ns2:Herbst_Ilona_Renate a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/51181> ;
+    ns1:name "Herbst, Ilona Renate" .
+
+ns2:Hirschler_Petra a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/37127> ;
+    ns1:name "Hirschler, Petra" .
+
+ns2:Hofmann_Roswitha a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/128289> ;
+    ns1:name "Hofmann, Roswitha" .
+
+ns2:Hollands_Jutta a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/287976> ;
+    ns1:name "Hollands, Jutta" .
+
+ns2:Hollaus_Fabian a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/50571> ;
+    ns1:name "Hollaus, Fabian" .
+
+ns2:Jantsch_Axel a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/141060> ;
+    ns1:name "Jantsch, Axel" .
+
+ns2:Judmann_Kurt a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/163415> ;
+    ns1:name "Judmann, Kurt" .
+
+ns2:Kampel_Martin a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/49535> ;
+    ns1:name "Kampel, Martin" .
+
+ns2:Kasenbacher_Karl a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/69191> ;
+    ns1:name "Kasenbacher, Karl" .
+
+ns2:Kasenbacher_Michael a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/330253> ;
+    ns1:name "Kasenbacher, Michael" .
+
+ns2:Kasper-Giebl_Anneliese a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/38373> ;
+    ns1:name "Kasper-Giebl, Anneliese" .
+
+ns2:Kastner_Wolfgang a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/119612> ;
+    ns1:name "Kastner, Wolfgang" .
+
+ns2:Kellerer_Hans a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/270741> ;
+    ns1:name "Kellerer, Hans" .
+
+ns2:Kleestorfer_Erika a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/301940> ;
+    ns1:name "Kleestorfer, Erika" .
+
+ns2:Klute_Fabian a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/299051> ;
+    ns1:name "Klute, Fabian" .
+
+ns2:Knoll_Bente a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/54471> ;
+    ns1:name "Knoll, Bente" .
+
+ns2:Korjenic_Azra a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/41284> ;
+    ns1:name "Korjenic, Azra" .
+
+ns2:Kouril_David a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/298198> ;
+    ns1:name "Kouril, David" .
+
+ns2:Kovacic_Iva a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/42543> ;
+    ns1:name "Kovacic, Iva" .
+
+ns2:Kovacs_Laura a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/191912> ;
+    ns1:name "Kovacs, Laura" .
+
+ns2:Körner_Andreas a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/40607> ;
+    ns1:name "Körner, Andreas" .
+
+ns2:Köszegi_Sabine_Theresia a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/67703> ;
+    ns1:name "Köszegi, Sabine Theresia" .
+
+ns2:Kühn_Eva a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/44962> ;
+    ns1:name "Kühn, Eva" .
+
+ns2:Lanzinger_Matthias_Paul a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/230336> ;
+    ns1:name "Lanzinger, Matthias Paul" .
+
+ns2:Lederbauer_Stefan a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/41223> ;
+    ns1:name "Lederbauer, Stefan" .
+
+ns2:Lenglachner_Maria-Elisabeth a ns2:Lecturer ;
+    ns1:name "Lenglachner, Maria-Elisabeth" .
+
+ns2:Linkeschova_Dana a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/195335> ;
+    ns1:name "Linkeschova, Dana" .
+
+ns2:Lukas_Günter a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/307501> ;
+    ns1:name "Lukas, Günter" .
+
+ns2:Mahdavi_Ardeshir a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/40365> ;
+    ns1:name "Mahdavi, Ardeshir" .
+
+ns2:Maringer_Franz_Josef a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/64460> ;
+    ns1:name "Maringer, Franz Josef" .
+
+ns2:Mindek_Peter a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/245502> ;
+    ns1:name "Mindek, Peter" .
+
+ns2:Mitterlehner_Reinhold a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/328640> ;
+    ns1:name "Mitterlehner, Reinhold" .
+
+ns2:Okulmus_Cem a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/291693> ;
+    ns1:name "Okulmus, Cem" .
+
+ns2:Ortiz_de_la_Fuente_Maria_Magdalena a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/55361> ;
+    ns1:name "Ortiz de la Fuente, Maria Magdalena" .
+
+ns2:Ostad_Hesamedin a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/53348> ;
+    ns1:name "Ostad, Hesamedin" .
+
+ns2:Pacha_Alexander a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/68727> ;
+    ns1:name "Pacha, Alexander" .
+
+ns2:Pagel_Jens a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/294825> ;
+    ns1:name "Pagel, Jens" .
+
+ns2:Patera_Mario a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/53937> ;
+    ns1:name "Patera, Mario" .
+
+ns2:Peissl_Walter a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/311709> ;
+    ns1:name "Peissl, Walter" .
+
+ns2:Pföstl_Andreas a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/95678> ;
+    ns1:name "Pföstl, Andreas" .
+
+ns2:Pibal_Sophia_Silvia a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/231474> ;
+    ns1:name "Pibal, Sophia Silvia" .
+
+ns2:Pietrzak_Krzysztof a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/320178> ;
+    ns1:name "Pietrzak, Krzysztof" .
+
+ns2:Pietzka_Markus a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/238798> ;
+    ns1:name "Pietzka, Markus" .
+
+ns2:Piroi_Florina_Mihaela a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/239780> ;
+    ns1:name "Piroi, Florina Mihaela" .
+
+ns2:Popper_Nikolas a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/49563> ;
+    ns1:name "Popper, Nikolas" .
+
+ns2:Posekany_Alexandra a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/40001> ;
+    ns1:name "Posekany, Alexandra" .
+
+ns2:Predota_Martin a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/54870> ;
+    ns1:name "Predota, Martin" .
+
+ns2:Prem_Erich a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/126489> ;
+    ns1:name "Prem, Erich" .
+
+ns2:Prinzinger_Philipp a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/45723> ;
+    ns1:name "Prinzinger, Philipp" .
+
+ns2:Purgathofer_Werner a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/156486> ;
+    ns1:name "Purgathofer, Werner" .
+
+ns2:Raidou_Renata a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/306405> ;
+    ns1:name "Raidou, Renata" .
+
+ns2:Rakoczi_Gergely a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/40040> ;
+    ns1:name "Rakoczi, Gergely" .
+
+ns2:Reischauer_Georg a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/277371> ;
+    ns1:name "Reischauer, Georg" .
+
+ns2:Reisinger_Julia a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/230671> ;
+    ns1:name "Reisinger, Julia" .
+
+ns2:Reiter_Michael a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/42378> ;
+    ns1:name "Reiter, Michael" .
+
+ns2:Sablatnig_Robert a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/133566> ;
+    ns1:name "Sablatnig, Robert" .
+
+ns2:Sabou_Reka_Marta a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/280972> ;
+    ns1:name "Sabou, Reka Marta" .
+
+ns2:Schatten_Alexander a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/49575> ;
+    ns1:name "Schatten, Alexander" .
+
+ns2:Schetinger_Victor a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/323365> ;
+    ns1:name "Schetinger, Victor" .
+
+ns2:Schildt_Gerhard-Helge a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/38464> ;
+    ns1:name "Schildt, Gerhard-Helge" .
+
+ns2:Schlechter_Burkhard a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/316193> ;
+    ns1:name "Schlechter, Burkhard" .
+
+ns2:Schmidt_Johanna a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/46812> ;
+    ns1:name "Schmidt, Johanna" .
+
+ns2:Schmied_Gabriele a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/292167> ;
+    ns1:name "Schmied, Gabriele" .
+
+ns2:Schnürch_Michael a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/51467> ;
+    ns1:name "Schnürch, Michael" .
+
+ns2:Schützenhofer_Stefan a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/249548> ;
+    ns1:name "Schützenhofer, Stefan" .
+
+ns2:Sertkan_Mete a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/58962> ;
+    ns1:name "Sertkan, Mete" .
+
+ns2:Simkus_Mantas a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/55545> ;
+    ns1:name "Simkus, Mantas" .
+
+ns2:Skritek_Sebastian a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/44828> ;
+    ns1:name "Skritek, Sebastian" .
+
+ns2:Slamanig_Daniel a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/320016> ;
+    ns1:name "Slamanig, Daniel" .
+
+ns2:Slivovsky_Friedrich a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/40172> ;
+    ns1:name "Slivovsky, Friedrich" .
+
+ns2:Some_Doliere_Francis a ns2:Lecturer ;
+    ns1:name "Some, Doliere Francis" .
+
+ns2:Sotoudeh_Mahshid a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/217419> ;
+    ns1:name "Sotoudeh, Mahshid" .
+
+ns2:Squarcina_Marco a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/323023> ;
+    ns1:name "Squarcina, Marco" .
+
+ns2:Sreckovic_Marijana a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/41722> ;
+    ns1:name "Sreckovic, Marijana" .
+
+ns2:Stadler_Michael a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/78474> ;
+    ns1:name "Stadler, Michael" .
+
+ns2:Stampfer_Lukas a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/182216> ;
+    ns1:name "Stampfer, Lukas" .
+
+ns2:Steinhardt_Gerald a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/40168> ;
+    ns1:name "Steinhardt, Gerald" .
+
+ns2:Steininger_Andreas a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/137136> ;
+    ns1:name "Steininger, Andreas" .
+
+ns2:Stephanitsch_Michael a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/51776> ;
+    ns1:name "Stephanitsch, Michael" .
+
+ns2:Stieldorf_Karin a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/48134> ;
+    ns1:name "Stieldorf, Karin" .
+
+ns2:Szeider_Stefan a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/127285> ;
+    ns1:name "Szeider, Stefan" .
+
+ns2:Taha_Abdel_Aziz a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/41158> ;
+    ns1:name "Taha, Abdel Aziz" .
+
+ns2:Tran_Thanh_Hai a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/286364> ;
+    ns1:name "Tran, Thanh Hai" .
+
+ns2:Tritremmel_Wolfgang a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/41744> ;
+    ns1:name "Tritremmel, Wolfgang" .
+
+ns2:Vasilescu_Dragos-Cristian a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/187016> ;
+    ns1:name "Vasilescu, Dragos-Cristian" .
+
+ns2:Vogl_Richard a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/306611> ;
+    ns1:name "Vogl, Richard" .
+
+ns2:Wagner_Marlene a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/46724> ;
+    ns1:name "Wagner, Marlene" .
+
+ns2:Waldner_Manuela a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/269459> ;
+    ns1:name "Waldner, Manuela" .
+
+ns2:Weikinger_Simon a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/315782> ;
+    ns1:name "Weikinger, Simon" .
+
+ns2:Weissenböck_Martin a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/42555> ;
+    ns1:name "Weissenböck, Martin" .
+
+ns2:Werthner_Hannes a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/54398> ;
+    ns1:name "Werthner, Hannes" .
+
+ns2:Winkler_Stefanie a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/55485> ;
+    ns1:name "Winkler, Stefanie" .
+
+ns2:Wu_Hsiang-Yun a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/308769> ;
+    ns1:name "Wu, Hsiang-Yun" .
+
+ns2:Zambanini_Sebastian a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/53412> ;
+    ns1:name "Zambanini, Sebastian" .
+
+ns2:Zillner_Sonja a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/109922> ;
+    ns1:name "Zillner, Sonja" .
+
+ns2:Zuleger_Florian a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/191914> ;
+    ns1:name "Zuleger, Florian" .
+
+ns2:Bräuer-Veigel_Stefanie a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/327394> ;
+    ns1:name "Bräuer-Veigel, Stefanie" .
+
+ns2:Böck_Sebastian a ns2:Lecturer ;
+    ns1:name "Böck, Sebastian" .
+
+ns2:Csanyi_Gottfried a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/40554> ;
+    ns1:name "Csanyi, Gottfried" .
+
+ns2:Deimel_Bernhard a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/99284> ;
+    ns1:name "Deimel, Bernhard" .
+
+ns2:Ertl_Martin a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/125009> ;
+    ns1:name "Ertl, Martin" .
+
+ns2:Felsenstein_Klaus a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/152421> ;
+    ns1:name "Felsenstein, Klaus" .
+
+ns2:Fiala_Norbert a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/307416> ;
+    ns1:name "Fiala, Norbert" .
+
+ns2:Fitzpatrick_Geraldine a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/185194> ;
+    ns1:name "Fitzpatrick, Geraldine" .
+
+ns2:Freund_Rudolf a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/39227> ;
+    ns1:name "Freund, Rudolf" .
+
+ns2:Ganian_Robert a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/272401> ;
+    ns1:name "Ganian, Robert" .
+
+ns2:Grasserbauer_Manfred a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/168157> ;
+    ns1:name "Grasserbauer, Manfred" .
+
+ns2:Gschwandtner_Theresia a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/53477> ;
+    ns1:name "Gschwandtner, Theresia" .
+
+ns2:Guss_Christoph a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/40833> ;
+    ns1:name "Guss, Christoph" .
+
+ns2:Halanek_Vera a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/41370> ;
+    ns1:name "Halanek, Vera" .
+
+ns2:Hofmann_Karin a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/41840> ;
+    ns1:name "Hofmann, Karin" .
+
+ns2:Hunold_Sascha a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/263178> ;
+    ns1:name "Hunold, Sascha" .
+
+ns2:Jerlich_Jutta a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/44513> ;
+    ns1:name "Jerlich, Jutta" .
+
+ns2:Kadlecek_Sabrina a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/277196> ;
+    ns1:name "Kadlecek, Sabrina" .
+
+ns2:Kogler_Jürgen a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/63708> ;
+    ns1:name "Kogler, Jürgen" .
+
+ns2:Krainz_Ewald a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/41218> ;
+    ns1:name "Krainz, Ewald" .
+
+ns2:Lammer_Lara a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/189976> ;
+    ns1:name "Lammer, Lara" .
+
+ns2:Leeb_Maria_Gabriella a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/47716> ;
+    ns1:name "Leeb, Maria Gabriella" .
+
+ns2:Lendl_Peter a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/161213> ;
+    ns1:name "Lendl, Peter" .
+
+ns2:Li_Yan a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/56505> ;
+    ns1:name "Li, Yan" .
+
+ns2:Linert_Wolfgang a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/156813> ;
+    ns1:name "Linert, Wolfgang" .
+
+ns2:Maffei_Matteo a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/306636> ;
+    ns1:name "Maffei, Matteo" .
+
+ns2:Martinez_Helmuth a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/54681> ;
+    ns1:name "Martinez, Helmuth" .
+
+ns2:Mayer_Rudolf a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/37605> ;
+    ns1:name "Mayer, Rudolf" .
+
+ns2:Miksch_Silvia a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/134749> ;
+    ns1:name "Miksch, Silvia" .
+
+ns2:Murzek_Marion a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/100963> ;
+    ns1:name "Murzek, Marion" .
+
+ns2:Müllner_Clemens a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/178532> ;
+    ns1:name "Müllner, Clemens" .
+
+ns2:Neidhardt_Julia a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/88078> ;
+    ns1:name "Neidhardt, Julia" .
+
+ns2:Nordhausen_Klaus a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/308242> ;
+    ns1:name "Nordhausen, Klaus" .
+
+ns2:Nöllenburg_Martin a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/293301> ;
+    ns1:name "Nöllenburg, Martin" .
+
+ns2:Obszelka_Daniel a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/58381> ;
+    ns1:name "Obszelka, Daniel" .
+
+ns2:Pitzek_Mitar a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/43419> ;
+    ns1:name "Pitzek, Mitar" .
+
+ns2:Podlipnig_Stefan a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/275835> ;
+    ns1:name "Podlipnig, Stefan" .
+
+ns2:Raidl_Günther a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/45040> ;
+    ns1:name "Raidl, Günther" .
+
+ns2:Rief_Thomas a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/39067> ;
+    ns1:name "Rief, Thomas" .
+
+ns2:Saez_Garcia_Susana a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/100609> ;
+    ns1:name "Saez Garcia, Susana" .
+
+ns2:Sagmeister_Elke_Maria a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/299831> ;
+    ns1:name "Sagmeister, Elke Maria" .
+
+ns2:Schindler_Alexander a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/53560> ;
+    ns1:name "Schindler, Alexander" .
+
+ns2:Schneglberger-Lenglachner_Valerie a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/299807> ;
+    ns1:name "Schneglberger-Lenglachner, Valerie" .
+
+ns2:Schwaninger_Isabel a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/293292> ;
+    ns1:name "Schwaninger, Isabel" .
+
+ns2:Tjoa_A_Min a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/39902> ;
+    ns1:name "Tjoa, A Min" .
+
+ns2:Tragler_Gernot a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/37768> ;
+    ns1:name "Tragler, Gernot" .
+
+ns2:Träff_Jesper_Larsson a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/240502> ;
+    ns1:name "Träff, Jesper Larsson" .
+
+ns2:Vincze_Markus a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/133231> ;
+    ns1:name "Vincze, Markus" .
+
+ns2:Vinzenz_Ingmar a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/89634> ;
+    ns1:name "Vinzenz, Ingmar" .
+
+ns2:Vreugdenhil_Mariette a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/248738> ;
+    ns1:name "Vreugdenhil, Mariette" .
+
+ns2:Wagner_Wolfgang a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/47741> ;
+    ns1:name "Wagner, Wolfgang" .
+
+ns2:Weber_Stefan a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/322769> ;
+    ns1:name "Weber, Stefan" .
+
+ns2:Weingartner_Bernhard a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/50860> ;
+    ns1:name "Weingartner, Bernhard" .
+
+ns2:Weippl_Edgar a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/54162> ;
+    ns1:name "Weippl, Edgar" .
+
+ns2:Filzmoser_Michael a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/70620> ;
+    ns1:name "Filzmoser, Michael" .
+
+ns2:Filzmoser_Peter a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/40896> ;
+    ns1:name "Filzmoser, Peter" .
+
+ns2:Fischer_Gabriele a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/48909> ;
+    ns1:name "Fischer, Gabriele" .
+
+ns2:Huemer_Christian a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/118510> ;
+    ns1:name "Huemer, Christian" .
+
+ns2:Kiesling_Elmar a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/40178> ;
+    ns1:name "Kiesling, Elmar" .
+
+ns2:Knapp_Ilan a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/40083> ;
+    ns1:name "Knapp, Ilan" .
+
+ns2:Matyas_Kurt a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/139234> ;
+    ns1:name "Matyas, Kurt" .
+
+ns2:Pohl_Margit a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/153985> ;
+    ns1:name "Pohl, Margit" .
+
+ns2:Knees_Peter a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/47426> ;
+    ns1:name "Knees, Peter" .
+
+ns2:Eidenberger_Horst a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/97117> ;
+    ns1:name "Eidenberger, Horst" .
+
+ns2:Hanbury_Allan a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/48222> ;
+    ns1:name "Hanbury, Allan" .
+
+ns2:Musliu_Nysret a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/215731> ;
+    ns1:name "Musliu, Nysret" .
+
+ns2:Pichler_Reinhard a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/135034> ;
+    ns1:name "Pichler, Reinhard" .
+
+ns2:Pichlmair_Markus a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/46201> ;
+    ns1:name "Pichlmair, Markus" .
+
+ns2:Schranz_Christian a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/36976> ;
+    ns1:name "Schranz, Christian" .
+
+ns2:Tellioglu_Hilda a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/215561> ;
+    ns1:name "Tellioglu, Hilda" .
+
+ns2:Rauber_Andreas a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/39608> ;
+    ns1:name "Rauber, Andreas" .
+
+ns2:Crowder_Jeff a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/54986> ;
+    ns1:name "Crowder, Jeff" .
+
+ns2:Grechenig_Thomas a ns2:Lecturer ;
+    ns1:URL <https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/44613> ;
+    ns1:name "Grechenig, Thomas" .
+
