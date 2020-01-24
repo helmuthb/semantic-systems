@@ -40,6 +40,7 @@ Which role should I aspire to earn the most money with age (XX) in (country)?
 
 - Merge columns (combine Stackoverflow, Kaggle, Github)
 - Merge entries of merged columns
+- add links to individuals, e.g. kaggle.com/dataset/xyx#1234, tiss.tuwien.ac.at/courses#ARAC,... as identifier in the about attribute
 
 
 ## Extensions
@@ -54,3 +55,8 @@ Which role should I aspire to earn the most money with age (XX) in (country)?
 ## Learning
 
 [OpenRefine](https://www.youtube.com/watch?v=XdpzmGxA33U)
+
+## app
+
+- web ui with rest endpoints to jena
+- cli with click/python https://click.palletsprojects.com/en/7.x/

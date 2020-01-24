@@ -1,0 +1,10 @@
+@prefix schema: <https://schema.org/>
+@prefix group1: <http://www.semanticweb.org/sws/ws2019/group1#>
+
+group1:k1234 group1:developsIn group1:Python
+group1:k1234 group1:hasAgeRange group1:25-35
+group1:k1234 group1:hasRole group1:Senior%20Developer
+group1:k1234 group1:hasSalaryRange group1:30%2C000-39%2C999
+group1:k1234 schema:gender group1:Male
+group1:k1234 schema:homeLocation group1:Austria
+group1:k1234 group1:salary 100000
