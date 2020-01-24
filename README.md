@@ -26,6 +26,33 @@
 
 #### Github
 
+##### Example Query
+
+**Top 10 Starred Repositories**
+
+https://developer.github.com/v4/explorer
+```graphql
+query{
+  search(type: REPOSITORY, query: "language:python", first:10) {
+    userCount
+    edges {
+      node {
+        ... on Repository {
+          name
+          url
+          stargazers {
+            totalCount
+          }
+          owner{
+            login
+          }
+        }
+      }
+    }
+  }
+}
+```
+
 #### Tiss
 
 ### App Ontology
