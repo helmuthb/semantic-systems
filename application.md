@@ -60,3 +60,20 @@ Which role should I aspire to earn the most money with age (XX) in (country)?
 
 - web ui with rest endpoints to jena
 - cli with click/python https://click.palletsprojects.com/en/7.x/
+
+
+
+## SPARQL Queries
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX group1: <http://www.semanticweb.org/sws/ws2019/group1#>
+PREFIX schema: <http://schema.org/>
+SELECT ?name
+WHERE {
+  ?lecture rdf:type group1:TU-Lecture .
+  ?lecture schema:name ?name .
+}
+LIMIT 25
+
+
+https://jena.helmuth.at/jobsta/query?query=PREFIX%20rdf%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0APREFIX%20group1%3A%20%3Chttp%3A%2F%2Fwww.semanticweb.org%2Fsws%2Fws2019%2Fgroup1%23%3E%0APREFIX%20schema%3A%20%3Chttp%3A%2F%2Fschema.org%2F%3E%0ASELECT%20%3Fname%0AWHERE%20%7B%0A%20%20%3Flecture%20rdf%3Atype%20group1%3ATU-Lecture%20.%0A%20%20%3Flecture%20schema%3Aname%20%3Fname%20.%0A%7D%0ALIMIT%2025
