@@ -62,6 +62,10 @@ Which role should I aspire to earn the most money with age (XX) in (country)?
 - cli with click/python https://click.palletsprojects.com/en/7.x/
 
 
+## Jena Server
+
+https://jena.helmuth.at/
+
 
 ## SPARQL Queries
 
