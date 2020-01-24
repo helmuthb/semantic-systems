@@ -25,16 +25,19 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ## App Idea
 
-* _What shall I study?_
-* _Where shall I work?_
-* _What shall I practise?_
-* _How could I practise?_
+* For Software Developers and Data Scientists 
+* Asks for experience, age, location
+* Answers:
+  * _What shall I study?_
+  * _Where shall I work?_
+  * _What shall I practise?_
+  * _How could I practise?_
 
 ## Data Sources
 
-* Kaggle User Survey 2019
-* StackOverflow User Survey 2019
-* GitHub Profile data
+* Kaggle User Survey
+* StackOverflow User Survey
+* GitHub Profile Data
 * TISS Lectures
 
 ## Ontology
@@ -44,5 +47,15 @@ knitr::opts_chunk$set(echo = FALSE)
 - Bullet 3
 
 ## Data Processing
+
+### Kaggle Survey
+
+### StackOverflow Survey
+
+### GitHub Profile Data
+
+### TISS Lectures
+
+## SPARQL Queries
 
 ## Questions?
