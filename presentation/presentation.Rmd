@@ -98,4 +98,18 @@ knitr::include_graphics("ontology.png")
 
 ## SPARQL Queries
 
+```
+PREFIX rdf: 
+  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX group1: 
+  <http://www.semanticweb.org/sws/ws2019/group1#>
+PREFIX schema: <http://schema.org/>
+
+SELECT ?name
+WHERE {
+  ?lecture rdf:type group1:TU-Lecture .
+  ?lecture schema:name ?name .
+}
+LIMIT 25
+```
 ## Questions?
