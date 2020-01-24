@@ -1,0 +1,48 @@
+---
+title: "jobsta"
+subtitle: |
+  | _Study - Job - Money_
+  | 
+  | Project for
+  | Introduction to Semantic Systems
+  | (188.399-2019W)
+author: |
+  | Group 01
+  |
+  | Cem Bicer (01425692)
+  | Helmuth Breitenfellner (08725866)
+  | Laszlo Kiraly (09227679)
+  | Gerald Weber (00125536)
+date: "2020-01-31"
+output:
+  beamer_presentation:
+    theme: "Goettingen"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## App Idea
+
+* _What shall I study?_
+* _Where shall I work?_
+* _What shall I practise?_
+* _How could I practise?_
+
+## Data Sources
+
+* Kaggle User Survey 2019
+* StackOverflow User Survey 2019
+* GitHub Profile data
+* TISS Lectures
+
+## Ontology
+
+- Bullet 1
+- Bullet 2
+- Bullet 3
+
+## Data Processing
+
+## Questions?
