@@ -671,14 +671,99 @@
         <rdf:type rdf:resource="http://schema.org/ComputerLanguage"/>
     </owl:NamedIndividual>
     
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#R">
+        <rdf:type rdf:resource="http://schema.org/ComputerLanguage"/>
+    </owl:NamedIndividual>
 
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#SQL">
+        <rdf:type rdf:resource="http://schema.org/ComputerLanguage"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#C">
+        <rdf:type rdf:resource="http://schema.org/ComputerLanguage"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#C%2B%2B">
+        <rdf:type rdf:resource="http://schema.org/ComputerLanguage"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Java">
+        <rdf:type rdf:resource="http://schema.org/ComputerLanguage"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Javascript">
+        <rdf:type rdf:resource="http://schema.org/ComputerLanguage"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#TypeScript">
+        <rdf:type rdf:resource="http://schema.org/ComputerLanguage"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Bash">
+        <rdf:type rdf:resource="http://schema.org/ComputerLanguage"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#MATLAB">
+        <rdf:type rdf:resource="http://schema.org/ComputerLanguage"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Other">
+        <rdf:type rdf:resource="http://schema.org/ComputerLanguage"/>
+    </owl:NamedIndividual>
 
     <!-- http://www.semanticweb.org/sws/ws2019/group1#Senior_Developer -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Senior_Developer">
         <rdf:type rdf:resource="https://schema.org/EmployeeRole"/>
     </owl:NamedIndividual>
-    
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Software%20Engineer">
+        <rdf:type rdf:resource="https://schema.org/EmployeeRole"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Other">
+        <rdf:type rdf:resource="https://schema.org/EmployeeRole"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Data%20Scientist">
+        <rdf:type rdf:resource="https://schema.org/EmployeeRole"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Student">
+        <rdf:type rdf:resource="https://schema.org/EmployeeRole"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Statistician">
+        <rdf:type rdf:resource="https://schema.org/EmployeeRole"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Product/Project%20Manager">
+        <rdf:type rdf:resource="https://schema.org/EmployeeRole"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Data%20Analyst">
+        <rdf:type rdf:resource="https://schema.org/EmployeeRole"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Research%20Scientist">
+        <rdf:type rdf:resource="https://schema.org/EmployeeRole"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Business%20Analyst">
+        <rdf:type rdf:resource="https://schema.org/EmployeeRole"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Data%20Engineer">
+        <rdf:type rdf:resource="https://schema.org/EmployeeRole"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Not%20employed">
+        <rdf:type rdf:resource="https://schema.org/EmployeeRole"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#DBA/Database%20Engineer">
+        <rdf:type rdf:resource="https://schema.org/EmployeeRole"/>
+    </owl:NamedIndividual>
 
 
     <!-- http://www.semanticweb.org/sws/ws2019/group1#Super-Repository -->
