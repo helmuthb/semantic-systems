@@ -396,12 +396,242 @@
 
     <!-- http://www.semanticweb.org/sws/ws2019/group1#Austria -->
 
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#France">
+        <rdf:type rdf:resource="http://schema.org/Country"/>
+        <schema:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">France</schema:name>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#India">
+        <rdf:type rdf:resource="http://schema.org/Country"/>
+        <schema:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">India</schema:name>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Germany">
+        <rdf:type rdf:resource="http://schema.org/Country"/>
+        <schema:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Germany</schema:name>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Australia">
+        <rdf:type rdf:resource="http://schema.org/Country"/>
+        <schema:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Australia</schema:name>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#United%20States%20of%20America">
+        <rdf:type rdf:resource="http://schema.org/Country"/>
+        <schema:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">United States of America</schema:name>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Netherlands">
+        <rdf:type rdf:resource="http://schema.org/Country"/>
+        <schema:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Netherlands</schema:name>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Ireland">
+        <rdf:type rdf:resource="http://schema.org/Country"/>
+        <schema:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ireland</schema:name>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Russia">
+        <rdf:type rdf:resource="http://schema.org/Country"/>
+        <schema:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Russia</schema:name>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Greece">
+        <rdf:type rdf:resource="http://schema.org/Country"/>
+        <schema:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Greece</schema:name>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Ukraine">
+        <rdf:type rdf:resource="http://schema.org/Country"/>
+        <schema:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ukraine</schema:name>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Pakistan">
+        <rdf:type rdf:resource="http://schema.org/Country"/>
+        <schema:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pakistan</schema:name>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Japan">
+        <rdf:type rdf:resource="http://schema.org/Country"/>
+        <schema:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Japan</schema:name>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Other">
+        <rdf:type rdf:resource="http://schema.org/Country"/>
+        <schema:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Other</schema:name>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Brazil">
+        <rdf:type rdf:resource="http://schema.org/Country"/>
+        <schema:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Brazil</schema:name>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#South%20Korea">
+        <rdf:type rdf:resource="http://schema.org/Country"/>
+        <schema:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">South Korea</schema:name>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Belarus">
+        <rdf:type rdf:resource="http://schema.org/Country"/>
+        <schema:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Belarus</schema:name>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Nigeria">
+        <rdf:type rdf:resource="http://schema.org/Country"/>
+        <schema:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nigeria</schema:name>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#United%20Kingdom%20of%20Great%20Britain%20and%20Northern%20Ireland">
+        <rdf:type rdf:resource="http://schema.org/Country"/>
+        <schema:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">United Kingdom of Great Britain and Northern Ireland</schema:name>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Sweden">
+        <rdf:type rdf:resource="http://schema.org/Country"/>
+        <schema:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sweden</schema:name>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Mexico">
+        <rdf:type rdf:resource="http://schema.org/Country"/>
+        <schema:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mexico</schema:name>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Canada">
+        <rdf:type rdf:resource="http://schema.org/Country"/>
+        <schema:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Canada</schema:name>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Portugal">
+        <rdf:type rdf:resource="http://schema.org/Country"/>
+        <schema:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Portugal</schema:name>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Poland">
+        <rdf:type rdf:resource="http://schema.org/Country"/>
+        <schema:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Poland</schema:name>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Indonesia">
+        <rdf:type rdf:resource="http://schema.org/Country"/>
+        <schema:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Indonesia</schema:name>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Italy">
+        <rdf:type rdf:resource="http://schema.org/Country"/>
+        <schema:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Italy</schema:name>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Czech%20Republic">
+        <rdf:type rdf:resource="http://schema.org/Country"/>
+        <schema:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Czech Republic</schema:name>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Spain">
+        <rdf:type rdf:resource="http://schema.org/Country"/>
+        <schema:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Spain</schema:name>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Morocco">
+        <rdf:type rdf:resource="http://schema.org/Country"/>
+        <schema:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Morocco</schema:name>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Chile">
+        <rdf:type rdf:resource="http://schema.org/Country"/>
+        <schema:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chile</schema:name>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Hong%20Kong%20%28S.A.R.%29">
+        <rdf:type rdf:resource="http://schema.org/Country"/>
+        <schema:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hong Kong (S.A.R.)</schema:name>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#South%20Africa">
+        <rdf:type rdf:resource="http://schema.org/Country"/>
+        <schema:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">South Africa</schema:name>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Hungary">
+        <rdf:type rdf:resource="http://schema.org/Country"/>
+        <schema:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hungary</schema:name>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Argentina">
+        <rdf:type rdf:resource="http://schema.org/Country"/>
+        <schema:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Argentina</schema:name>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Turkey">
+        <rdf:type rdf:resource="http://schema.org/Country"/>
+        <schema:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Turkey</schema:name>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Singapore">
+        <rdf:type rdf:resource="http://schema.org/Country"/>
+        <schema:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Singapore</schema:name>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Israel">
+        <rdf:type rdf:resource="http://schema.org/Country"/>
+        <schema:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Israel</schema:name>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Taiwan">
+        <rdf:type rdf:resource="http://schema.org/Country"/>
+        <schema:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Taiwan</schema:name>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Egypt">
+        <rdf:type rdf:resource="http://schema.org/Country"/>
+        <schema:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Egypt</schema:name>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Bangladesh">
+        <rdf:type rdf:resource="http://schema.org/Country"/>
+        <schema:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bangladesh</schema:name>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Colombia">
+        <rdf:type rdf:resource="http://schema.org/Country"/>
+        <schema:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Colombia</schema:name>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Norway">
+        <rdf:type rdf:resource="http://schema.org/Country"/>
+        <schema:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Norway</schema:name>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Thailand">
+        <rdf:type rdf:resource="http://schema.org/Country"/>
+        <schema:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Thailand</schema:name>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#China">
+        <rdf:type rdf:resource="http://schema.org/Country"/>
+        <schema:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">China</schema:name>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Switzerland">
+        <rdf:type rdf:resource="http://schema.org/Country"/>
+        <schema:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Switzerland</schema:name>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Viet%20Nam">
+        <rdf:type rdf:resource="http://schema.org/Country"/>
+        <schema:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Viet Nam</schema:name>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Denmark">
+        <rdf:type rdf:resource="http://schema.org/Country"/>
+        <schema:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Denmark</schema:name>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Tunisia">
+        <rdf:type rdf:resource="http://schema.org/Country"/>
+        <schema:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tunisia</schema:name>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Republic%20of%20Korea">
+        <rdf:type rdf:resource="http://schema.org/Country"/>
+        <schema:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Republic of Korea</schema:name>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#New%20Zealand">
+        <rdf:type rdf:resource="http://schema.org/Country"/>
+        <schema:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">New Zealand</schema:name>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Iran%2C%20Islamic%20Republic%20of...">
+        <rdf:type rdf:resource="http://schema.org/Country"/>
+        <schema:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Iran, Islamic Republic of...</schema:name>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Peru">
+        <rdf:type rdf:resource="http://schema.org/Country"/>
+        <schema:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Peru</schema:name>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Kenya">
+        <rdf:type rdf:resource="http://schema.org/Country"/>
+        <schema:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kenya</schema:name>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Romania">
+        <rdf:type rdf:resource="http://schema.org/Country"/>
+        <schema:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Romania</schema:name>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Malaysia">
+        <rdf:type rdf:resource="http://schema.org/Country"/>
+        <schema:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malaysia</schema:name>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Belgium">
+        <rdf:type rdf:resource="http://schema.org/Country"/>
+        <schema:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Belgium</schema:name>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Algeria">
+        <rdf:type rdf:resource="http://schema.org/Country"/>
+        <schema:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Algeria</schema:name>
+    </owl:NamedIndividual>
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Austria">
         <rdf:type rdf:resource="http://schema.org/Country"/>
         <schema:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Austria</schema:name>
     </owl:NamedIndividual>
-    
-
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Philippines">
+        <rdf:type rdf:resource="http://schema.org/Country"/>
+        <schema:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Philippines</schema:name>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Saudi%20Arabia">
+        <rdf:type rdf:resource="http://schema.org/Country"/>
+        <schema:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Saudi Arabia</schema:name>
+    </owl:NamedIndividual>
 
     <!-- http://www.semanticweb.org/sws/ws2019/group1#Laszlo_Kiraly -->
 
@@ -469,6 +699,73 @@
         <maxAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">35</maxAge>
         <minAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">25</minAge>
     </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#22-24">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sws/ws2019/group1#AgeRange"/>
+        <maxAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">24</maxAge>
+        <minAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">22</minAge>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#40-44">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sws/ws2019/group1#AgeRange"/>
+        <maxAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">44</maxAge>
+        <minAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">40</minAge>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#55-59">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sws/ws2019/group1#AgeRange"/>
+        <maxAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">59</maxAge>
+        <minAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">55</minAge>
+    </owl:NamedIndividual>
+
+        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#50-54">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sws/ws2019/group1#AgeRange"/>
+        <maxAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">54</maxAge>
+        <minAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">59</minAge>
+    </owl:NamedIndividual>
+
+        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#18-21">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sws/ws2019/group1#AgeRange"/>
+        <maxAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">21</maxAge>
+        <minAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">18</minAge>
+    </owl:NamedIndividual>
+
+        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#30-34">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sws/ws2019/group1#AgeRange"/>
+        <maxAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">34</maxAge>
+        <minAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">30</minAge>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#25-29">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sws/ws2019/group1#AgeRange"/>
+        <maxAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">29</maxAge>
+        <minAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">25</minAge>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#35-39">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sws/ws2019/group1#AgeRange"/>
+        <maxAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">39</maxAge>
+        <minAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">35</minAge>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#45-49">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sws/ws2019/group1#AgeRange"/>
+        <maxAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">49</maxAge>
+        <minAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">45</minAge>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#60-69">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sws/ws2019/group1#AgeRange"/>
+        <maxAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">69</maxAge>
+        <minAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">60</minAge>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#70-">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sws/ws2019/group1#AgeRange"/>
+        <minAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">70</minAge>
+    </owl:NamedIndividual>
+
+
 </rdf:RDF>
 
 

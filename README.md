@@ -68,5 +68,6 @@ merged ontology
 
 - Create ontologies for your dataset
 - Find join points in different ontologies
-
+- rdf ids 
+- Check Viet Nam vs Stackoverflow
 
