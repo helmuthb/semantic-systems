@@ -794,126 +794,126 @@
     </owl:NamedIndividual>
     
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#30%2C000-39%2C999">
-        <rdf:type rdf:resource="http://schema.org/SalaryRange"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/sws/ws2019/group1#SalaryRange"/>
         <minSalary rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">30000</minSalary>
         <maxSalary rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">39999</maxSalary>
     </owl:NamedIndividual>
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#5%2C000-7%2C499">
-        <rdf:type rdf:resource="http://schema.org/SalaryRange"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/sws/ws2019/group1#SalaryRange"/>
         <minSalary rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5000</minSalary>
         <maxSalary rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7499</maxSalary>
     </owl:NamedIndividual>
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#250%2C000-299%2C999">
-        <rdf:type rdf:resource="http://schema.org/SalaryRange"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/sws/ws2019/group1#SalaryRange"/>
         <minSalary rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">250000</minSalary>
         <maxSalary rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">299999</maxSalary>
     </owl:NamedIndividual>
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#4%2C000-4%2C999">
-        <rdf:type rdf:resource="http://schema.org/SalaryRange"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/sws/ws2019/group1#SalaryRange"/>
         <minSalary rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4000</minSalary>
         <maxSalary rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4999</maxSalary>
     </owl:NamedIndividual>
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#60%2C000-69%2C999">
-        <rdf:type rdf:resource="http://schema.org/SalaryRange"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/sws/ws2019/group1#SalaryRange"/>
         <minSalary rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">60000</minSalary>
         <maxSalary rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">69999</maxSalary>
     </owl:NamedIndividual>
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#10%2C000-14%2C999">
-        <rdf:type rdf:resource="http://schema.org/SalaryRange"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/sws/ws2019/group1#SalaryRange"/>
         <minSalary rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10000</minSalary>
         <maxSalary rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14999</maxSalary>
     </owl:NamedIndividual>
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#80%2C000-89%2C999">
-        <rdf:type rdf:resource="http://schema.org/SalaryRange"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/sws/ws2019/group1#SalaryRange"/>
         <minSalary rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">80000</minSalary>
         <maxSalary rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">89999</maxSalary>
     </owl:NamedIndividual>
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#%240-999">
-        <rdf:type rdf:resource="http://schema.org/SalaryRange"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/sws/ws2019/group1#SalaryRange"/>
         <minSalary rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</minSalary>
         <maxSalary rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">999</maxSalary>
     </owl:NamedIndividual>
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#2%2C000-2%2C999">
-        <rdf:type rdf:resource="http://schema.org/SalaryRange"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/sws/ws2019/group1#SalaryRange"/>
         <minSalary rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2000</minSalary>
         <maxSalary rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2999</maxSalary>
     </owl:NamedIndividual>
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#70%2C000-79%2C999">
-        <rdf:type rdf:resource="http://schema.org/SalaryRange"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/sws/ws2019/group1#SalaryRange"/>
         <minSalary rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">70000</minSalary>
         <maxSalary rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">79999</maxSalary>
     </owl:NamedIndividual>
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#90%2C000-99%2C999">
-        <rdf:type rdf:resource="http://schema.org/SalaryRange"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/sws/ws2019/group1#SalaryRange"/>
         <minSalary rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">90000</minSalary>
         <maxSalary rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">99999</maxSalary>
     </owl:NamedIndividual>
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#125%2C000-149%2C999">
-        <rdf:type rdf:resource="http://schema.org/SalaryRange"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/sws/ws2019/group1#SalaryRange"/>
         <minSalary rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">125000</minSalary>
         <maxSalary rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">149999</maxSalary>
     </owl:NamedIndividual>
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#40%2C000-49%2C999">
-        <rdf:type rdf:resource="http://schema.org/SalaryRange"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/sws/ws2019/group1#SalaryRange"/>
         <minSalary rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">40000</minSalary>
         <maxSalary rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">49999</maxSalary>
     </owl:NamedIndividual>
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#20%2C000-24%2C999">
-        <rdf:type rdf:resource="http://schema.org/SalaryRange"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/sws/ws2019/group1#SalaryRange"/>
         <minSalary rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20000</minSalary>
         <maxSalary rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">24999</maxSalary>
     </owl:NamedIndividual>
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#15%2C000-19%2C999">
-        <rdf:type rdf:resource="http://schema.org/SalaryRange"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/sws/ws2019/group1#SalaryRange"/>
         <minSalary rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15000</minSalary>
         <maxSalary rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">19999</maxSalary>
     </owl:NamedIndividual>
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#100%2C000-124%2C999">
-        <rdf:type rdf:resource="http://schema.org/SalaryRange"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/sws/ws2019/group1#SalaryRange"/>
         <minSalary rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">100000</minSalary>
         <maxSalary rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">124999</maxSalary>
     </owl:NamedIndividual>
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#7%2C500-9%2C999">
-        <rdf:type rdf:resource="http://schema.org/SalaryRange"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/sws/ws2019/group1#SalaryRange"/>
         <minSalary rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7500</minSalary>
         <maxSalary rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9999</maxSalary>
     </owl:NamedIndividual>
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#150%2C000-199%2C999">
-        <rdf:type rdf:resource="http://schema.org/SalaryRange"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/sws/ws2019/group1#SalaryRange"/>
         <minSalary rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">150000</minSalary>
         <maxSalary rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">199999</maxSalary>
     </owl:NamedIndividual>
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#25%2C000-29%2C999">
-        <rdf:type rdf:resource="http://schema.org/SalaryRange"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/sws/ws2019/group1#SalaryRange"/>
         <minSalary rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">25000</minSalary>
         <maxSalary rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">29999</maxSalary>
     </owl:NamedIndividual>
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#3%2C000-3%2C999">
-        <rdf:type rdf:resource="http://schema.org/SalaryRange"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/sws/ws2019/group1#SalaryRange"/>
         <minSalary rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3000</minSalary>
         <maxSalary rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3999</maxSalary>
     </owl:NamedIndividual>
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#1%2C000-1%2C999">
-        <rdf:type rdf:resource="http://schema.org/SalaryRange"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/sws/ws2019/group1#SalaryRange"/>
         <minSalary rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1000</minSalary>
         <maxSalary rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1999</maxSalary>
     </owl:NamedIndividual>
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#200%2C000-249%2C999">
-        <rdf:type rdf:resource="http://schema.org/SalaryRange"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/sws/ws2019/group1#SalaryRange"/>
         <minSalary rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">200000</minSalary>
         <maxSalary rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">249999</maxSalary>
     </owl:NamedIndividual>
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#50%2C000-59%2C999">
-        <rdf:type rdf:resource="http://schema.org/SalaryRange"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/sws/ws2019/group1#SalaryRange"/>
         <minSalary rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">50000</minSalary>
         <maxSalary rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">59999</maxSalary>
     </owl:NamedIndividual>
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#%3E%20%24500%2C000">
-        <rdf:type rdf:resource="http://schema.org/SalaryRange"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/sws/ws2019/group1#SalaryRange"/>
         <minSalary rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">500000</minSalary>
     </owl:NamedIndividual>
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#300%2C000-500%2C000">
-        <rdf:type rdf:resource="http://schema.org/SalaryRange"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/sws/ws2019/group1#SalaryRange"/>
         <minSalary rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">300000</minSalary>
         <maxSalary rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">500000</maxSalary>
     </owl:NamedIndividual>
