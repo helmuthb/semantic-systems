@@ -735,7 +735,7 @@
         <rdf:type rdf:resource="https://schema.org/EmployeeRole"/>
     </owl:NamedIndividual>
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Software%20Engineer">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Software_Engineer">
         <rdf:type rdf:resource="https://schema.org/EmployeeRole"/>
     </owl:NamedIndividual>
 
@@ -743,7 +743,7 @@
         <rdf:type rdf:resource="https://schema.org/EmployeeRole"/>
     </owl:NamedIndividual>
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Data%20Scientist">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Data_Scientist">
         <rdf:type rdf:resource="https://schema.org/EmployeeRole"/>
     </owl:NamedIndividual>
 
@@ -755,31 +755,31 @@
         <rdf:type rdf:resource="https://schema.org/EmployeeRole"/>
     </owl:NamedIndividual>
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Product/Project%20Manager">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Product_or_Project_Manager">
         <rdf:type rdf:resource="https://schema.org/EmployeeRole"/>
     </owl:NamedIndividual>
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Data%20Analyst">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Data_Analyst">
         <rdf:type rdf:resource="https://schema.org/EmployeeRole"/>
     </owl:NamedIndividual>
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Research%20Scientist">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Research_Scientist">
         <rdf:type rdf:resource="https://schema.org/EmployeeRole"/>
     </owl:NamedIndividual>
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Business%20Analyst">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Business_Analyst">
         <rdf:type rdf:resource="https://schema.org/EmployeeRole"/>
     </owl:NamedIndividual>
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Data%20Engineer">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Data_Engineer">
         <rdf:type rdf:resource="https://schema.org/EmployeeRole"/>
     </owl:NamedIndividual>
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Not%20employed">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Not_employed">
         <rdf:type rdf:resource="https://schema.org/EmployeeRole"/>
     </owl:NamedIndividual>
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#DBA/Database%20Engineer">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#DBA_or_Database_Engineer">
         <rdf:type rdf:resource="https://schema.org/EmployeeRole"/>
     </owl:NamedIndividual>
 
@@ -1009,16 +1009,6 @@
 	</owl:NamedIndividual>
 
 
-	<owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Data_Scientist">
-		<rdf:type rdf:resource="https://schema.org/EmployeeRole"/>
-	</owl:NamedIndividual>
-
-
-	<owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#DBA_or_Database_Engineer">
-		<rdf:type rdf:resource="https://schema.org/EmployeeRole"/>
-	</owl:NamedIndividual>
-
-
 	<owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Designer">
 		<rdf:type rdf:resource="https://schema.org/EmployeeRole"/>
 	</owl:NamedIndividual>
@@ -1075,11 +1065,6 @@
 
 
 	<owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Mobile_developer">
-		<rdf:type rdf:resource="https://schema.org/EmployeeRole"/>
-	</owl:NamedIndividual>
-
-
-	<owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Product_or_Project_Manager">
 		<rdf:type rdf:resource="https://schema.org/EmployeeRole"/>
 	</owl:NamedIndividual>
 
