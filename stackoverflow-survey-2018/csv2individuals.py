@@ -22,19 +22,31 @@ def map_dev_role(role):
         return 'Product or Project Manager'
     return role
 
-with open('./edited_survey_results_public.csv', mode='r') as csv_file:
-    csv_reader = csv.reader(csv_file, delimiter=',')
-    
-    for row in csv_reader:
-        tmp_dev_roles = row[3].split(';')
-        for role in tmp_dev_roles:
-            if role not in dev_roles:
-                dev_roles.append(role)
-    
-    dev_roles.sort()
+def parse_dev_roles(raw):
+    tmp_dev_roles = raw.split(';')
+    for role in tmp_dev_roles:
+        if role not in dev_roles:
+            dev_roles.append(role)
+
+def print_dev_roles():
     for role in dev_roles:
         dev_role = map_dev_role(role)
         print(EMPLOYEE_ROLE_BASE % (dev_role.replace(' ', '_')))
         print()
         print()
+
+def main():    
+    with open('./edited_survey_results_public.csv', mode='r') as csv_file:
+        csv_reader = csv.reader(csv_file, delimiter=',')
+    
+        for row in csv_reader:
+            parse_dev_roles(row[3])
+        
+        # sort all first
+        dev_roles.sort()
+    
+        print_dev_roles()
+
+if __name__ == "__main__":
+    main()
     
