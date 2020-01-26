@@ -28,26 +28,29 @@ def parse_dev_roles(raw):
         if role not in dev_roles:
             dev_roles.append(role)
 
-def print_dev_roles():
-    for role in dev_roles:
-        dev_role = map_dev_role(role)
-        print(EMPLOYEE_ROLE_BASE % (dev_role.replace(' ', '_')))
-        print()
-        print()
+def write_dev_roles_to_file():
+    with open('../generated/generated_dev_roles.xml', mode='w') as f:
+        f.write('\t<!-- STACKOVERFLOW: DEVELOPER ROLES -->\n')
+        f.write('\n')
+        for role in dev_roles:
+            dev_role = map_dev_role(role)
+            f.write(EMPLOYEE_ROLE_BASE % (dev_role.replace(' ', '_')) + '\n')
+            f.write('\n')
+            f.write('\n')
 
 def main():    
     with open('../../edited_survey_results_public.csv', mode='r') as csv_file:
         csv_reader = csv.reader(csv_file, delimiter=',')
 
-        print('\t<!-- STACKOVERFLOW: DEVELOPER ROLES -->')
-        print()
-        for row in csv_reader:
+        for i, row in enumerate(csv_reader):
+            if i == 0:
+                continue
             parse_dev_roles(row[2])
         
         # sort all first
         dev_roles.sort()
     
-        print_dev_roles()
+        write_dev_roles_to_file()
 
 if __name__ == "__main__":
     main()

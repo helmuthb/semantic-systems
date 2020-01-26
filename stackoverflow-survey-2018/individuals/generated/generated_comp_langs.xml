@@ -15,12 +15,12 @@
 	</owl:NamedIndividual>
 
 
-	<owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#C#">
+	<owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Csharp">
 		<rdf:type rdf:resource="https://schema.org/ComputerLanguage"/>
 	</owl:NamedIndividual>
 
 
-	<owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#C++">
+	<owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Cplusplus">
 		<rdf:type rdf:resource="https://schema.org/ComputerLanguage"/>
 	</owl:NamedIndividual>
 
@@ -45,7 +45,7 @@
 	</owl:NamedIndividual>
 
 
-	<owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Delphi/Object_Pascal">
+	<owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Delphi_ObjectPascal">
 		<rdf:type rdf:resource="https://schema.org/ComputerLanguage"/>
 	</owl:NamedIndividual>
 
@@ -55,7 +55,7 @@
 	</owl:NamedIndividual>
 
 
-	<owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#F#">
+	<owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Fsharp">
 		<rdf:type rdf:resource="https://schema.org/ComputerLanguage"/>
 	</owl:NamedIndividual>
 
@@ -101,11 +101,6 @@
 
 
 	<owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Kotlin">
-		<rdf:type rdf:resource="https://schema.org/ComputerLanguage"/>
-	</owl:NamedIndividual>
-
-
-	<owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#LanguageWorkedWith">
 		<rdf:type rdf:resource="https://schema.org/ComputerLanguage"/>
 	</owl:NamedIndividual>
 

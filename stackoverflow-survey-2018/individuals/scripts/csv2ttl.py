@@ -1,6 +1,7 @@
 import csv
 import urllib.parse
 from csv2devroles import map_dev_role
+from csv2complangs import map_computer_language
 
 """
 This script RDFizes the stackoverflow survey results from 2018 (in csv format).
@@ -30,13 +31,13 @@ def get_gender(raw):
         return 'Male'
     return 'Other'
 
-def print_prefix():
-    print("""@prefix group1: <http://www.semanticweb.org/sws/ws2019/group1#> .\n@prefix dbpedia: <http://www.dbpedia.org/resource/> .\n""")
+def print_prefix(f):
+    f.write('@prefix group1: <http://www.semanticweb.org/sws/ws2019/group1#> .\n@prefix dbpedia: <http://www.dbpedia.org/resource/> .\n\n')
 
-def print_home_location(name, raw):
-    print(user(name) + ' ' + group1('homeLocation') + ' ' + dbpedia(raw.replace(' ', '_')) + ' ;')
+def print_home_location(f, name, raw):
+    f.write(user(name) + ' ' + group1('homeLocation') + ' ' + dbpedia(raw.replace(' ', '_')) + ' ;\n')
 
-def print_developer_roles(raw):
+def print_developer_roles(f, raw):
     developer_roles = raw.split(';')
     print_dev_roles = ''
     for i, dev_role in enumerate(developer_roles):
@@ -44,54 +45,58 @@ def print_developer_roles(raw):
         print_dev_roles += group1(mapped_dev_role.replace(' ', '_'))
         if i < len(developer_roles)-1:
             print_dev_roles += ', '
-    print('\t' + group1('hasRole') + ' ' + print_dev_roles + ' ;')
+    f.write('\t' + group1('hasRole') + ' ' + print_dev_roles + ' ;\n')
 
-def print_experience_years(raw):
-    print('\t<!-- TODO: rename experience range values (e.g. no encoding but IDs) -->')
-    print('\t' + group1('hasExperienceRange') + ' ' + group1(urllib.parse.quote(raw)) + ' ;')
+def print_experience_years(f, raw):
+    f.write('\t<!-- TODO: rename experience range values (e.g. no encoding but IDs) -->\n')
+    f.write('\t' + group1('hasExperienceRange') + ' ' + group1(urllib.parse.quote(raw)) + ' ;\n')
 
-def print_is_searching_job(raw):
-    print('\t' + group1('isSearchingJob') + ' ' + str(is_searching_job(raw)).lower() + ' ;')
+def print_is_searching_job(f, raw):
+    f.write('\t' + group1('isSearchingJob') + ' ' + str(is_searching_job(raw)).lower() + ' ;\n')
 
-def print_salary(raw):
-    print('\t' + group1('salary') + ' "' + raw + '"^^xsd:integer ;')
+def print_salary(f, raw):
+    f.write('\t' + group1('salary') + ' "' + raw + '"^^xsd:integer ;\n')
 
-def print_programming_languages(raw):
-    programming_languages = raw.split(';')
+def print_computer_languages(f, raw):
+    computer_languages = raw.split(';')
     print_prog_langs = ''
-    for i, lang in enumerate(programming_languages):
-        print_prog_langs += group1(lang)
-        if i < len(programming_languages)-1:
+    for i, lang in enumerate(computer_languages):
+        mapped_computer_language = map_computer_language(lang)
+        print_prog_langs += group1(mapped_computer_language.replace(' ', '_'))
+        if i < len(computer_languages)-1:
             print_prog_langs += ', '
-    print('\t' + group1('devlopsIn') + ' ' + group1(lang) + ' ;')
+    f.write('\t' + group1('devlopsIn') + ' ' + print_prog_langs + ' ;\n')
 
-def print_gender(raw):
-    print('\t' + group1('gender') + ' ' + group1(get_gender(raw)) + ' ;')
+def print_gender(f, raw):
+    f.write('\t' + group1('gender') + ' ' + group1(get_gender(raw)) + ' ;\n')
 
-def print_age(raw):
-    print('\t<!-- TOOD: get mapping to age range -->')
-    print('\t' + group1('hasAgeRange') + ' ' + group1(urllib.parse.quote(raw)) + ' .')
+def print_age(f, raw):
+    f.write('\t<!-- TOOD: get mapping to age range -->\n')
+    f.write('\t' + group1('hasAgeRange') + ' ' + group1(urllib.parse.quote(raw)) + ' .\n')
 
 def main():
     with open('../../edited_survey_results_public.csv', mode='r') as csv_file:
         csv_reader = csv.reader(csv_file, delimiter=',')
+
+        with open('../generated/stackoverflow_individuals1.ttl', mode='w') as f:
+            print_prefix(f)
     
-        print_prefix()
-    
-        for row in csv_reader:
-            name = row[0]
+            for i, row in enumerate(csv_reader):
+                if i == 0:
+                    continue
+                name = row[0]
         
-            print_home_location(name, row[1])
-            print_developer_roles(row[2])
-            # do we need this?
-            print_experience_years(row[3])
-            print_is_searching_job(row[4])
-            print_salary(row[5])
-            print_programming_languages(row[6])
-            print_gender(row[7])
-            print_age(row[8])
-            print()
-            print()
+                print_home_location(f, name, row[1])
+                print_developer_roles(f, row[2])
+                # do we need this?
+                print_experience_years(f, row[3])
+                print_is_searching_job(f, row[4])
+                print_salary(f, row[5])
+                print_computer_languages(f, row[6])
+                print_gender(f, row[7])
+                print_age(f, row[8])
+                f.write('\n')
+                f.write('\n')
 
 if __name__ == "__main__":
     main()

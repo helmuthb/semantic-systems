@@ -16,15 +16,15 @@ Instead of url-encoding the roles, just replace every space (' ') with an unders
 
 ##### KAGGLE:
 
-- 'DBA/Database Engineer'	->	'DBA or Database Engineer'
-- 'Product/Project Manager'	->	'Product or Project Manager'
+- 'DBA/Database Engineer'   -> 'DBA or Database Engineer'
+- 'Product/Project Manager' -> 'Product or Project Manager'
 
 ##### STACKOVERFLOW:
 
-- 'C-suite executive (CEO, CTO, etc.)'              ->  'C-suite executive'
-- 'Data scientist or machine learning specialist'   ->  'Data Scientist'
-- 'Database administrator'                          ->  'DBA or Database Engineer'
-- 'Product manager'                                 ->  'Product or Project Manager'
+- 'C-suite executive (CEO, CTO, etc.)'              -> 'C-suite executive'
+- 'Data scientist or machine learning specialist'   -> 'Data Scientist'
+- 'Database administrator'                          -> 'DBA or Database Engineer'
+- 'Product manager'                                 -> 'Product or Project Manager'
 
 
 
@@ -32,6 +32,16 @@ Instead of url-encoding the roles, just replace every space (' ') with an unders
 
 ## Computer languages:
 
+##### KAGGLE:
+
+- 'C#'         -> 'Csharp'
+- 'C++'        -> 'Cplusplus'
+- 'Javascript' -> 'JavaScript'
+
 ##### STACKOVERFLOW:
 
-- 'Bash/Shell'	-> 'Bash'
+- 'Bash/Shell'           -> 'Bash'
+- 'C#'                   -> 'Csharp'
+- 'C++'                  -> 'Cplusplus'
+- 'F#'                   -> 'Fsharp'
+- 'Delphi/Object Pascal' -> 'Delphi ObjectPascal'
