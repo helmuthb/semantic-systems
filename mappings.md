@@ -11,7 +11,7 @@ Instead of url-encoding the roles, just replace every space (' ') with an unders
 - 'DBA/Database Engineer'	->	'DBA or Database Engineer'
 - 'Product/Project Manager'	->	'Product or Project Manager'
 
-###### STACKOVERFLOW:
+##### STACKOVERFLOW:
 
 - 'C-suite executive (CEO, CTO, etc.)'              ->  'C-suite executive'
 - 'Data scientist or machine learning specialist'   ->  'Data Scientist'
