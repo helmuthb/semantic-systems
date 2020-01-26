@@ -1,3 +1,5 @@
+	<!-- STACKOVERFLOW: DEVELOPER ROLES -->
+
 	<owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Back-end_developer">
 		<rdf:type rdf:resource="https://schema.org/EmployeeRole"/>
 	</owl:NamedIndividual>

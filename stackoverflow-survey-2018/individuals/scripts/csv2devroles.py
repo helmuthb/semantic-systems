@@ -1,7 +1,7 @@
 import csv
 
 """
-This script creates RDFized individuals the stackoverflow survey results from 2018, which is in csv format.
+This script creates RDFized dev roles from the stackoverflow survey results from 2018, which is in csv format.
 """
 
 EMPLOYEE_ROLE_BASE = '\t<owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#%s">\n\t\t<rdf:type rdf:resource="https://schema.org/EmployeeRole"/>\n\t</owl:NamedIndividual>'
@@ -36,11 +36,13 @@ def print_dev_roles():
         print()
 
 def main():    
-    with open('./edited_survey_results_public.csv', mode='r') as csv_file:
+    with open('../../edited_survey_results_public.csv', mode='r') as csv_file:
         csv_reader = csv.reader(csv_file, delimiter=',')
-    
+
+        print('\t<!-- STACKOVERFLOW: DEVELOPER ROLES -->')
+        print()
         for row in csv_reader:
-            parse_dev_roles(row[3])
+            parse_dev_roles(row[2])
         
         # sort all first
         dev_roles.sort()

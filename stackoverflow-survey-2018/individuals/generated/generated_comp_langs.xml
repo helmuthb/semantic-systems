@@ -1,0 +1,197 @@
+	<!-- STACKOVERFLOW: COMPUTER LANGUAGES -->
+
+	<owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Assembly">
+		<rdf:type rdf:resource="https://schema.org/ComputerLanguage"/>
+	</owl:NamedIndividual>
+
+
+	<owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Bash">
+		<rdf:type rdf:resource="https://schema.org/ComputerLanguage"/>
+	</owl:NamedIndividual>
+
+
+	<owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#C">
+		<rdf:type rdf:resource="https://schema.org/ComputerLanguage"/>
+	</owl:NamedIndividual>
+
+
+	<owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#C#">
+		<rdf:type rdf:resource="https://schema.org/ComputerLanguage"/>
+	</owl:NamedIndividual>
+
+
+	<owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#C++">
+		<rdf:type rdf:resource="https://schema.org/ComputerLanguage"/>
+	</owl:NamedIndividual>
+
+
+	<owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#CSS">
+		<rdf:type rdf:resource="https://schema.org/ComputerLanguage"/>
+	</owl:NamedIndividual>
+
+
+	<owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Clojure">
+		<rdf:type rdf:resource="https://schema.org/ComputerLanguage"/>
+	</owl:NamedIndividual>
+
+
+	<owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Cobol">
+		<rdf:type rdf:resource="https://schema.org/ComputerLanguage"/>
+	</owl:NamedIndividual>
+
+
+	<owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#CoffeeScript">
+		<rdf:type rdf:resource="https://schema.org/ComputerLanguage"/>
+	</owl:NamedIndividual>
+
+
+	<owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Delphi/Object_Pascal">
+		<rdf:type rdf:resource="https://schema.org/ComputerLanguage"/>
+	</owl:NamedIndividual>
+
+
+	<owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Erlang">
+		<rdf:type rdf:resource="https://schema.org/ComputerLanguage"/>
+	</owl:NamedIndividual>
+
+
+	<owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#F#">
+		<rdf:type rdf:resource="https://schema.org/ComputerLanguage"/>
+	</owl:NamedIndividual>
+
+
+	<owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Go">
+		<rdf:type rdf:resource="https://schema.org/ComputerLanguage"/>
+	</owl:NamedIndividual>
+
+
+	<owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Groovy">
+		<rdf:type rdf:resource="https://schema.org/ComputerLanguage"/>
+	</owl:NamedIndividual>
+
+
+	<owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#HTML">
+		<rdf:type rdf:resource="https://schema.org/ComputerLanguage"/>
+	</owl:NamedIndividual>
+
+
+	<owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Hack">
+		<rdf:type rdf:resource="https://schema.org/ComputerLanguage"/>
+	</owl:NamedIndividual>
+
+
+	<owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Haskell">
+		<rdf:type rdf:resource="https://schema.org/ComputerLanguage"/>
+	</owl:NamedIndividual>
+
+
+	<owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Java">
+		<rdf:type rdf:resource="https://schema.org/ComputerLanguage"/>
+	</owl:NamedIndividual>
+
+
+	<owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#JavaScript">
+		<rdf:type rdf:resource="https://schema.org/ComputerLanguage"/>
+	</owl:NamedIndividual>
+
+
+	<owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Julia">
+		<rdf:type rdf:resource="https://schema.org/ComputerLanguage"/>
+	</owl:NamedIndividual>
+
+
+	<owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Kotlin">
+		<rdf:type rdf:resource="https://schema.org/ComputerLanguage"/>
+	</owl:NamedIndividual>
+
+
+	<owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#LanguageWorkedWith">
+		<rdf:type rdf:resource="https://schema.org/ComputerLanguage"/>
+	</owl:NamedIndividual>
+
+
+	<owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Lua">
+		<rdf:type rdf:resource="https://schema.org/ComputerLanguage"/>
+	</owl:NamedIndividual>
+
+
+	<owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Matlab">
+		<rdf:type rdf:resource="https://schema.org/ComputerLanguage"/>
+	</owl:NamedIndividual>
+
+
+	<owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Objective-C">
+		<rdf:type rdf:resource="https://schema.org/ComputerLanguage"/>
+	</owl:NamedIndividual>
+
+
+	<owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Ocaml">
+		<rdf:type rdf:resource="https://schema.org/ComputerLanguage"/>
+	</owl:NamedIndividual>
+
+
+	<owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#PHP">
+		<rdf:type rdf:resource="https://schema.org/ComputerLanguage"/>
+	</owl:NamedIndividual>
+
+
+	<owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Perl">
+		<rdf:type rdf:resource="https://schema.org/ComputerLanguage"/>
+	</owl:NamedIndividual>
+
+
+	<owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Python">
+		<rdf:type rdf:resource="https://schema.org/ComputerLanguage"/>
+	</owl:NamedIndividual>
+
+
+	<owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#R">
+		<rdf:type rdf:resource="https://schema.org/ComputerLanguage"/>
+	</owl:NamedIndividual>
+
+
+	<owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Ruby">
+		<rdf:type rdf:resource="https://schema.org/ComputerLanguage"/>
+	</owl:NamedIndividual>
+
+
+	<owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Rust">
+		<rdf:type rdf:resource="https://schema.org/ComputerLanguage"/>
+	</owl:NamedIndividual>
+
+
+	<owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#SQL">
+		<rdf:type rdf:resource="https://schema.org/ComputerLanguage"/>
+	</owl:NamedIndividual>
+
+
+	<owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Scala">
+		<rdf:type rdf:resource="https://schema.org/ComputerLanguage"/>
+	</owl:NamedIndividual>
+
+
+	<owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Swift">
+		<rdf:type rdf:resource="https://schema.org/ComputerLanguage"/>
+	</owl:NamedIndividual>
+
+
+	<owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#TypeScript">
+		<rdf:type rdf:resource="https://schema.org/ComputerLanguage"/>
+	</owl:NamedIndividual>
+
+
+	<owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#VB.NET">
+		<rdf:type rdf:resource="https://schema.org/ComputerLanguage"/>
+	</owl:NamedIndividual>
+
+
+	<owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#VBA">
+		<rdf:type rdf:resource="https://schema.org/ComputerLanguage"/>
+	</owl:NamedIndividual>
+
+
+	<owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Visual_Basic_6">
+		<rdf:type rdf:resource="https://schema.org/ComputerLanguage"/>
+	</owl:NamedIndividual>
+
+
