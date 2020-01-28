@@ -1,0 +1,20 @@
+	<!-- STACKOVERFLOW: GENDERS -->
+
+	<owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Female">
+		<rdf:type rdf:resource="http://www.semanticweb.org/sws/ws2019/group1#Gender"/>
+		<schema:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Female</schema:name>
+	</owl:NamedIndividual>
+
+
+	<owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Male">
+		<rdf:type rdf:resource="http://www.semanticweb.org/sws/ws2019/group1#Gender"/>
+		<schema:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Male</schema:name>
+	</owl:NamedIndividual>
+
+
+	<owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Other">
+		<rdf:type rdf:resource="http://www.semanticweb.org/sws/ws2019/group1#Gender"/>
+		<schema:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Other</schema:name>
+	</owl:NamedIndividual>
+
+

@@ -2,6 +2,7 @@ import csv
 import urllib.parse
 from csv2devroles import map_dev_role
 from csv2complangs import map_computer_language
+from csv2genders import map_gender
 
 """
 This script RDFizes the stackoverflow survey results from 2018 (in csv format).
@@ -38,13 +39,6 @@ def is_searching_job(raw):
     if 'not' in raw:
         return False
     return True
-
-def get_gender(raw):
-    if raw == 'Female':
-        return 'Female'
-    if raw == 'Male':
-        return 'Male'
-    return 'Other'
 
 def print_prefix(f):
     for prefix in PREFIXES:
@@ -85,7 +79,7 @@ def print_computer_languages(f, raw):
     f.write('\t' + group1('devlopsIn') + ' ' + print_prog_langs + ' ;\n')
 
 def print_gender(f, raw):
-    f.write('\t' + group1('gender') + ' ' + group1(get_gender(raw)) + ' ;\n')
+    f.write('\t' + group1('gender') + ' ' + group1(map_gender(raw)) + ' ;\n')
 
 def print_age(f, raw):
     f.write('\t<!-- TOOD: get mapping to age range -->\n')

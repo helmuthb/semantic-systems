@@ -41,6 +41,15 @@ Instead of url-encoding the roles, just replace every space (' ') with an unders
 
 
 
+## Gender:
+
+##### STACKOVERFLOW:
+
+- map everything that is not 'Male' or 'Female' to 'Other'
+
+
+
+
 ## Developer roles:
 
 ##### KAGGLE:
