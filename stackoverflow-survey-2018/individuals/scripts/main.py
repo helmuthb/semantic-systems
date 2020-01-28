@@ -3,6 +3,7 @@ import errno
 from csv2ttl import main as ttl_main
 from csv2devroles import main as devroles_main
 from csv2complangs import main as complangs_main
+from csv2countries import main as countries_main
 
 """
 
@@ -26,6 +27,7 @@ def main():
     mkdir_p('../generated')
     devroles_main()
     complangs_main()
+    countries_main()
     ttl_main()
 
 if __name__ == "__main__":

@@ -12,11 +12,31 @@ Instead of url-encoding the roles, just replace every space (' ') with an unders
 
 
 
+## ID:
+
+##### STACKOVERFLOW:
+
+- prepend 'S' on IDs (i.e. "Respondent" field)
+
+
+
+
+
 ## Salary:
 
 ##### STACKOVERFLOW:
 
 - convert '9.00E+05' to '900000'
+
+
+
+
+
+## Country:
+
+##### STACKOVERFLOW:
+
+- 'Iran, Islamic Republic of...' -> 'Iran'
 
 
 

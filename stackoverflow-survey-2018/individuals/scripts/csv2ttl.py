@@ -7,6 +7,21 @@ from csv2complangs import map_computer_language
 This script RDFizes the stackoverflow survey results from 2018 (in csv format).
 """
 
+PREFIXES = [
+    {
+        'abbr': 'group1',
+        'url': 'http://www.semanticweb.org/sws/ws2019/group1#'
+    },
+    {
+        'abbr': 'schmea',
+        'url': 'http://www.schema.org/'
+    },
+    {
+        'abbr': 'dbpedia',
+        'url': 'http://www.dbpedia.org/resource/'
+    },
+]
+
 def group1(string):
     return 'group1:' + string
 
@@ -32,7 +47,9 @@ def get_gender(raw):
     return 'Other'
 
 def print_prefix(f):
-    f.write('@prefix group1: <http://www.semanticweb.org/sws/ws2019/group1#> .\n@prefix dbpedia: <http://www.dbpedia.org/resource/> .\n\n')
+    for prefix in PREFIXES:
+        f.write('@prefix ' + prefix['abbr'] + ': <' + prefix['url'] + '> .\n')
+    f.write('\n')
 
 def print_home_location(f, name, raw):
     f.write(user(name) + ' ' + group1('homeLocation') + ' ' + dbpedia(raw.replace(' ', '_')) + ' ;\n')
@@ -78,7 +95,7 @@ def main():
     with open('../../edited_survey_results_public.csv', mode='r') as csv_file:
         csv_reader = csv.reader(csv_file, delimiter=',')
 
-        with open('../generated/stackoverflow_individuals1.ttl', mode='w') as f:
+        with open('../generated/stackoverflow_individuals.ttl', mode='w') as f:
             print_prefix(f)
     
             for i, row in enumerate(csv_reader):
