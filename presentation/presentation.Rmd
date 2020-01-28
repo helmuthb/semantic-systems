@@ -76,7 +76,7 @@ knitr::include_graphics("ontology.png")
 ### StackOverflow Survey
 
 * https://insights.stackoverflow.com/survey/2018
-* Used Jupyter Notebook for Pre-Processing
+* Used Python for Pre-Processing
 * Created RDF XML directly from Python
 * **Challenge:** Fighting with OpenREFINE - at the end reverted to manual
 

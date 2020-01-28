@@ -12,6 +12,15 @@ Instead of url-encoding the roles, just replace every space (' ') with an unders
 
 
 
+## Salary:
+
+##### STACKOVERFLOW:
+
+- convert '9.00E+05' to '900000'
+
+
+
+
 ## Developer roles:
 
 ##### KAGGLE:

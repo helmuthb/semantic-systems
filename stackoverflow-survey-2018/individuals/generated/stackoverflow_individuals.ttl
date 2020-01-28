@@ -1,4 +1,5 @@
 @prefix group1: <http://www.semanticweb.org/sws/ws2019/group1#> .
+@prefix schmea: <http://www.schema.org/> .
 @prefix dbpedia: <http://www.dbpedia.org/resource/> .
 
 group1:S7 group1:homeLocation dbpedia:South_Africa ;
@@ -114,7 +115,7 @@ group1:S44 group1:homeLocation dbpedia:United_States ;
 	<!-- TODO: rename experience range values (e.g. no encoding but IDs) -->
 	group1:hasExperienceRange group1:3-5%20years ;
 	group1:isSearchingJob false ;
-	group1:salary "9.00E+05"^^xsd:integer ;
+	group1:salary "900000"^^xsd:integer ;
 	group1:devlopsIn group1:Csharp, group1:JavaScript, group1:SQL, group1:HTML, group1:CSS ;
 	group1:gender group1:Male ;
 	<!-- TOOD: get mapping to age range -->
@@ -1266,7 +1267,7 @@ group1:S390 group1:homeLocation dbpedia:United_States ;
 	<!-- TODO: rename experience range values (e.g. no encoding but IDs) -->
 	group1:hasExperienceRange group1:6-8%20years ;
 	group1:isSearchingJob false ;
-	group1:salary "1.00E+05"^^xsd:integer ;
+	group1:salary "100000"^^xsd:integer ;
 	group1:devlopsIn group1:Csharp ;
 	group1:gender group1:Male ;
 	<!-- TOOD: get mapping to age range -->
@@ -1290,7 +1291,7 @@ group1:S397 group1:homeLocation dbpedia:United_States ;
 	<!-- TODO: rename experience range values (e.g. no encoding but IDs) -->
 	group1:hasExperienceRange group1:3-5%20years ;
 	group1:isSearchingJob false ;
-	group1:salary "2.00E+06"^^xsd:integer ;
+	group1:salary "2000000"^^xsd:integer ;
 	group1:devlopsIn group1:Assembly, group1:C, group1:Cplusplus, group1:Matlab, group1:Python, group1:Bash ;
 	group1:gender group1:Female ;
 	<!-- TOOD: get mapping to age range -->
@@ -1986,7 +1987,7 @@ group1:S566 group1:homeLocation dbpedia:Canada ;
 	<!-- TODO: rename experience range values (e.g. no encoding but IDs) -->
 	group1:hasExperienceRange group1:3-5%20years ;
 	group1:isSearchingJob false ;
-	group1:salary "1.00E+06"^^xsd:integer ;
+	group1:salary "1000000"^^xsd:integer ;
 	group1:devlopsIn group1:Go, group1:JavaScript, group1:PHP, group1:SQL, group1:HTML, group1:CSS ;
 	group1:gender group1:Male ;
 	<!-- TOOD: get mapping to age range -->
@@ -2058,7 +2059,7 @@ group1:S583 group1:homeLocation dbpedia:United_States ;
 	<!-- TODO: rename experience range values (e.g. no encoding but IDs) -->
 	group1:hasExperienceRange group1:3-5%20years ;
 	group1:isSearchingJob false ;
-	group1:salary "2.00E+06"^^xsd:integer ;
+	group1:salary "2000000"^^xsd:integer ;
 	group1:devlopsIn group1:C, group1:Java, group1:JavaScript, group1:Julia, group1:Python, group1:R, group1:HTML, group1:CSS, group1:Bash ;
 	group1:gender group1:Female ;
 	<!-- TOOD: get mapping to age range -->
@@ -2142,7 +2143,7 @@ group1:S33937 group1:homeLocation dbpedia:United_States ;
 	<!-- TODO: rename experience range values (e.g. no encoding but IDs) -->
 	group1:hasExperienceRange group1:6-8%20years ;
 	group1:isSearchingJob false ;
-	group1:salary "1.00E+05"^^xsd:integer ;
+	group1:salary "100000"^^xsd:integer ;
 	group1:devlopsIn group1:Csharp, group1:JavaScript, group1:SQL, group1:HTML, group1:CSS ;
 	group1:gender group1:Male ;
 	<!-- TOOD: get mapping to age range -->
@@ -2310,7 +2311,7 @@ group1:S33993 group1:homeLocation dbpedia:Germany ;
 	<!-- TODO: rename experience range values (e.g. no encoding but IDs) -->
 	group1:hasExperienceRange group1:21-23%20years ;
 	group1:isSearchingJob false ;
-	group1:salary "1.00E+06"^^xsd:integer ;
+	group1:salary "1000000"^^xsd:integer ;
 	group1:devlopsIn group1:Csharp, group1:JavaScript, group1:SQL, group1:TypeScript, group1:HTML, group1:CSS ;
 	group1:gender group1:Male ;
 	<!-- TOOD: get mapping to age range -->
@@ -2466,7 +2467,7 @@ group1:S34029 group1:homeLocation dbpedia:United_States ;
 	<!-- TODO: rename experience range values (e.g. no encoding but IDs) -->
 	group1:hasExperienceRange group1:12-14%20years ;
 	group1:isSearchingJob false ;
-	group1:salary "2.00E+05"^^xsd:integer ;
+	group1:salary "200000"^^xsd:integer ;
 	group1:devlopsIn group1:C, group1:Cplusplus, group1:Clojure, group1:Java, group1:JavaScript, group1:Lua, group1:PHP, group1:Python, group1:Ruby, group1:SQL, group1:Visual_Basic_6, group1:Ocaml, group1:HTML, group1:CSS ;
 	group1:gender group1:Male ;
 	<!-- TOOD: get mapping to age range -->
@@ -4014,7 +4015,7 @@ group1:S34448 group1:homeLocation dbpedia:United_States ;
 	<!-- TODO: rename experience range values (e.g. no encoding but IDs) -->
 	group1:hasExperienceRange group1:3-5%20years ;
 	group1:isSearchingJob false ;
-	group1:salary "2.00E+06"^^xsd:integer ;
+	group1:salary "2000000"^^xsd:integer ;
 	group1:devlopsIn group1:C, group1:Java, group1:Python, group1:TypeScript ;
 	group1:gender group1:Male ;
 	<!-- TOOD: get mapping to age range -->
@@ -5262,7 +5263,7 @@ group1:S34819 group1:homeLocation dbpedia:United_States ;
 	<!-- TODO: rename experience range values (e.g. no encoding but IDs) -->
 	group1:hasExperienceRange group1:6-8%20years ;
 	group1:isSearchingJob false ;
-	group1:salary "1.00E+05"^^xsd:integer ;
+	group1:salary "100000"^^xsd:integer ;
 	group1:devlopsIn group1:CoffeeScript, group1:JavaScript, group1:TypeScript, group1:HTML, group1:CSS ;
 	group1:gender group1:Male ;
 	<!-- TOOD: get mapping to age range -->
@@ -5466,7 +5467,7 @@ group1:S34869 group1:homeLocation dbpedia:Ireland ;
 	<!-- TODO: rename experience range values (e.g. no encoding but IDs) -->
 	group1:hasExperienceRange group1:30%20or%20more%20years ;
 	group1:isSearchingJob false ;
-	group1:salary "1.00E+06"^^xsd:integer ;
+	group1:salary "1000000"^^xsd:integer ;
 	group1:devlopsIn group1:Csharp, group1:Java, group1:SQL, group1:Delphi_ObjectPascal, group1:HTML, group1:Bash ;
 	group1:gender group1:Male ;
 	<!-- TOOD: get mapping to age range -->
@@ -5742,7 +5743,7 @@ group1:S34947 group1:homeLocation dbpedia:United_States ;
 	<!-- TODO: rename experience range values (e.g. no encoding but IDs) -->
 	group1:hasExperienceRange group1:3-5%20years ;
 	group1:isSearchingJob false ;
-	group1:salary "2.00E+06"^^xsd:integer ;
+	group1:salary "2000000"^^xsd:integer ;
 	group1:devlopsIn group1:Java, group1:JavaScript, group1:Python, group1:SQL, group1:HTML, group1:CSS ;
 	group1:gender group1:Female ;
 	<!-- TOOD: get mapping to age range -->
@@ -6366,7 +6367,7 @@ group1:S35105 group1:homeLocation dbpedia:United_States ;
 	<!-- TODO: rename experience range values (e.g. no encoding but IDs) -->
 	group1:hasExperienceRange group1:3-5%20years ;
 	group1:isSearchingJob false ;
-	group1:salary "2.00E+06"^^xsd:integer ;
+	group1:salary "2000000"^^xsd:integer ;
 	group1:devlopsIn group1:Go, group1:Java, group1:JavaScript, group1:Objective-C, group1:PHP, group1:Python, group1:SQL, group1:Swift, group1:TypeScript, group1:Kotlin, group1:HTML, group1:CSS ;
 	group1:gender group1:Male ;
 	<!-- TOOD: get mapping to age range -->
@@ -6582,7 +6583,7 @@ group1:S35179 group1:homeLocation dbpedia:United_States ;
 	<!-- TODO: rename experience range values (e.g. no encoding but IDs) -->
 	group1:hasExperienceRange group1:30%20or%20more%20years ;
 	group1:isSearchingJob false ;
-	group1:salary "1.00E+05"^^xsd:integer ;
+	group1:salary "100000"^^xsd:integer ;
 	group1:devlopsIn group1:C, group1:Cplusplus, group1:Csharp, group1:JavaScript, group1:SQL, group1:TypeScript, group1:Delphi_ObjectPascal, group1:HTML, group1:CSS ;
 	group1:gender group1:Male ;
 	<!-- TOOD: get mapping to age range -->
@@ -7434,7 +7435,7 @@ group1:S38461 group1:homeLocation dbpedia:United_States ;
 	<!-- TODO: rename experience range values (e.g. no encoding but IDs) -->
 	group1:hasExperienceRange group1:6-8%20years ;
 	group1:isSearchingJob false ;
-	group1:salary "1.00E+05"^^xsd:integer ;
+	group1:salary "100000"^^xsd:integer ;
 	group1:devlopsIn group1:Csharp, group1:JavaScript, group1:SQL, group1:TypeScript, group1:HTML, group1:CSS ;
 	group1:gender group1:Male ;
 	<!-- TOOD: get mapping to age range -->
@@ -7518,7 +7519,7 @@ group1:S38855 group1:homeLocation dbpedia:Russian_Federation ;
 	<!-- TODO: rename experience range values (e.g. no encoding but IDs) -->
 	group1:hasExperienceRange group1:9-11%20years ;
 	group1:isSearchingJob false ;
-	group1:salary "2.00E+05"^^xsd:integer ;
+	group1:salary "200000"^^xsd:integer ;
 	group1:devlopsIn group1:Go, group1:JavaScript, group1:SQL, group1:TypeScript, group1:HTML, group1:CSS, group1:Bash ;
 	group1:gender group1:Male ;
 	<!-- TOOD: get mapping to age range -->
