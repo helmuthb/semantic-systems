@@ -16,7 +16,7 @@ author: |
 date: "2020-01-31"
 output:
   beamer_presentation:
-    theme: "Goettingen"
+    theme: "Pittsburgh"
 ---
 
 ```{r setup, include=FALSE}
@@ -33,11 +33,17 @@ _Study - Job - Money_
 
 * For Software Developers and Data Scientists
 * Asks for experience, age, location
-* Answers:
-  * _What shall I study?_
-  * _Where shall I work?_
-  * _What shall I practise?_
-  * _How could I practise?_
+* Answers to following questions:
+    * _What shall I study?_
+    * _Where shall I work?_
+    * _What shall I practise?_
+    * _How can I improve?_
+
+## The Mobile App
+
+```{r fig.align="center"}
+knitr::include_graphics('mockup.png')
+```
 
 ## Data Sources
 
