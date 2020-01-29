@@ -1,11 +1,11 @@
 	<!-- STACKOVERFLOW: DEVELOPER ROLES -->
 
-	<owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Back-end_developer">
+	<owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Software_Engineer">
 		<rdf:type rdf:resource="https://schema.org/EmployeeRole"/>
 	</owl:NamedIndividual>
 
 
-	<owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#C-suite_executive">
+	<owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Manager">
 		<rdf:type rdf:resource="https://schema.org/EmployeeRole"/>
 	</owl:NamedIndividual>
 
@@ -30,42 +30,42 @@
 	</owl:NamedIndividual>
 
 
-	<owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Desktop_or_enterprise_applications_developer">
+	<owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Software_Engineer">
 		<rdf:type rdf:resource="https://schema.org/EmployeeRole"/>
 	</owl:NamedIndividual>
 
 
-	<owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#DevOps_specialist">
+	<owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Software_Engineer">
 		<rdf:type rdf:resource="https://schema.org/EmployeeRole"/>
 	</owl:NamedIndividual>
 
 
-	<owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Educator_or_academic_researcher">
+	<owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Manager">
 		<rdf:type rdf:resource="https://schema.org/EmployeeRole"/>
 	</owl:NamedIndividual>
 
 
-	<owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Embedded_applications_or_devices_developer">
+	<owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Software_Engineer">
 		<rdf:type rdf:resource="https://schema.org/EmployeeRole"/>
 	</owl:NamedIndividual>
 
 
-	<owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Engineering_manager">
+	<owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Software_Engineer">
 		<rdf:type rdf:resource="https://schema.org/EmployeeRole"/>
 	</owl:NamedIndividual>
 
 
-	<owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Front-end_developer">
+	<owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Software_Engineer">
 		<rdf:type rdf:resource="https://schema.org/EmployeeRole"/>
 	</owl:NamedIndividual>
 
 
-	<owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Full-stack_developer">
+	<owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Software_Engineer">
 		<rdf:type rdf:resource="https://schema.org/EmployeeRole"/>
 	</owl:NamedIndividual>
 
 
-	<owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Game_or_graphics_developer">
+	<owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Software_Engineer">
 		<rdf:type rdf:resource="https://schema.org/EmployeeRole"/>
 	</owl:NamedIndividual>
 
@@ -75,17 +75,17 @@
 	</owl:NamedIndividual>
 
 
-	<owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Mobile_developer">
+	<owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Software_Engineer">
 		<rdf:type rdf:resource="https://schema.org/EmployeeRole"/>
 	</owl:NamedIndividual>
 
 
-	<owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Product_or_Project_Manager">
+	<owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Manager">
 		<rdf:type rdf:resource="https://schema.org/EmployeeRole"/>
 	</owl:NamedIndividual>
 
 
-	<owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#QA_or_test_developer">
+	<owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Software_Engineer">
 		<rdf:type rdf:resource="https://schema.org/EmployeeRole"/>
 	</owl:NamedIndividual>
 

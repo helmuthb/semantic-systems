@@ -3,6 +3,7 @@ import urllib.parse
 from csv2devroles import map_dev_role
 from csv2complangs import map_computer_language
 from csv2genders import map_gender
+from csv2countries import map_country
 
 """
 This script RDFizes the stackoverflow survey results from 2018 (in csv format).
@@ -46,27 +47,30 @@ def print_prefix(f):
     f.write('\n')
 
 def print_home_location(f, name, raw):
-    f.write(user(name) + ' ' + group1('homeLocation') + ' ' + dbpedia(raw.replace(' ', '_')) + ' ;\n')
+    f.write(user(name) + ' ' + group1('homeLocation') + ' ' + dbpedia(map_country(raw).replace(' ', '_')) + ' ;\n')
 
 def print_developer_roles(f, raw):
     developer_roles = raw.split(';')
     print_dev_roles = ''
+    roles_used = []
     for i, dev_role in enumerate(developer_roles):
         mapped_dev_role = map_dev_role(dev_role)
-        print_dev_roles += group1(mapped_dev_role.replace(' ', '_'))
-        if i < len(developer_roles)-1:
-            print_dev_roles += ', '
+        if mapped_dev_role in roles_used:
+            continue
+        roles_used.append(mapped_dev_role)
+        print_dev_roles += (group1(mapped_dev_role.replace(' ', '_')) + ', ')
+    if print_dev_roles.endswith(', '):
+        print_dev_roles = print_dev_roles[:-2]
     f.write('\t' + group1('hasRole') + ' ' + print_dev_roles + ' ;\n')
 
 def print_experience_years(f, raw):
-    f.write('\t<!-- TODO: rename experience range values (e.g. no encoding but IDs) -->\n')
     f.write('\t' + group1('hasExperienceRange') + ' ' + group1(urllib.parse.quote(raw)) + ' ;\n')
 
 def print_is_searching_job(f, raw):
     f.write('\t' + group1('isSearchingJob') + ' ' + str(is_searching_job(raw)).lower() + ' ;\n')
 
 def print_salary(f, raw):
-    f.write('\t' + group1('salary') + ' "' + raw + '"^^xsd:integer ;\n')
+    f.write('\t' + group1('salary') + ' ' + raw + ' ;\n')
 
 def print_computer_languages(f, raw):
     computer_languages = raw.split(';')
@@ -82,7 +86,6 @@ def print_gender(f, raw):
     f.write('\t' + group1('gender') + ' ' + group1(map_gender(raw)) + ' ;\n')
 
 def print_age(f, raw):
-    f.write('\t<!-- TOOD: get mapping to age range -->\n')
     f.write('\t' + group1('hasAgeRange') + ' ' + group1(urllib.parse.quote(raw)) + ' .\n')
 
 def main():
@@ -100,8 +103,8 @@ def main():
                 print_home_location(f, name, row[1])
                 print_developer_roles(f, row[2])
                 # do we need this?
-                print_experience_years(f, row[3])
-                print_is_searching_job(f, row[4])
+                #print_experience_years(f, row[3])
+                #print_is_searching_job(f, row[4])
                 print_salary(f, row[5])
                 print_computer_languages(f, row[6])
                 print_gender(f, row[7])
