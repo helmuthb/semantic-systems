@@ -103,24 +103,8 @@ How we harmonized data among the surveys
 
 ## SPARQL Queries #1
 
-```
-PREFIX group1: <http://www.semanticweb.org/sws/ws2019/group1#>
-PREFIX schema: <http://schema.org/>
-PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
-PREFIX dbpedia: <http://dbpedia.org/resource/>
-PREFIX gr: <http://purl.org/goodrelations/v1#>
-PREFIX sc: <http://purl.org/science/owl/sciencecommons/>
-
-SELECT DISTINCT ?lecture ?language
-WHERE {
-  ?lecture group1:dealsWith ?language .
-  ?developer group1:developsIn ?language .
-  ?salaryRange group1:maxSalary ?salary .
-  ?developer group1:hasSalaryRange ?salaryRange .
-  ?developer schema:homeLocation dbpedia:Austria .
-  FILTER (?salary > "150000"^^xsd:integer)
-}
-LIMIT 25
+```{r,out.width="100%"}
+knitr::include_graphics('sparql-query1.png')
 ```
 
 ## SPARQL Queries #2
