@@ -1,0 +1,55 @@
+.github-button {
+  line-height: 55px;
+}
+.start-button, .github-button {
+  color: #000000 !important;
+}
+.github-logo {
+  padding-top: 20px;
+  padding-right: 15px;
+  max-width: 75%;
+  max-height: 50%;
+}
+.start-image {
+  padding-top: 10px;
+  max-width: 75%;
+  max-height: 65%;
+}
+.github-logo {
+  vertical-align: middle;
+}
+.closing, .slogan {
+  font-style: italic;
+}
+.closing {
+  font-size: 10px;
+}
+.slogan {
+  display: block;
+  margin-top: -20px;
+  margin-bottom: 20px;
+}
+.centered {
+  text-align: center;
+}
+.start-1 {
+  background: #BB86FC;
+}
+.start-2 {
+  background: #03DAC6;
+}
+.start-3 {
+  background: #FFDE03;
+}
+.start-4 {
+  background: #FF0266;
+}
+.start {
+  height: 150px;
+  /* line-height: 95px; */
+  vertical-align: middle;
+}
+.github-tile {
+  background: #E0E0E0;
+  height: 80px;
+}
