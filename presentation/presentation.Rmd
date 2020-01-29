@@ -56,20 +56,19 @@ knitr::include_graphics('mockup.png')
 * **TISS Lectures**$\hfill\break$
   Lectures, Lecturer, Description, Programming Language
 
-## Ontology
+## Ontology #1
 
 ```{r ontology, echo=FALSE, out.width="100%"}
 knitr::include_graphics("ontology.png")
 ```
 
+## Ontology #2
+
 * Created with Protégé
 * Reusing existing Ontologies
-  * http://schema.org/Gender
-  * http://schema.org/ComputerLanguage
-  * http://schema.org/EmployeeRole
-  * http://schema.org/Country
-  * ...
-  
+  * schema.org
+  * dbpedia.org
+
 ## Kaggle Survey
 
 * https://www.kaggle.com/c/kaggle-survey-2019
@@ -105,16 +104,21 @@ How we harmonized data among the surveys
 ## SPARQL Queries #1
 
 ```
-PREFIX rdf: 
-  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-PREFIX group1: 
-  <http://www.semanticweb.org/sws/ws2019/group1#>
+PREFIX group1: <http://www.semanticweb.org/sws/ws2019/group1#>
 PREFIX schema: <http://schema.org/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX dbpedia: <http://dbpedia.org/resource/>
+PREFIX gr: <http://purl.org/goodrelations/v1#>
+PREFIX sc: <http://purl.org/science/owl/sciencecommons/>
 
-SELECT ?name
+SELECT DISTINCT ?lecture ?language
 WHERE {
-  ?lecture rdf:type group1:TU-Lecture .
-  ?lecture schema:name ?name .
+  ?lecture group1:dealsWith ?language .
+  ?developer group1:developsIn ?language .
+  ?salaryRange group1:maxSalary ?salary .
+  ?developer group1:hasSalaryRange ?salaryRange .
+  ?developer schema:homeLocation dbpedia:Austria .
+  FILTER (?salary > "150000"^^xsd:integer)
 }
 LIMIT 25
 ```
