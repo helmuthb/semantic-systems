@@ -1,5 +1,5 @@
 pip install selenium
-pip install 
+pip install beautifulsoup
 
 list of drivers
 https://pypi.org/project/selenium/
