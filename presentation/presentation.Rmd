@@ -16,7 +16,7 @@ author: |
 date: "2020-01-31"
 output:
   beamer_presentation:
-    theme: "Goettingen"
+    theme: "Pittsburgh"
 ---
 
 ```{r setup, include=FALSE}
@@ -33,11 +33,17 @@ _Study - Job - Money_
 
 * For Software Developers and Data Scientists
 * Asks for experience, age, location
-* Answers:
-  * _What shall I study?_
-  * _Where shall I work?_
-  * _What shall I practise?_
-  * _How could I practise?_
+* Answers to following questions:
+    * _What shall I study?_
+    * _Where shall I work?_
+    * _What shall I practise?_
+    * _How can I improve?_
+
+## The Mobile App
+
+```{r fig.align="center", out.width="40%"}
+knitr::include_graphics('mockup.png')
+```
 
 ## Data Sources
 
@@ -58,45 +64,45 @@ knitr::include_graphics("ontology.png")
 
 * Created with Protégé
 * Reusing existing Ontologies
-  * https://schema.org/Gender
-  * https://schema.org/ComputerLanguage
-  * https://schema.org/EmployeeRole
-  * https://schema.org/Country
+  * http://schema.org/Gender
+  * http://schema.org/ComputerLanguage
+  * http://schema.org/EmployeeRole
+  * http://schema.org/Country
   * ...
   
-## Data Processing #1
-
-### Kaggle Survey
+## Kaggle Survey
 
 * https://www.kaggle.com/c/kaggle-survey-2019
 * Used Jupyter Notebook for Pre-Processing
 * Created RDF XML directly from Python
 * **Challenge:** high number of one-hot-encoded values, had to extract unique values
 
-### StackOverflow Survey
+## StackOverflow Survey
 
 * https://insights.stackoverflow.com/survey/2018
 * Used Python for Pre-Processing
 * Created RDF XML directly from Python
 * **Challenge:** Fighting with OpenREFINE - at the end reverted to manual
 
-## Data Processing #2
-
-### GitHub Repositories Data
+## GitHub Repositories Data
 
 * http://ghtorrent.org/
 * Used Bash & R Script for Pre-Processing
 * Created RDF XML directly from Python
 * **Challenge:** _huge_ data archive (>100GB) had to be filtered / preprocessed
 
-### TISS Lectures
+## TISS Lectures
 
 * https://tiss.tuwien.ac.at/course/courseList.xhtml?dswid=6403&dsrid=238
 * Used Python Script
 * Created RDF XML directly from Python (using `rdflib`)
 * **Challenge:** web scraping, identifying the programming language from text
 
-## SPARQL Queries
+## Mapping
+
+How we harmonized data among the surveys
+
+## SPARQL Queries #1
 
 ```
 PREFIX rdf: 
@@ -112,4 +118,38 @@ WHERE {
 }
 LIMIT 25
 ```
+
+## SPARQL Queries #2
+
+## Harmonize Data I
+
+* Age Ranges
+    * Different Age Ranges
+
+* Salary and Salary Ranges
+    * Salary Range in Kaggle
+    * Salary Value in Stackoverflow
+
+* Roles
+  * Combined from Surveys into List
+  * e.g. Frontend Developer -> Software Engineer
+  * ... C-Suite Executive -> Manager
+
+## Harmonize Data II
+
+* Countries
+    * dbpedia linked to external data
+
+* Gender
+    * Single Selection in Kaggle
+    * Multiple Selections in Stackoverflow
+
+* Computer Language
+    * Combined from Surveys into List
+    * Field in Github Repository
+    * Extracted from TISS Lecture Description
+
+## Lessons Learned
+
+
 ## Questions?
