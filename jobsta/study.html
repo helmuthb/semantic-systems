@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap@latest/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="css/styles.css">
+    <script>
+        function query() {
+            console.log('query clicked')
+            let language = $('#language').val()
+            let acceptHeader = 'application/sparql-results+json'
+            let url = 'https://jena.helmuth.at/jobsta_dev/query?query='
+            let qry_schema = 'PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX group1: <http://www.semanticweb.org/sws/ws2019/group1#>\nPREFIX schema: <http://schema.org/>\n';
+            let qry = `SELECT ?name ?programming_language\nWHERE {\n?lecture schema:name ?name .\n?lecture group1:dealsWith ?programming_language .\nFILTER (?programming_language = ${language})\n}\nLIMIT 25`
+            $.get(url+encodeURIComponent(qry_schema + qry)).then(function (result) {
+            // const result = JSON.parse(`{
+            //                           "head": {
+            //                             "vars": [ "name" , "programming_language" ]
+            //                           } ,
+            //                           "results": {
+            //                             "bindings": [
+            //                               {
+            //                                 "name": { "type": "literal" , "value": "Advanced Methods for Regression and Classification" } ,
+            //                                 "programming_language": { "type": "uri" , "value": "http://www.semanticweb.org/sws/ws2019/group1#R" }
+            //                               } ,
+            //                               {
+            //                                 "name": { "type": "literal" , "value": "Statistical Computing" } ,
+            //                                 "programming_language": { "type": "uri" , "value": "http://www.semanticweb.org/sws/ws2019/group1#R" }
+            //                               } ,
+            //                               {
+            //                                 "name": { "type": "literal" , "value": "Machine Learning" } ,
+            //                                 "programming_language": { "type": "uri" , "value": "http://www.semanticweb.org/sws/ws2019/group1#R" }
+            //                               } ,
+            //                               {
+            //                                 "name": { "type": "literal" , "value": "Technology exploitation" } ,
+            //                                 "programming_language": { "type": "uri" , "value": "http://www.semanticweb.org/sws/ws2019/group1#R" }
+            //                               } 
+            //                               ] 
+            //                             } 
+            //                           }`)
+              if (result && result.results && result.results.bindings.length > 0) {
+                let output = '';
+                result.results.bindings.forEach(element => {
+                  output += `<div class="result-row"><div class="lecture">${element.name.value}</div><div class="language">${element.programming_language.value}</div></div>`
+                });
+                $('#Answer').html(output)
+              }
+            });
+        }
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">          
+            <a href="index-bs.html" class="subtitle">
+              <div class="jobsta-logo">
+                <img src="img/jobsta-logo.png" />
+                <div class="slogan">Study - Job - Money</div>
+              </div>
+            </a>          
+        </div>
+      </div>
+        <div class="row">
+        <div class="col-12 text-center">
+          <h1 class="start-1 padding-05">Study</h1>
+        </div>
+        <div class="col-12 text-center query margin-top2">
+            As a student I want to learn language <select id="language"><option value="group1:Python">Python</option><option value="group1:R">R</option></select>.<br/> Which courses should I take?
+        </div>
+        <div class="col-12 text-center">
+          <button class="btn-primary btn-my-primary margin-top2" onclick="query()">Query</button>
+        </div>
+        <div class="col-12 text-center">
+            <h1 class="margin-top2">Answer</h1>
+        </div>
+        <div class="col-12 text-center">
+            <div class="answer" id="Answer"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/jquery@latest/dist/jquery.min.js"></script>
+    <script src="https://unpkg.com/bootstrap@latest/dist/js/bootstrap.min.js"></script>
+    
+  </body>
+</html>

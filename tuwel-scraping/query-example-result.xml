@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<sparql xmlns="http://www.w3.org/2005/sparql-results#">
+  <head>
+    <variable name="name"/>
+    <variable name="programming_language"/>
+  </head>
+  <results>
+    <result>
+      <binding name="name">
+        <literal>Machine Learning</literal>
+      </binding>
+      <binding name="programming_language">
+        <uri>http://www.semanticweb.org/sws/ws2019/group1#Python</uri>
+      </binding>
+    </result>
+    <result>
+      <binding name="name">
+        <literal>Data-oriented Programming Paradigms</literal>
+      </binding>
+      <binding name="programming_language">
+        <uri>http://www.semanticweb.org/sws/ws2019/group1#Python</uri>
+      </binding>
+    </result>
+    <result>
+      <binding name="name">
+        <literal>Didactics in computer science education</literal>
+      </binding>
+      <binding name="programming_language">
+        <uri>http://www.semanticweb.org/sws/ws2019/group1#Python</uri>
+      </binding>
+    </result>
+    <result>
+      <binding name="name">
+        <literal>Similarity Modeling 2 - Computational Seeing and Hearing</literal>
+      </binding>
+      <binding name="programming_language">
+        <uri>http://www.semanticweb.org/sws/ws2019/group1#Python</uri>
+      </binding>
+    </result>
+    <result>
+      <binding name="name">
+        <literal>Capture The Flag</literal>
+      </binding>
+      <binding name="programming_language">
+        <uri>http://www.semanticweb.org/sws/ws2019/group1#Python</uri>
+      </binding>
+    </result>
+    <result>
+      <binding name="name">
+        <literal>Modeling and Simulation</literal>
+      </binding>
+      <binding name="programming_language">
+        <uri>http://www.semanticweb.org/sws/ws2019/group1#Python</uri>
+      </binding>
+    </result>
+  </results>
+</sparql>
