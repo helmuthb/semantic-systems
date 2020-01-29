@@ -119,3 +119,32 @@ WHERE {
 LIMIT 25
 ```
 ## Questions?
+
+
+## Harmonize Data I
+
+* Age Ranges
+    * Different Age Ranges
+
+* Salary and Salary Ranges
+    * Salary Range in Kaggle
+    * Salary Value in Stackoverflow
+
+* Roles
+  * Combined from Surveys into List
+  * e.g. Frontend Developer -> Software Engineer
+  * ... C-Suite Executive -> Manager
+
+## Harmonize Data II
+
+* Countries
+    * dbpedia linked to external data
+
+* Gender
+    * Single Selection in Kaggle
+    * Multiple Selections in Stackoverflow
+
+* Computer Language
+    * Combined from Surveys into List
+    * Field in Github Repository
+    * Extracted from TISS Lecture Description
