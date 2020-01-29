@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+  <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div class="mdc-layout-grid">
+  <div class="mdc-layout-grid__inner">
+    <div class="mdc-layout-grid__cell--span-4 centered">
+      <img src="img/jobsta-logo.png"><br>
+      <span class="slogan">Study - Job - Money</span>
+    </div>
+    <div class="mdc-layout-grid__cell--span-2 centered start start-1">
+      <img class="start-image" src="img/study-logo.png"><br>
+      <button class="start-button mdc-button">Study</button>
+    </div>
+    <div class="mdc-layout-grid__cell--span-2 centered start start-2">
+      <img class="start-image" src="img/house-logo.png"><br>
+      <button class="start-button mdc-button">Country</button>
+    </div>
+    <div class="mdc-layout-grid__cell--span-2 centered start start-3">
+      <img class="start-image" src="img/money-logo.png"><br>
+      <button class="start-button mdc-button">Money</button>
+    </div>
+    <div class="mdc-layout-grid__cell--span-2 centered start start-4">
+      <img class="start-image" src="img/job-logo.png"><br>
+      <button class="start-button mdc-button">Job</button>
+    </div>
+    <div class="mdc-layout-grid__cell--span-4 centered github-tile">
+      <img class="github-logo" src="img/github-logo.png">
+      <button class="github-button mdc-button">Get the Source</button>
+    </div>
+    <div class="mdc-layout-grid__cell--span-4 centered">
+      <span class="closing">Made with Love for Semantic Systems @TU-Wien</span>
+    </div>
+  </div>
+</div>
+<!-- Code to run after HTML is loaded -->
+<script>
+mdc.ripple.MDCRipple.attachTo(document.querySelector('.start-button'));
+</script>
+</body>
+</html>
