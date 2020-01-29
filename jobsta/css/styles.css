@@ -15,11 +15,25 @@
   max-width: 75%;
   max-height: 65%;
 }
+.btn-image {
+  cursor: pointer;
+  width: 6em;
+  height: 8em;
+}
+.btn-github {
+  width: 3em;
+  height: 3em;
+}
+.margin-top2 {
+  margin-top: 2em;
+}
 .github-logo {
   vertical-align: middle;
 }
 .closing, .slogan {
   font-style: italic;
+  text-decoration: none;
+  color: black;
 }
 .closing {
   font-size: 10px;
@@ -49,7 +63,70 @@
   /* line-height: 95px; */
   vertical-align: middle;
 }
-.github-tile {
-  background: #E0E0E0;
+.github-title {
   height: 80px;
+}
+
+.btn-github-container {
+  /* width: 15em; */
+  /* border: 1px solid black; */
+  text-decoration: none;
+  color: black;
+  background: #E0E0E0;
+}
+div.subtitle {
+  font-weight: bolder;
+  font-size: 2em;
+  color: black;
+}
+a.subtitle {
+  text-decoration: none;
+}
+.bg-gray {
+  background-color: light-gray;
+}
+.padding-1 {
+  padding: 1em;
+}
+.padding-05 {
+  padding: 0.5em;
+}
+.github-text {
+  color: black;
+  font-size: 1em;
+  text-decoration: none;
+}
+
+.btn-my-primary {
+  width: 15em;
+}
+.query {
+  line-height: 2em;
+
+}
+
+.answer {
+  display: flex;
+  flex-direction: column;
+}
+
+.result-row {
+  display: flex;
+  margin-bottom: 1em;
+  width: 100%;
+}
+
+.lecture {
+  border: 1px solid lightgray;
+  width: 100%;
+}
+
+.language {
+  border: 1px solid lightgray;
+  width: 100%;
+  margin-left: 2px;
+}
+.jobsta-logo {
+  width: 100%;
+  text-decoration: none;
 }
