@@ -41,7 +41,7 @@ _Study - Job - Money_
 
 ## The Mobile App
 
-```{r fig.align="center"}
+```{r fig.align="center", out.width="40%"}
 knitr::include_graphics('mockup.png')
 ```
 
@@ -64,45 +64,45 @@ knitr::include_graphics("ontology.png")
 
 * Created with Protégé
 * Reusing existing Ontologies
-  * https://schema.org/Gender
-  * https://schema.org/ComputerLanguage
-  * https://schema.org/EmployeeRole
-  * https://schema.org/Country
+  * http://schema.org/Gender
+  * http://schema.org/ComputerLanguage
+  * http://schema.org/EmployeeRole
+  * http://schema.org/Country
   * ...
   
-## Data Processing #1
-
-### Kaggle Survey
+## Kaggle Survey
 
 * https://www.kaggle.com/c/kaggle-survey-2019
 * Used Jupyter Notebook for Pre-Processing
 * Created RDF XML directly from Python
 * **Challenge:** high number of one-hot-encoded values, had to extract unique values
 
-### StackOverflow Survey
+## StackOverflow Survey
 
 * https://insights.stackoverflow.com/survey/2018
 * Used Python for Pre-Processing
 * Created RDF XML directly from Python
 * **Challenge:** Fighting with OpenREFINE - at the end reverted to manual
 
-## Data Processing #2
-
-### GitHub Repositories Data
+## GitHub Repositories Data
 
 * http://ghtorrent.org/
 * Used Bash & R Script for Pre-Processing
 * Created RDF XML directly from Python
 * **Challenge:** _huge_ data archive (>100GB) had to be filtered / preprocessed
 
-### TISS Lectures
+## TISS Lectures
 
 * https://tiss.tuwien.ac.at/course/courseList.xhtml?dswid=6403&dsrid=238
 * Used Python Script
 * Created RDF XML directly from Python (using `rdflib`)
 * **Challenge:** web scraping, identifying the programming language from text
 
-## SPARQL Queries
+## Mapping
+
+How we harmonized data among the surveys
+
+## SPARQL Queries #1
 
 ```
 PREFIX rdf: 
@@ -118,4 +118,11 @@ WHERE {
 }
 LIMIT 25
 ```
+
+## SPARQL Queries #2
+
+## Lessons Learned
+
+
+
 ## Questions?
