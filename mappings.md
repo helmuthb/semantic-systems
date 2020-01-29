@@ -37,6 +37,8 @@ Instead of url-encoding the roles, just replace every space (' ') with an unders
 ##### KAGGLE:
 
 - 'United Kingdom of Great Britain and Northern Ireland' -> 'United Kingdom
+- 'Iran, Islamic Republic of...' -> 'Iran'
+- 'United States of America' -> 'United States'
 
 ##### STACKOVERFLOW:
 
@@ -46,6 +48,10 @@ Instead of url-encoding the roles, just replace every space (' ') with an unders
 
 
 ## Gender:
+
+##### KAGGLE:
+
+- map 'Prefer to self-describe' -> 'Other
 
 ##### STACKOVERFLOW:
 
