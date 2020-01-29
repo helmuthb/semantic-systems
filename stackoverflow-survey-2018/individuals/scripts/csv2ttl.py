@@ -51,11 +51,15 @@ def print_home_location(f, name, raw):
 def print_developer_roles(f, raw):
     developer_roles = raw.split(';')
     print_dev_roles = ''
+    roles_used = []
     for i, dev_role in enumerate(developer_roles):
         mapped_dev_role = map_dev_role(dev_role)
-        print_dev_roles += group1(mapped_dev_role.replace(' ', '_'))
-        if i < len(developer_roles)-1:
-            print_dev_roles += ', '
+        if mapped_dev_role in roles_used:
+            continue
+        roles_used.append(mapped_dev_role)
+        print_dev_roles += (group1(mapped_dev_role.replace(' ', '_')) + ', ')
+    if print_dev_roles.endswith(', '):
+        print_dev_roles = print_dev_roles[:-2]
     f.write('\t' + group1('hasRole') + ' ' + print_dev_roles + ' ;\n')
 
 def print_experience_years(f, raw):

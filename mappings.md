@@ -73,7 +73,7 @@ Instead of url-encoding the roles, just replace every space (' ') with an unders
 - 'C-suite executive (CEO, CTO, etc.)'                                -> 'Manager'
 - 'Data scientist or machine learning specialist'                     -> 'Data Scientist'
 - 'Database administrator'                                            -> 'DBA or Database Engineer'
-- 'Product manager'                                                   -> 'Product or Project Manager'
+- 'Product manager'                                                   -> 'Manager'
 - 'Back-end Developer', 'Front-end developer', 'Full-stack developer' -> 'Software Engineer'
 - 'Desktop or enterprise applications developer'                      -> 'Software Engineer'
 - 'DevOps specialist'                                                 -> 'Software Engineer'

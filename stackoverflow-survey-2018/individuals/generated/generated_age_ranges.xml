@@ -1,0 +1,50 @@
+	<!-- STACKOVERFLOW: AGE RANGES -->
+
+	<owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#18%20-%2024">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sws/ws2019/group1#AgeRange"/>
+        <minAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">18</minAge>
+        <maxAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">24</maxAge>
+    </owl:NamedIndividual>
+
+
+	<owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#35%20-%2044">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sws/ws2019/group1#AgeRange"/>
+        <minAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">35</minAge>
+        <maxAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">44</maxAge>
+    </owl:NamedIndividual>
+
+
+	<owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#25%20-%2034">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sws/ws2019/group1#AgeRange"/>
+        <minAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">25</minAge>
+        <maxAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">34</maxAge>
+    </owl:NamedIndividual>
+
+
+	<owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#45%20-%2054">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sws/ws2019/group1#AgeRange"/>
+        <minAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">45</minAge>
+        <maxAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">54</maxAge>
+    </owl:NamedIndividual>
+
+
+	<owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Under%2018%20years%20old">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sws/ws2019/group1#AgeRange"/>
+        <minAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</minAge>
+        <maxAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">17</maxAge>
+    </owl:NamedIndividual>
+
+
+	<owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#55%20-%2064">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sws/ws2019/group1#AgeRange"/>
+        <minAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">55</minAge>
+        <maxAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">64</maxAge>
+    </owl:NamedIndividual>
+
+
+	<owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#65%20years%20or%20older">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sws/ws2019/group1#AgeRange"/>
+        <minAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">65</minAge>
+    </owl:NamedIndividual>
+
+

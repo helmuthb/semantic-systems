@@ -12,14 +12,25 @@ dev_roles = []
 Check the mappings.md file for the mapping rules
 """
 def map_dev_role(role):
-    if role.endswith(' (CEO, CTO, etc.)'):
-        return role[:-17]
-    if role.startswith('Data scientist'):
+    if role == 'C-suite executive (CEO, CTO, etc.)' or role == 'Product manager' or role == 'Educator or academic researcher':
+        return 'Manager'
+    if role == 'Data scientist or machine learning specialist':
         return 'Data Scientist'
     if role == 'Database administrator':
         return 'DBA or Database Engineer'
-    if role == 'Product manager':
-        return 'Product or Project Manager'
+    if role == 'Back-end developer' \
+        or role == 'Front-end developer' \
+        or role == 'Full-stack developer' \
+        or role == 'Desktop or enterprise applications developer' \
+        or role == 'DevOps specialist' \
+        or role == 'Embedded applications or devices developer' \
+        or role == 'Engineering manager' \
+        or role == 'Game or graphics developer' \
+        or role == 'Mobile developer' \
+        or role == 'QA or test developer':
+        return 'Software Engineer'
+    if role == 'Educator or academic researcher':
+        return 'Research Scientist'
     return role
 
 def parse_dev_roles(raw):

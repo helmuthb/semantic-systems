@@ -5,6 +5,7 @@ from csv2devroles import main as devroles_main
 from csv2complangs import main as complangs_main
 from csv2countries import main as countries_main
 from csv2genders import main as gender_main
+from csv2ages import main as ages_main
 
 """
 
@@ -30,6 +31,7 @@ def main():
     complangs_main()
     countries_main()
     gender_main()
+    ages_main()
     ttl_main()
 
 if __name__ == "__main__":
