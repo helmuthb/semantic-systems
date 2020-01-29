@@ -25,7 +25,7 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ## App Idea
 
-```{r logo, echo=FALSE}
+```{r logo, echo=FALSE, out.width="30%"}
 knitr::include_graphics("jobsta-logo.png")
 ```
 
