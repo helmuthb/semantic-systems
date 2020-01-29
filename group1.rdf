@@ -103,7 +103,7 @@
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/sws/ws2019/group1#roleHasDevelopers"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/sws/ws2019/group1#Developer"/>
-        <rdfs:range rdf:resource="http://schema.org/EmployeeRole"/>
+        <rdfs:range rdf:resource="http://schema.org/Role"/>
     </owl:ObjectProperty>
     
 
@@ -160,7 +160,7 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sws/ws2019/group1#roleHasDevelopers">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://schema.org/EmployeeRole"/>
+        <rdfs:domain rdf:resource="http://schema.org/Role"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/sws/ws2019/group1#Developer"/>
     </owl:ObjectProperty>
     
@@ -345,9 +345,9 @@
     
 
 
-    <!-- http://schema.org/EmployeeRole -->
+    <!-- http://schema.org/Role -->
 
-    <owl:Class rdf:about="http://schema.org/EmployeeRole"/>
+    <owl:Class rdf:about="http://schema.org/Role"/>
     
 
 
@@ -477,7 +477,7 @@
     <!-- http://www.semanticweb.org/sws/ws2019/group1#Back-end_developer -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Back-end_developer">
-        <rdf:type rdf:resource="http://schema.org/EmployeeRole"/>
+        <rdf:type rdf:resource="http://schema.org/Role"/>
     </owl:NamedIndividual>
     
 
@@ -529,7 +529,7 @@
     <!-- http://www.semanticweb.org/sws/ws2019/group1#Business_Analyst -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Business_Analyst">
-        <rdf:type rdf:resource="http://schema.org/EmployeeRole"/>
+        <rdf:type rdf:resource="http://schema.org/Role"/>
     </owl:NamedIndividual>
     
 
@@ -545,7 +545,7 @@
     <!-- http://www.semanticweb.org/sws/ws2019/group1#C-suite_executive -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#C-suite_executive">
-        <rdf:type rdf:resource="http://schema.org/EmployeeRole"/>
+        <rdf:type rdf:resource="http://schema.org/Role"/>
     </owl:NamedIndividual>
     
 
@@ -589,7 +589,7 @@
     <!-- http://www.semanticweb.org/sws/ws2019/group1#DBA_or_Database_Engineer -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#DBA_or_Database_Engineer">
-        <rdf:type rdf:resource="http://schema.org/EmployeeRole"/>
+        <rdf:type rdf:resource="http://schema.org/Role"/>
     </owl:NamedIndividual>
     
 
@@ -597,7 +597,7 @@
     <!-- http://www.semanticweb.org/sws/ws2019/group1#Data_Analyst -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Data_Analyst">
-        <rdf:type rdf:resource="http://schema.org/EmployeeRole"/>
+        <rdf:type rdf:resource="http://schema.org/Role"/>
     </owl:NamedIndividual>
     
 
@@ -605,7 +605,7 @@
     <!-- http://www.semanticweb.org/sws/ws2019/group1#Data_Engineer -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Data_Engineer">
-        <rdf:type rdf:resource="http://schema.org/EmployeeRole"/>
+        <rdf:type rdf:resource="http://schema.org/Role"/>
     </owl:NamedIndividual>
     
 
@@ -613,7 +613,7 @@
     <!-- http://www.semanticweb.org/sws/ws2019/group1#Data_Scientist -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Data_Scientist">
-        <rdf:type rdf:resource="http://schema.org/EmployeeRole"/>
+        <rdf:type rdf:resource="http://schema.org/Role"/>
     </owl:NamedIndividual>
     
 
@@ -621,7 +621,7 @@
     <!-- http://www.semanticweb.org/sws/ws2019/group1#Data_or_business_analyst -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Data_or_business_analyst">
-        <rdf:type rdf:resource="http://schema.org/EmployeeRole"/>
+        <rdf:type rdf:resource="http://schema.org/Role"/>
     </owl:NamedIndividual>
     
 
@@ -638,7 +638,7 @@
     <!-- http://www.semanticweb.org/sws/ws2019/group1#Designer -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Designer">
-        <rdf:type rdf:resource="http://schema.org/EmployeeRole"/>
+        <rdf:type rdf:resource="http://schema.org/Role"/>
     </owl:NamedIndividual>
     
 
@@ -646,7 +646,7 @@
     <!-- http://www.semanticweb.org/sws/ws2019/group1#Desktop_or_enterprise_applications_developer -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Desktop_or_enterprise_applications_developer">
-        <rdf:type rdf:resource="http://schema.org/EmployeeRole"/>
+        <rdf:type rdf:resource="http://schema.org/Role"/>
     </owl:NamedIndividual>
     
 
@@ -654,7 +654,7 @@
     <!-- http://www.semanticweb.org/sws/ws2019/group1#DevOps_specialist -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#DevOps_specialist">
-        <rdf:type rdf:resource="http://schema.org/EmployeeRole"/>
+        <rdf:type rdf:resource="http://schema.org/Role"/>
     </owl:NamedIndividual>
     
 
@@ -662,7 +662,7 @@
     <!-- http://www.semanticweb.org/sws/ws2019/group1#Educator_or_academic_researcher -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Educator_or_academic_researcher">
-        <rdf:type rdf:resource="http://schema.org/EmployeeRole"/>
+        <rdf:type rdf:resource="http://schema.org/Role"/>
     </owl:NamedIndividual>
     
 
@@ -679,7 +679,7 @@
     <!-- http://www.semanticweb.org/sws/ws2019/group1#Embedded_applications_or_devices_developer -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Embedded_applications_or_devices_developer">
-        <rdf:type rdf:resource="http://schema.org/EmployeeRole"/>
+        <rdf:type rdf:resource="http://schema.org/Role"/>
     </owl:NamedIndividual>
     
 
@@ -687,7 +687,7 @@
     <!-- http://www.semanticweb.org/sws/ws2019/group1#Engineering_manager -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Engineering_manager">
-        <rdf:type rdf:resource="http://schema.org/EmployeeRole"/>
+        <rdf:type rdf:resource="http://schema.org/Role"/>
     </owl:NamedIndividual>
     
 
@@ -704,7 +704,7 @@
     <!-- http://www.semanticweb.org/sws/ws2019/group1#Front-end_developer -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Front-end_developer">
-        <rdf:type rdf:resource="http://schema.org/EmployeeRole"/>
+        <rdf:type rdf:resource="http://schema.org/Role"/>
     </owl:NamedIndividual>
     
 
@@ -712,7 +712,7 @@
     <!-- http://www.semanticweb.org/sws/ws2019/group1#Full-stack_developer -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Full-stack_developer">
-        <rdf:type rdf:resource="http://schema.org/EmployeeRole"/>
+        <rdf:type rdf:resource="http://schema.org/Role"/>
     </owl:NamedIndividual>
     
 
@@ -720,7 +720,7 @@
     <!-- http://www.semanticweb.org/sws/ws2019/group1#Game_or_graphics_developer -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Game_or_graphics_developer">
-        <rdf:type rdf:resource="http://schema.org/EmployeeRole"/>
+        <rdf:type rdf:resource="http://schema.org/Role"/>
     </owl:NamedIndividual>
     
 
@@ -867,7 +867,7 @@
     <!-- http://www.semanticweb.org/sws/ws2019/group1#Marketing_or_sales_professional -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Marketing_or_sales_professional">
-        <rdf:type rdf:resource="http://schema.org/EmployeeRole"/>
+        <rdf:type rdf:resource="http://schema.org/Role"/>
     </owl:NamedIndividual>
     
 
@@ -884,7 +884,7 @@
     <!-- http://www.semanticweb.org/sws/ws2019/group1#Mobile_developer -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Mobile_developer">
-        <rdf:type rdf:resource="http://schema.org/EmployeeRole"/>
+        <rdf:type rdf:resource="http://schema.org/Role"/>
     </owl:NamedIndividual>
     
 
@@ -928,7 +928,7 @@
     <!-- http://www.semanticweb.org/sws/ws2019/group1#Not_employed -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Not_employed">
-        <rdf:type rdf:resource="http://schema.org/EmployeeRole"/>
+        <rdf:type rdf:resource="http://schema.org/Role"/>
     </owl:NamedIndividual>
     
 
@@ -938,7 +938,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Other">
         <rdf:type rdf:resource="http://schema.org/ComputerLanguage"/>
         <rdf:type rdf:resource="http://schema.org/Country"/>
-        <rdf:type rdf:resource="http://schema.org/EmployeeRole"/>
+        <rdf:type rdf:resource="http://schema.org/Role"/>
         <schema:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Other</schema:name>
     </owl:NamedIndividual>
     
@@ -1001,7 +1001,7 @@
     <!-- http://www.semanticweb.org/sws/ws2019/group1#Product_or_Project_Manager -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Product_or_Project_Manager">
-        <rdf:type rdf:resource="http://schema.org/EmployeeRole"/>
+        <rdf:type rdf:resource="http://schema.org/Role"/>
     </owl:NamedIndividual>
     
 
@@ -1017,7 +1017,7 @@
     <!-- http://www.semanticweb.org/sws/ws2019/group1#QA_or_test_developer -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#QA_or_test_developer">
-        <rdf:type rdf:resource="http://schema.org/EmployeeRole"/>
+        <rdf:type rdf:resource="http://schema.org/Role"/>
     </owl:NamedIndividual>
     
 
@@ -1033,7 +1033,7 @@
     <!-- http://www.semanticweb.org/sws/ws2019/group1#Research_Scientist -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Research_Scientist">
-        <rdf:type rdf:resource="http://schema.org/EmployeeRole"/>
+        <rdf:type rdf:resource="http://schema.org/Role"/>
     </owl:NamedIndividual>
     
 
@@ -1067,7 +1067,7 @@
     <!-- http://www.semanticweb.org/sws/ws2019/group1#Senior_Developer -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Senior_Developer">
-        <rdf:type rdf:resource="http://schema.org/EmployeeRole"/>
+        <rdf:type rdf:resource="http://schema.org/Role"/>
     </owl:NamedIndividual>
     
 
@@ -1084,7 +1084,7 @@
     <!-- http://www.semanticweb.org/sws/ws2019/group1#Software_Engineer -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Software_Engineer">
-        <rdf:type rdf:resource="http://schema.org/EmployeeRole"/>
+        <rdf:type rdf:resource="http://schema.org/Role"/>
     </owl:NamedIndividual>
     
 
@@ -1101,7 +1101,7 @@
     <!-- http://www.semanticweb.org/sws/ws2019/group1#Statistician -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Statistician">
-        <rdf:type rdf:resource="http://schema.org/EmployeeRole"/>
+        <rdf:type rdf:resource="http://schema.org/Role"/>
     </owl:NamedIndividual>
     
 
@@ -1109,7 +1109,7 @@
     <!-- http://www.semanticweb.org/sws/ws2019/group1#Student -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Student">
-        <rdf:type rdf:resource="http://schema.org/EmployeeRole"/>
+        <rdf:type rdf:resource="http://schema.org/Role"/>
     </owl:NamedIndividual>
     
 
@@ -1146,7 +1146,7 @@
     <!-- http://www.semanticweb.org/sws/ws2019/group1#System_administrator -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#System_administrator">
-        <rdf:type rdf:resource="http://schema.org/EmployeeRole"/>
+        <rdf:type rdf:resource="http://schema.org/Role"/>
     </owl:NamedIndividual>
     
 
@@ -1598,9 +1598,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/sws/ws2019/group1#Iran%2C_Islamic_Republic_of... -->
+    <!-- http://www.semanticweb.org/sws/ws2019/group1#Iran -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Iran%2C_Islamic_Republic_of...">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Iran">
         <rdf:type rdf:resource="http://schema.org/Country"/>
         <schema:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Iran, Islamic Republic of...</schema:name>
     </owl:NamedIndividual>

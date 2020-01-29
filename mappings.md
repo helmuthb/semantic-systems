@@ -34,6 +34,10 @@ Instead of url-encoding the roles, just replace every space (' ') with an unders
 
 ## Country:
 
+##### KAGGLE:
+
+- 'United Kingdom of Great Britain and Northern Ireland' -> 'United Kingdom
+
 ##### STACKOVERFLOW:
 
 - 'Iran, Islamic Republic of...' -> 'Iran'
@@ -54,15 +58,25 @@ Instead of url-encoding the roles, just replace every space (' ') with an unders
 
 ##### KAGGLE:
 
-- 'DBA/Database Engineer'   -> 'DBA or Database Engineer'
-- 'Product/Project Manager' -> 'Product or Project Manager'
+- 'DBA/Database Engineer'               -> 'DBA or Database Engineer'
+- 'Product/Project Manager'             -> 'Manager'
+- 'Data Analyst' and 'Business Analyst' -> 'Data or Business Analyst'
 
 ##### STACKOVERFLOW:
 
-- 'C-suite executive (CEO, CTO, etc.)'              -> 'C-suite executive'
-- 'Data scientist or machine learning specialist'   -> 'Data Scientist'
-- 'Database administrator'                          -> 'DBA or Database Engineer'
-- 'Product manager'                                 -> 'Product or Project Manager'
+- 'C-suite executive (CEO, CTO, etc.)'                                -> 'Manager'
+- 'Data scientist or machine learning specialist'                     -> 'Data Scientist'
+- 'Database administrator'                                            -> 'DBA or Database Engineer'
+- 'Product manager'                                                   -> 'Product or Project Manager'
+- 'Back-end Developer', 'Front-end developer', 'Full-stack developer' -> 'Software Engineer'
+- 'Desktop or enterprise applications developer'                      -> 'Software Engineer'
+- 'DevOps specialist'                                                 -> 'Software Engineer'
+- 'Embedded applications or devices developer'                        -> 'Software Engineer'
+- 'Engineering manager'                                               -> 'Manager'
+- 'Educator or academic researcher'                                   -> 'Research Scientist'
+- 'Game or graphics developer'                                        -> 'Software Engineer'
+- 'Mobile developer'                                                  -> 'Software Engineer'
+- 'QA or test developer'                                              -> 'Software Engineer'
 
 
 
