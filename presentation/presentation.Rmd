@@ -150,12 +150,12 @@ knitr::include_graphics('sparql-query1.png')
 
 ## SPARQL Queries #2
 
-"As a developer I live in (Austria) and I can program in (Python) and I want more than (55000 USD per year). Should I stay or should I go?"
+"As a (Data Scientist) I live in (Austria) and I can program in (Java) and I want more than (62000 USD per year). Should I stay or should I go?"
 
 
 ## SPARQL Queries #2 (cont.)
 
-```{r,out.width="90%"}
+```{r,out.width="100%"}
 knitr::include_graphics('sparql-query2-final.png')
 ```
 
