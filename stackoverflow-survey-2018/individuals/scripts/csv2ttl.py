@@ -15,13 +15,17 @@ PREFIXES = [
         'url': 'http://www.semanticweb.org/sws/ws2019/group1#'
     },
     {
-        'abbr': 'schmea',
+        'abbr': 'schema',
         'url': 'http://www.schema.org/'
     },
     {
         'abbr': 'dbpedia',
         'url': 'http://www.dbpedia.org/resource/'
     },
+    {
+        'abbr': 'rdf',
+        'url': 'http://www.w3.org/1999/02/22-rdf-syntax-ns#'
+    }
 ]
 
 def group1(string):
@@ -33,8 +37,14 @@ def schema(string):
 def dbpedia(string):
     return 'dbpedia:' + string
 
+def rdf(string):
+    return 'rdf:' + string
+
 def user(name):
     return group1(name)
+
+def print_type_developer(f):
+    f.write('\t' + rdf('type') + ' ' + group1('Developer') + ' ;\n')
 
 def is_searching_job(raw):
     if 'not' in raw:
@@ -47,7 +57,7 @@ def print_prefix(f):
     f.write('\n')
 
 def print_home_location(f, name, raw):
-    f.write(user(name) + ' ' + group1('homeLocation') + ' ' + dbpedia(map_country(raw).replace(' ', '_')) + ' ;\n')
+    f.write(user(name) + ' ' + schema('homeLocation') + ' ' + dbpedia(map_country(raw).replace(' ', '_')) + ' ;\n')
 
 def print_developer_roles(f, raw):
     developer_roles = raw.split(';')
@@ -83,7 +93,7 @@ def print_computer_languages(f, raw):
     f.write('\t' + group1('devlopsIn') + ' ' + print_prog_langs + ' ;\n')
 
 def print_gender(f, raw):
-    f.write('\t' + group1('gender') + ' ' + group1(map_gender(raw)) + ' ;\n')
+    f.write('\t' + schema('gender') + ' ' + group1(map_gender(raw)) + ' ;\n')
 
 def print_age(f, raw):
     f.write('\t' + group1('hasAgeRange') + ' ' + group1(urllib.parse.quote(raw)) + ' .\n')
@@ -100,7 +110,9 @@ def main():
                     continue
                 name = row[0]
         
+                # HOME LOCATION MUST BE FIRST LINE !!
                 print_home_location(f, name, row[1])
+                print_type_developer(f)
                 print_developer_roles(f, row[2])
                 # do we need this?
                 #print_experience_years(f, row[3])
