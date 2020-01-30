@@ -42,7 +42,7 @@ _Study - Job - Money_
 ## The Mobile App
 
 ```{r fig.align="center", out.width="40%"}
-knitr::include_graphics('mockup.png')
+knitr::include_graphics('mockup-mobile.png')
 ```
 
 ## Data Sources
