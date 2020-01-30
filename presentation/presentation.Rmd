@@ -25,7 +25,7 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ## App Idea
 
-```{r logo, echo=FALSE}
+```{r logo, echo=FALSE, out.width="30%"}
 knitr::include_graphics("jobsta-logo.png")
 ```
 
@@ -56,20 +56,19 @@ knitr::include_graphics('mockup.png')
 * **TISS Lectures**$\hfill\break$
   Lectures, Lecturer, Description, Programming Language
 
-## Ontology
+## Ontology #1
 
 ```{r ontology, echo=FALSE, out.width="100%"}
 knitr::include_graphics("ontology.png")
 ```
 
+## Ontology #2
+
 * Created with Protégé
 * Reusing existing Ontologies
-  * http://schema.org/Gender
-  * http://schema.org/ComputerLanguage
-  * http://schema.org/EmployeeRole
-  * http://schema.org/Country
-  * ...
-  
+  * schema.org
+  * dbpedia.org
+
 ## Kaggle Survey
 
 * https://www.kaggle.com/c/kaggle-survey-2019
@@ -104,19 +103,8 @@ How we harmonized data among the surveys
 
 ## SPARQL Queries #1
 
-```
-PREFIX rdf: 
-  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-PREFIX group1: 
-  <http://www.semanticweb.org/sws/ws2019/group1#>
-PREFIX schema: <http://schema.org/>
-
-SELECT ?name
-WHERE {
-  ?lecture rdf:type group1:TU-Lecture .
-  ?lecture schema:name ?name .
-}
-LIMIT 25
+```{r,out.width="100%"}
+knitr::include_graphics('sparql-query1.png')
 ```
 
 ## SPARQL Queries #2

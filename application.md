@@ -21,6 +21,10 @@ TISS [Lectures(Course_ID, Title, Description, ECTS, Programming-Language, URL), 
 As a (software developer) I live in (Country) and I can program in (Python) and I want at least (XXX USD per year). Should I stay or should I go?
 > Yes/No/Country
 
+# simplification
+I want at least (XXX USD per year) which lectures should I take. 
+
+
 As a student I want to learn language (Python). Which courses should I take?
 > TU Wien Courses
 
@@ -81,3 +85,20 @@ LIMIT 25
 
 
 https://jena.helmuth.at/jobsta/query?query=PREFIX%20rdf%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0APREFIX%20group1%3A%20%3Chttp%3A%2F%2Fwww.semanticweb.org%2Fsws%2Fws2019%2Fgroup1%23%3E%0APREFIX%20schema%3A%20%3Chttp%3A%2F%2Fschema.org%2F%3E%0ASELECT%20%3Fname%0AWHERE%20%7B%0A%20%20%3Flecture%20rdf%3Atype%20group1%3ATU-Lecture%20.%0A%20%20%3Flecture%20schema%3Aname%20%3Fname%20.%0A%7D%0ALIMIT%2025
+
+
+
+// filter for Language R
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX group1: <http://www.semanticweb.org/sws/ws2019/group1#>
+PREFIX schema: <http://schema.org/>
+
+SELECT ?name ?programming_language
+WHERE {
+  ?lecture schema:name ?name .
+  ?lecture group1:dealsWith ?programming_language .  
+  FILTER (?programming_language = group1:R)
+}
+LIMIT 25
+
