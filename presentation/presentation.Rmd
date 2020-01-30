@@ -87,7 +87,7 @@ knitr::include_graphics('mockup.png')
 ## Ontology #1
 
 ```{r ontology, echo=FALSE, out.width="100%"}
-knitr::include_graphics("ontology.png")
+knitr::include_graphics("ontology_new.png")
 ```
 
 ## Ontology #2
@@ -96,13 +96,25 @@ knitr::include_graphics("ontology.png")
 * Reusing existing Ontologies
   * schema.org
   * dbpedia.org
+* Entites:
+  - Developer
+  - dbpedia:Country
+  - schema:Course
+  - GitHubRepository
+  - schema:ComputerLanguage
+  - ...
+* Object properties:
+  - dealsWith
+  - developsIn
+  - schema:homeLocation
+  - ...
 
 ## Harmonize Data I
 
 * Age Ranges
     * Different Age Ranges
 
-* Salary and Salary Ranges
+* Salary vs. Salary Range
     * Salary Range in Kaggle
     * Salary Value in Stackoverflow
 
@@ -132,6 +144,11 @@ knitr::include_graphics('sparql-query1.png')
 ```
 
 ## SPARQL Queries #2
+
+"As a developer I live in (Austria) and I can program in (Python) and I want more than (55000 USD per year). Should I stay or should I go"
+
+
+## SPARQL Queries #2 (cont.)
 
 ```{r,out.width="90%"}
 knitr::include_graphics('sparql-query2.png')
