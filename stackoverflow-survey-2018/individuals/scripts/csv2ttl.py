@@ -4,6 +4,7 @@ from csv2devroles import map_dev_role
 from csv2complangs import map_computer_language
 from csv2genders import map_gender
 from csv2countries import map_country
+from csv2ages import parse_age_range
 
 """
 This script RDFizes the stackoverflow survey results from 2018 (in csv format).
@@ -25,6 +26,10 @@ PREFIXES = [
     {
         'abbr': 'rdf',
         'url': 'http://www.w3.org/1999/02/22-rdf-syntax-ns#'
+    },
+    {
+        'abbr': 'xsd',
+        'url': 'http://www.w3.org/2001/XMLSchema#'
     }
 ]
 
@@ -80,7 +85,7 @@ def print_is_searching_job(f, raw):
     f.write('\t' + group1('isSearchingJob') + ' ' + str(is_searching_job(raw)).lower() + ' ;\n')
 
 def print_salary(f, raw):
-    f.write('\t' + group1('salary') + ' ' + raw + ' ;\n')
+    f.write('\t' + group1('salary') + ' "' + raw + '"^^xsd:integer ;\n')
 
 def print_computer_languages(f, raw):
     computer_languages = raw.split(';')
@@ -90,13 +95,13 @@ def print_computer_languages(f, raw):
         print_prog_langs += group1(mapped_computer_language.replace(' ', '_'))
         if i < len(computer_languages)-1:
             print_prog_langs += ', '
-    f.write('\t' + group1('devlopsIn') + ' ' + print_prog_langs + ' ;\n')
+    f.write('\t' + group1('developsIn') + ' ' + print_prog_langs + ' ;\n')
 
 def print_gender(f, raw):
     f.write('\t' + schema('gender') + ' ' + group1(map_gender(raw)) + ' ;\n')
 
 def print_age(f, raw):
-    f.write('\t' + group1('hasAgeRange') + ' ' + group1(urllib.parse.quote(raw)) + ' .\n')
+    f.write('\t' + group1('hasAgeRange') + ' ' + group1(parse_age_range(raw)['id'].replace(' ', '')) + ' .\n')
 
 def main():
     with open('../../edited_survey_results_public.csv', mode='r') as csv_file:
@@ -114,7 +119,6 @@ def main():
                 print_home_location(f, name, row[1])
                 print_type_developer(f)
                 print_developer_roles(f, row[2])
-                # do we need this?
                 #print_experience_years(f, row[3])
                 #print_is_searching_job(f, row[4])
                 print_salary(f, row[5])
