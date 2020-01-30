@@ -1,2 +1,3 @@
 selenium == 3.*
 beautifulsoup4 == 4.*
+rdflib==4.*
