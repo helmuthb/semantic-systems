@@ -67,8 +67,8 @@ knitr::include_graphics('mockup.png')
 
 * https://insights.stackoverflow.com/survey/2018
 * Used Python for Pre-Processing
-* Created RDF XML directly from Python
-* **Challenge:** Fighting with OpenREFINE - at the end reverted to manual
+* Created instances directly from Python
+* **Challenge:** Excel, Numbers and TextMate could all not open the csv file (>90.000 entries) properly
 
 ## GitHub Repositories Data
 
