@@ -16,11 +16,11 @@ PREFIXES = [
     },
     {
         'abbr': 'schema',
-        'url': 'http://www.schema.org/'
+        'url': 'http://schema.org/'
     },
     {
         'abbr': 'dbpedia',
-        'url': 'http://www.dbpedia.org/resource/'
+        'url': 'http://dbpedia.org/resource/'
     },
     {
         'abbr': 'rdf',
