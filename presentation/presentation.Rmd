@@ -56,19 +56,6 @@ knitr::include_graphics('mockup.png')
 * **TISS Lectures**$\hfill\break$
   Lectures, Lecturer, Description, Programming Language
 
-## Ontology #1
-
-```{r ontology, echo=FALSE, out.width="100%"}
-knitr::include_graphics("ontology.png")
-```
-
-## Ontology #2
-
-* Created with Protégé
-* Reusing existing Ontologies
-  * schema.org
-  * dbpedia.org
-
 ## Kaggle Survey
 
 * https://www.kaggle.com/c/kaggle-survey-2019
@@ -97,17 +84,18 @@ knitr::include_graphics("ontology.png")
 * Created RDF XML directly from Python (using `rdflib`)
 * **Challenge:** web scraping, identifying the programming language from text
 
-## Mapping
+## Ontology #1
 
-How we harmonized data among the surveys
-
-## SPARQL Queries #1
-
-```{r,out.width="100%"}
-knitr::include_graphics('sparql-query1.png')
+```{r ontology, echo=FALSE, out.width="100%"}
+knitr::include_graphics("ontology.png")
 ```
 
-## SPARQL Queries #2
+## Ontology #2
+
+* Created with Protégé
+* Reusing existing Ontologies
+  * schema.org
+  * dbpedia.org
 
 ## Harmonize Data I
 
@@ -137,7 +125,31 @@ knitr::include_graphics('sparql-query1.png')
     * Field in Github Repository
     * Extracted from TISS Lecture Description
 
+## SPARQL Queries #1
+
+```{r,out.width="100%"}
+knitr::include_graphics('sparql-query1.png')
+```
+
+## SPARQL Queries #2
+
+```{r,out.width="90%"}
+knitr::include_graphics('sparql-query2.png')
+```
+
 ## Lessons Learned
+
+* Iterative process to come up with final idea
+
+* Scraping TISS: no ID access to fields
+
+* http://schema.org not equal to http://www.schema.org
+
+* GraphQL Github API vs. Database Dump
+
+* Harmonizing data can be tedious
 
 
 ## Questions?
+
+Thank you for your attention!
