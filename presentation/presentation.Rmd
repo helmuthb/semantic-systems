@@ -60,28 +60,28 @@ knitr::include_graphics('iphone-mockup.png')
 
 * https://www.kaggle.com/c/kaggle-survey-2019
 * Used Jupyter Notebook for Pre-Processing
-* Created RDF XML directly from Python
+* Created RDF directly from Python
 * **Challenge:** high number of one-hot-encoded values, had to extract unique values
 
 ## StackOverflow Survey
 
 * https://insights.stackoverflow.com/survey/2018
 * Used Python for Pre-Processing
-* Created instances directly from Python
+* Created RDF directly from Python
 * **Challenge:** Excel, Numbers and TextMate could all not open the csv file (>90.000 entries) properly
 
 ## GitHub Repositories Data
 
 * http://ghtorrent.org/
 * Used Bash & R Script for Pre-Processing
-* Created RDF XML directly from Python
+* Created RDF directly from Python
 * **Challenge:** _huge_ data archive (>100GB) had to be filtered / preprocessed
 
 ## TISS Lectures
 
 * https://tiss.tuwien.ac.at/course/courseList.xhtml?dswid=6403&dsrid=238
 * Used Python Script
-* Created RDF XML directly from Python (using `rdflib`)
+* Created RDF directly from Python (using `rdflib`)
 * **Challenge:** web scraping, identifying the programming language from text
 
 ## Ontology #1
