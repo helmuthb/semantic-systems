@@ -940,11 +940,6 @@
         <rdf:type rdf:resource="http://schema.org/Country"/>
         <schema:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Romania</schema:name>
     </owl:NamedIndividual>
-	
-	
-	<owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Manager">
-		<rdf:type rdf:resource="https://schema.org/EmployeeRole"/>
-	</owl:NamedIndividual>
     
 
 
