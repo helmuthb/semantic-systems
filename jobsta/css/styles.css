@@ -130,3 +130,8 @@ a.subtitle {
   width: 100%;
   text-decoration: none;
 }
+
+input.salary {
+  max-width: 5em;
+  line-height: 1em;
+}
