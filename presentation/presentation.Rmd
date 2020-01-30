@@ -41,8 +41,8 @@ _Study - Job - Money_
 
 ## The Mobile App
 
-```{r fig.align="center", out.width="40%"}
-knitr::include_graphics('mockup.png')
+```{r fig.align="center", out.width="35%"}
+knitr::include_graphics('iphone-mockup.png')
 ```
 
 ## Data Sources
@@ -139,13 +139,17 @@ knitr::include_graphics("ontology_new.png")
 
 ## SPARQL Queries #1
 
+"As a developer I live in (Austria) and I want more than (150000 USD per year). What courses at TU Wien deal with programming languages which high-earners are using?"
+
+## SPARQL Queries #1 (cont.)
+
 ```{r,out.width="100%"}
 knitr::include_graphics('sparql-query1.png')
 ```
 
 ## SPARQL Queries #2
 
-"As a developer I live in (Austria) and I can program in (Python) and I want more than (55000 USD per year). Should I stay or should I go"
+"As a developer I live in (Austria) and I can program in (Python) and I want more than (55000 USD per year). Should I stay or should I go?"
 
 
 ## SPARQL Queries #2 (cont.)
