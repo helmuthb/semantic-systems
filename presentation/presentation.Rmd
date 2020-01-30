@@ -61,7 +61,8 @@ knitr::include_graphics('mockup-mobile.png')
 * https://www.kaggle.com/c/kaggle-survey-2019
 * Used Jupyter Notebook for Pre-Processing
 * Created RDF directly from Python
-* **Challenge:** high number of one-hot-encoded values, had to extract unique values
+* Private data was not usable for our case
+* **Challenge:** harmonize data
 
 ## StackOverflow Survey
 
@@ -155,7 +156,7 @@ knitr::include_graphics('sparql-query1.png')
 ## SPARQL Queries #2 (cont.)
 
 ```{r,out.width="90%"}
-knitr::include_graphics('sparql-query2.png')
+knitr::include_graphics('sparql-query2-final.png')
 ```
 
 ## Lessons Learned
