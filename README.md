@@ -66,9 +66,9 @@ merged ontology
 
 ## Todos
 
-- add 2 queries to app
-- test app locally
-- report
+-[ ] add 2 queries to app
+-[ ] test app locally
+-[ ] report
   - datasets
     - data source and format
     - data read
