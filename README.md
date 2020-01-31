@@ -82,6 +82,6 @@ merged ontology
   - [ ] fill the gaps
   - [ ] final size of jena datafile (after import of ontology + all 4 datasets) -> need to create as persistent store
 - [ ] package scripts, webapp, report (and data?)
-- tuwel upload
+- [ ] tuwel upload
 
 
