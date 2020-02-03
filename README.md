@@ -66,8 +66,22 @@ merged ontology
 
 ## Todos
 
-- Create ontologies for your dataset
-- Find join points in different ontologies
-- rdf ids 
-- Check Viet Nam vs Stackoverflow
+- [x] web app for presentation
+- [x] presentation
+- [ ] finish app
+  - [ ] github data
+  - [ ] add 2 queries to app
+- [ ] test app locally
+- [ ] report
+  - [ ] datasets
+    - [ ] data source and format
+    - [ ] data read
+    - [ ] data harmonization
+  - [ ] ontology
+  - [ ] webapp installation
+  - [ ] fill the gaps
+  - [ ] final size of jena datafile (after import of ontology + all 4 datasets) -> need to create as persistent store
+- [ ] package scripts, webapp, report (and data?)
+- [ ] tuwel upload
+
 
