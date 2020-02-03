@@ -11,8 +11,8 @@
             let language = $('#language').val()
             let acceptHeader = 'application/sparql-results+json'
             let url = 'https://jena.helmuth.at/jobsta/query?query='
-            let qry_schema = 'PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX group1: <http://www.semanticweb.org/sws/ws2019/group1#>\nPREFIX schema: <http://schema.org/>\n';
-            let qry = `SELECT ?name ?programming_language\nWHERE {\n?lecture schema:name ?name .\n?lecture group1:dealsWith ?programming_language .\nFILTER (?programming_language = ${language})\n}\nLIMIT 25`
+            let qry_schema = '';
+            let qry = ``
             $.get(url+encodeURIComponent(qry_schema + qry)).then(function (result) {
             // const result = JSON.parse(`{
             //                           "head": {
@@ -64,7 +64,7 @@
       </div>
         <div class="row">
         <div class="col-12 text-center">
-          <h1 class="start-1 padding-05">Study</h1>
+          <h1 class="start-4 padding-05">Jobs</h1>
         </div>
         <div class="col-12 text-center query">
             As a student I want to learn language <select id="language"><option value="group1:Python">Python</option><option value="group1:R">R</option></select>.<br/> Which courses should I take?
