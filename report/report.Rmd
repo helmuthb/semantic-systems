@@ -139,6 +139,38 @@ Overall, 95576 repositories from GitHub have been created as output in CSV forma
 
 ## Data 4: TISS Lectures
 
+The data has been parsed from TISS and consists of lecture descriptions, lecturer information and occuring programming languages parsed from the lecture description.
+The entry point of the parse task is the list of available  curriculums\footnote{\url{https://tiss.tuwien.ac.at/curriculum/studyCodes.xhtml?locale=en}, last seen on 2020-02-10} which is not available as simple HTML file. The endpoint presents a HTML based \textit{shell} which loads the data from the backend via REST calls. To parse the information we used Python with Selenium to interact with the browser and extract the data.
+Parsing contains of lookups - for HTML tags with specific class names and content - and clicks - navigate to the interesting content - to extract the required information.
+Finally, each linked lecture in the data science curriculum is clicked, loaded and parsed to get the information.
+The extracted information is directly exported into Turtle format via (RDFLib\footnote{\url{https://github.com/RDFLib/rdflib}, last seen on 2020-01-10}) and written to disk (file: tuwel-data-science.ttl).
+This output was directly imported into Apache Jena/Fuseki server via the provided web interface.
+
+Two example lectures extracted and exported into TTL format:
+
+```
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=188399&semester=2019W> a ns2:TU-Lecture ;
+    ns1:name "Introduction to Semantic Systems" ;
+    ns2:courseId "188.399" ;
+    ns2:description "2019W, VU, 2.0h, 3.0EC" ;
+    ns2:ects 3.0 ;
+    ns2:instructor ns2:Ekaputra_Fajar_Juang,
+        ns2:Kiesling_Elmar,
+        ns2:Sabou_Reka_Marta,
+        ns2:Tjoa_A_Min .
+        
+<https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=188995&semester=2019W> a ns2:TU-Lecture ;
+    ns1:name "Data-oriented Programming Paradigms" ;
+    ns2:courseId "188.995" ;
+    ns2:dealsWith ns2:Python ;
+    ns2:description "2019W, VU, 2.0h, 3.0EC" ;
+    ns2:ects 3.0 ;
+    ns2:instructor ns2:Böck_Sebastian,
+        ns2:Hanbury_Allan,
+        ns2:Kiesling_Elmar,
+        ns2:Piroi_Florina_Mihaela .
+```
+
 # Task 3: Ontology
 
 ```{r ontology, fig.cap="Ontology Diagram", out.width="100%"}

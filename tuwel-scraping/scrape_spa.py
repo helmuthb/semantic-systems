@@ -273,7 +273,7 @@ if __name__ == "__main__":
             if counter < 0:
                 break
         # print(SpaScraper.graph.serialize(format='turtle'))
-        SpaScraper.graph.serialize(destination='full-sample.ttl', format='turtle')
+        SpaScraper.graph.serialize(destination='tuwel-data-science.ttl', format='turtle')
 
     except Exception as e:
         print(e)
