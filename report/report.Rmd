@@ -145,6 +145,30 @@ Overall, 95576 repositories from GitHub have been created as output in CSV forma
 knitr::include_graphics('../presentation/ontology_new.png')
 ```
 
+When designing the ontology we were looking at reusing existing vocabulary as much as possible.
+
+We are using the following existing classes:
+
+* `schema:Enumeration`: Our enumerations (e.g. `Gender`, `AgeRange`, or `SalaryRange`)
+are subclasses of `schema:Enumeration`.
+* `schema:gender`: The (functional) attribute specifying the gender of a person is
+taken the `schema` vocabulatory.
+* `schema:homeLocation`: The (functional) attribute specifying the home country of a
+person is taken from the `schema` vocabulatory.
+* `schema:instructor`: The (functional) attribute specifying the lecturer of a lecture
+is taken from the `schema` vocabulatory.
+* `schema:name`: The data property specifying the name of an instance is taken from
+the `schema` vocabulatory.
+* `dbpedia:Country`: Countries are matched with corresponding countries from `dbpedia`.
+* `schema:ComputerLanguage`: For the programming languages we use entities of `schema:ComputerLanguage`.
+* `schema:Course`: The class `TU-Lecture`, representing a lecture at TU Wien, is modelled as a subclass
+of `schema:Course`.
+* `schema:Person`: The two types of person we deal with, `Developer` and `Lecturer`, are modelled
+as subclasses of `schema:Person`.
+* `schema:Role`: The developer and data scientiest roles are modelled as subclasses of `schema:Role`.
+
+We have specified attributes like inverse, functional or range and domain for all relations.
+
 The ontology developed is depicted in Figure \ref{fig:ontology}.
 
 # Task 4: Knowledge Graph
@@ -265,3 +289,12 @@ GROUP BY ?country ?average
 
 We used `jquery` when implementing the app.
 The app is interacting with Apache Jena using SOH - _SPARQL over HTTP_.
+
+To avoid dealing with _CORS_ (Cross-Origin Resource Sharing) issues,
+we have deployed the app in the same server as Apache Jena.
+It is accessible at https://jena.helmuth.at/app. For security reasons we have
+added username and password protection. Please use the following credentials
+to access the app (https://jena.helmuth.at/app) or the Jena Server (https://jena.helmuth.at/):
+
+* **Username:** `group1`
+* **Password:** `gurus2020`
