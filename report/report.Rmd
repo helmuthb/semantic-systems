@@ -145,9 +145,7 @@ Overall, 95576 repositories from GitHub have been created as output in CSV forma
 knitr::include_graphics('../presentation/ontology_new.png')
 ```
 
-When designing the ontology we were looking at reusing existing vocabulary as much as possible.
-
-We are using the following existing classes:
+When designing the ontology we were reusing existing vocabulary as much as possible.
 
 * `schema:Enumeration`: Our enumerations (e.g. `Gender`, `AgeRange`, or `SalaryRange`)
 are subclasses of `schema:Enumeration`.
@@ -181,8 +179,8 @@ The ontology developed is depicted in Figure \ref{fig:ontology}.
 
 The CSV file created from the data gathering and compilation, as described
 in the Task 2 description,
-is then processed using a Python script to create a Turtle RDF file. Here is just the
-representation of the first two repositories:
+is processed using a Python script called `RDFize.py` to create a Turtle RDF file.
+Below the RDF Turtle representation of two repositories:
 
 ```
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
@@ -203,10 +201,10 @@ representation of the first two repositories:
     group1:popularity "5715"^^xsd:integer .
 ```
 
-The most tedious task of the cleanup is to make the programming languages of
+The most tedious task of the cleanup was to make the programming languages of
 GitHub match with them from the other data sources.
-E.g. in GitHub it is written `C++`, while in the other data sources this language
-is referred to `Cplusplus`.
+E.g. what in GitHub is written as `C++` appears in the other data sources
+as `Cplusplus`.
 
 ## TISS Lectures
 
@@ -214,6 +212,16 @@ is referred to `Cplusplus`.
 
 For storing the data we were using [Jena](https://jena.apache.org).
 We have installed an instance on the Internet for easier collaboration and app deployment.
+
+The upload to Apache Jena was performed using the web interface, which
+turned out to be easy.
+Biggest problem here was error reporting. Apache Jena is not very verbose
+in reporting errors on the UI, even though a helpful error message could often be
+found in the logfiles.
+
+## Construct Queries for Enrichment
+
+
 
 # Task 6: SPARQL Queries
 
