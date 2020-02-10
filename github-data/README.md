@@ -22,7 +22,7 @@ This script is called `transform.R`.
 
 Only original repositories (not forked ones)
 were taken into account, and only those which have
-been forked more than 50 times (as a measure of _importance_)
+been forked more than 50 times (as a measure of _popularity_)
 were looked at.
 
 Similarly the issues per repository were counted.
