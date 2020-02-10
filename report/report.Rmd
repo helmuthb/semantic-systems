@@ -19,7 +19,7 @@ knitr::opts_chunk$set(echo = FALSE)
 
 # Task 1: Project Idea
 
-```{r, fig.cap='Mockup of Mobile Start Screen', fig.align="center", out.height="40%"}
+```{r, app.mockup, fig.cap='Mockup of Mobile Start Screen', fig.align="center", out.height="40%"}
 knitr::include_graphics('../presentation/mockup-mobile.png')
 ```
 
@@ -38,7 +38,7 @@ Specifically we want it to be able to answer the following questions:
   my country, or shall I consider relocating, and where shall I relocate to?
 * I can develop in _(programming language)_. Which repository is a good starting
   point to practise?
-* I am looking for learning more about _(programming language)_. Which lectures
+* I want to learn more about _(programming language)_. Which lectures
   at TU Wien deal with this programming language?
 
 The app displays the four core questions as four tiles.
@@ -46,6 +46,7 @@ When selecting a tile, the user is asked for details, like their knowledge, loca
 or their desired income level.
 Then the app will submit these details and provide the answer to the question.
 
+Figure \ref{fig:app.mockup} shows a mockup of the start screen of the mobile app.
 
 # Task 2: Data Collection
 
@@ -192,7 +193,35 @@ We have installed an instance on the Internet for easier collaboration and app d
 
 # Task 6: SPARQL Queries
 
+These are just two sample SPARQL queries we have been developing.
+
+### Query 1: Which TU lectures deal with a specific programming language?
+
 ```
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX group1: <http://www.semanticweb.org/sws/ws2019/group1#>
+PREFIX schema: <http://schema.org/>
+
+SELECT ?name ?programming_language
+WHERE {
+  ?lecture schema:name ?name .
+  ?lecture group1:dealsWith ?programming_language .
+  FILTER (?programming_language = ${language})
+}
+LIMIT 25
+```
+
+### Query 2: With my income wish, role and programming language skills - shall I stay or shall I go?
+
+```
+PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX group1:<http://www.semanticweb.org/sws/ws2019/group1#>
+PREFIX schema:<http://schema.org/>
+PREFIX dbpedia:<http://dbpedia.org/resource/>
+PREFIX rdfs:<http://www.w3.org/2000/01/rdf-schema#>
+PREFIX sc:<http://purl.org/science/owl/sciencecommons/>
+PREFIX xsd:<http://www.w3.org/2001/XMLSchema#>
+
 ASK
 WHERE {
   ?developer a group1:Developer .
@@ -200,11 +229,39 @@ WHERE {
   ?developer group1:developsIn ?language .
   ?developer group1:hasRole ?role .
   {
+    SELECT ?country (AVG(?avgRange) as ?averageK)
+    WHERE {
+        ?developer a group1:Developer .
+        ?developer group1:hasRole ?role .
+        ?developer schema:homeLocation ?country .
+        ?developer group1:developsIn ?language .
+      ?developer group1:hasSalaryRange ?salaryRange .
+      ?salaryRange group1:minSalary ?minSalary .
+      ?salaryRange group1:maxSalary ?maxSalary.
+      BIND ((?minSalary + ?maxSalary)/2 AS ?avgRange)
+    }
+    GROUP BY ?country
   }
+  {
+    SELECT ?country (AVG(?salaryValue) as ?averageS)
+    WHERE {
+      ?developer a group1:Developer .
+      ?developer group1:hasRole ?role .
+      ?developer schema:homeLocation ?country .
+      ?developer group1:developsIn ?language .
+      ?developer group1:salary ?salaryValue .
+    }
+    GROUP BY ?country
+  }
+  BIND ((?averageK + ?averageS)/2 as ?average)
+  FILTER (?language = ${language} && ?country = ${country} &&
+          ?average > "${salary}"^^xsd:integer && ?role = ${role})
 }
+GROUP BY ?country ?average
 ```
+
 
 # Task 7: App Implementation
 
 We used `jquery` when implementing the app.
-The app is interacting with Apache Jena using SOH - _SPARSQL over HTTP_.
+The app is interacting with Apache Jena using SOH - _SPARQL over HTTP_.
