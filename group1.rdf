@@ -319,13 +319,19 @@
 
     <!-- http://dbpedia.org/resource/Country -->
 
-    <owl:Class rdf:about="http://dbpedia.org/resource/Country"/>
+    <owl:Class rdf:about="http://dbpedia.org/resource/Country">
+        <rdfs:comment>This represents the country a programmer lives in</rdfs:comment>
+        <rdfs:label>Country programmer lives in</rdfs:label>
+    </owl:Class>
     
 
 
     <!-- http://schema.org/ComputerLanguage -->
 
-    <owl:Class rdf:about="http://schema.org/ComputerLanguage"/>
+    <owl:Class rdf:about="http://schema.org/ComputerLanguage">
+        <rdfs:comment>This represents a computer (programming) language a programmer deals with, a Github repository is implemented in or a TU Vienna lecture teaches its students.</rdfs:comment>
+        <rdfs:label>Computer (Programming) language</rdfs:label>
+    </owl:Class>
     
 
 
@@ -349,7 +355,10 @@
 
     <!-- http://schema.org/Role -->
 
-    <owl:Class rdf:about="http://schema.org/Role"/>
+    <owl:Class rdf:about="http://schema.org/Role">
+        <rdfs:comment>Role of developer</rdfs:comment>
+        <rdfs:label>Developer role</rdfs:label>
+    </owl:Class>
     
 
 
@@ -357,6 +366,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/sws/ws2019/group1#AgeRange">
         <rdfs:subClassOf rdf:resource="http://schema.org/Enumeration"/>
+        <rdfs:comment>A programmer that has a specific age range assigned is between the minimum and maximum age of the age range years old</rdfs:comment>
+        <rdfs:label>Age range of programmer</rdfs:label>
     </owl:Class>
     
 
@@ -365,6 +376,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Developer">
         <rdfs:subClassOf rdf:resource="http://schema.org/Person"/>
+        <rdfs:comment>A person who took part in the Kaggle survey or the StackOverflow survey</rdfs:comment>
+        <rdfs:label>Developer/Programmer</rdfs:label>
     </owl:Class>
     
 
@@ -381,13 +394,18 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Gender">
         <rdfs:subClassOf rdf:resource="http://schema.org/Enumeration"/>
+        <rdfs:comment>Either male, female or other</rdfs:comment>
+        <rdfs:label>Gender of programmer</rdfs:label>
     </owl:Class>
     
 
 
     <!-- http://www.semanticweb.org/sws/ws2019/group1#GitHubRepository -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/sws/ws2019/group1#GitHubRepository"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/sws/ws2019/group1#GitHubRepository">
+        <rdfs:comment>This represents a repository in GitHub</rdfs:comment>
+        <rdfs:label>GitHub Repository</rdfs:label>
+    </owl:Class>
     
 
 
@@ -395,6 +413,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Lecturer">
         <rdfs:subClassOf rdf:resource="http://schema.org/Person"/>
+        <rdfs:comment>A person who teaches in a specific lecture</rdfs:comment>
+        <rdfs:label>TU Vienna Lecturer</rdfs:label>
     </owl:Class>
     
 
@@ -411,6 +431,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/sws/ws2019/group1#TU-Lecture">
         <rdfs:subClassOf rdf:resource="http://schema.org/Course"/>
+        <rdfs:comment>This represents a lecture the technical univerity of vienna offers in the Data Science curriculum</rdfs:comment>
+        <rdfs:label>TU Vienna lecture</rdfs:label>
     </owl:Class>
     
 
@@ -424,7 +446,6 @@
      -->
 
     
-
 
 
     <!-- http://www.semanticweb.org/sws/ws2019/group1#Assembly -->
@@ -447,6 +468,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Business_Analyst">
         <rdf:type rdf:resource="http://schema.org/Role"/>
+        <rdfs:label>Business Analyst</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -495,6 +517,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Cplusplus">
         <rdf:type rdf:resource="http://schema.org/ComputerLanguage"/>
+        <rdfs:label>C++</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -503,6 +526,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Csharp">
         <rdf:type rdf:resource="http://schema.org/ComputerLanguage"/>
+        <rdfs:label>C#</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -511,6 +535,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#DBA_or_Database_Engineer">
         <rdf:type rdf:resource="http://schema.org/Role"/>
+        <rdfs:label>DBA or Database Engineer</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -519,6 +544,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Data_Analyst">
         <rdf:type rdf:resource="http://schema.org/Role"/>
+        <rdfs:label>Data Analyst</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -527,6 +553,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Data_Engineer">
         <rdf:type rdf:resource="http://schema.org/Role"/>
+        <rdfs:label>Data Engineer</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -535,6 +562,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Data_Scientist">
         <rdf:type rdf:resource="http://schema.org/Role"/>
+        <rdfs:label>Data Scientist</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -543,6 +571,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Data_or_business_analyst">
         <rdf:type rdf:resource="http://schema.org/Role"/>
+        <rdfs:label>Data or business analyst</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -551,6 +580,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Delphi_ObjectPascal">
         <rdf:type rdf:resource="http://schema.org/ComputerLanguage"/>
+        <rdfs:label>Delphi Object Pascal</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -584,6 +614,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Fsharp">
         <rdf:type rdf:resource="http://schema.org/ComputerLanguage"/>
+        <rdfs:label>F#</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -689,6 +720,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Marketing_or_sales_professional">
         <rdf:type rdf:resource="http://schema.org/Role"/>
+        <rdfs:label>Marketing or sales professional</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -753,6 +785,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Research_Scientist">
         <rdf:type rdf:resource="http://schema.org/Role"/>
+        <rdfs:label>Research Scientist</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -793,6 +826,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Senior_Developer">
         <rdf:type rdf:resource="http://schema.org/Role"/>
+        <rdfs:label>Senior Developer</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -801,6 +835,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Software_Engineer">
         <rdf:type rdf:resource="http://schema.org/Role"/>
+        <rdfs:label>Software Engineer</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -833,6 +868,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#System_administrator">
         <rdf:type rdf:resource="http://schema.org/Role"/>
+        <rdfs:label>System administrator</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -865,6 +901,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Visual_Basic_6">
         <rdf:type rdf:resource="http://schema.org/ComputerLanguage"/>
+        <rdfs:label>Visual Basic 6</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -875,6 +912,8 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/sws/ws2019/group1#SalaryRange"/>
         <maxSalary rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">999</maxSalary>
         <minSalary rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</minSalary>
+        <rdfs:comment>A salary of 0 to 999 USD per year</rdfs:comment>
+        <rdfs:label>0-999</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -884,6 +923,8 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#%3E_%24500%2C000">
         <rdf:type rdf:resource="http://www.semanticweb.org/sws/ws2019/group1#SalaryRange"/>
         <minSalary rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">500000</minSalary>
+        <rdfs:comment>A salary of 50.000 USD per year</rdfs:comment>
+        <rdfs:label>&gt;=50.000</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -894,6 +935,8 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/sws/ws2019/group1#SalaryRange"/>
         <maxSalary rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1999</maxSalary>
         <minSalary rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1000</minSalary>
+        <rdfs:comment>A salary of 1.000 to 1.999 USD per year</rdfs:comment>
+        <rdfs:label>1.000-1.999</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -904,6 +947,8 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/sws/ws2019/group1#SalaryRange"/>
         <maxSalary rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14999</maxSalary>
         <minSalary rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10000</minSalary>
+        <rdfs:comment>A salary of 10.000 to 14.999 USD per year</rdfs:comment>
+        <rdfs:label>10.000-14.999</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -914,6 +959,8 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/sws/ws2019/group1#SalaryRange"/>
         <maxSalary rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">124999</maxSalary>
         <minSalary rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">100000</minSalary>
+        <rdfs:comment>A salary of 100.000 to 124.999 USD per year</rdfs:comment>
+        <rdfs:label>100.000-124.999</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -924,6 +971,8 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/sws/ws2019/group1#SalaryRange"/>
         <maxSalary rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">149999</maxSalary>
         <minSalary rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">125000</minSalary>
+        <rdfs:comment>A salary of 125.000 to 149.999 USD per year</rdfs:comment>
+        <rdfs:label>125.000-149.999</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -934,6 +983,8 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/sws/ws2019/group1#SalaryRange"/>
         <maxSalary rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">19999</maxSalary>
         <minSalary rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15000</minSalary>
+        <rdfs:comment>A salary of 15.000 to 19.000 USD per year</rdfs:comment>
+        <rdfs:label>15.000-19.000</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -944,6 +995,8 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/sws/ws2019/group1#SalaryRange"/>
         <maxSalary rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">199999</maxSalary>
         <minSalary rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">150000</minSalary>
+        <rdfs:comment>A salary of 150.000 to 199.999 USD per year</rdfs:comment>
+        <rdfs:label>150.000-199.999</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -954,6 +1007,8 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/sws/ws2019/group1#AgeRange"/>
         <maxAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">24</maxAge>
         <minAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">18</minAge>
+        <rdfs:comment>Age between 18 and 24 years</rdfs:comment>
+        <rdfs:label>18-24</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -964,6 +1019,8 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/sws/ws2019/group1#AgeRange"/>
         <maxAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">21</maxAge>
         <minAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">18</minAge>
+        <rdfs:comment>Age between 18 and 21 years</rdfs:comment>
+        <rdfs:label>18-21</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -974,6 +1031,8 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/sws/ws2019/group1#SalaryRange"/>
         <maxSalary rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2999</maxSalary>
         <minSalary rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2000</minSalary>
+        <rdfs:comment>A salary of 2.000 to 2.999 USD per year</rdfs:comment>
+        <rdfs:label>2.000-2.999</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -984,6 +1043,8 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/sws/ws2019/group1#SalaryRange"/>
         <maxSalary rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">24999</maxSalary>
         <minSalary rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20000</minSalary>
+        <rdfs:comment>A salary of 20.000 to 24.999 USD per year</rdfs:comment>
+        <rdfs:label>20.000-24.999</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -994,6 +1055,8 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/sws/ws2019/group1#SalaryRange"/>
         <maxSalary rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">249999</maxSalary>
         <minSalary rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">200000</minSalary>
+        <rdfs:comment>A salary of 200.000 to 249.999 USD per year</rdfs:comment>
+        <rdfs:label>200.000-249.999</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1004,6 +1067,8 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/sws/ws2019/group1#AgeRange"/>
         <maxAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">24</maxAge>
         <minAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">22</minAge>
+        <rdfs:comment>Age between 22 and 24 years</rdfs:comment>
+        <rdfs:label>22-24</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1014,6 +1079,8 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/sws/ws2019/group1#AgeRange"/>
         <maxAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">34</maxAge>
         <minAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">25</minAge>
+        <rdfs:comment>Age between 25 and 34 years</rdfs:comment>
+        <rdfs:label>25-34</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1024,6 +1091,8 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/sws/ws2019/group1#SalaryRange"/>
         <maxSalary rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">29999</maxSalary>
         <minSalary rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">25000</minSalary>
+        <rdfs:comment>A salary of 25.000 to 29.999 USD per year</rdfs:comment>
+        <rdfs:label>25.000-29.999</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1034,6 +1103,8 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/sws/ws2019/group1#AgeRange"/>
         <maxAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">29</maxAge>
         <minAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">25</minAge>
+        <rdfs:comment>Age between 25 and 29 years</rdfs:comment>
+        <rdfs:label>25-29</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1044,6 +1115,8 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/sws/ws2019/group1#AgeRange"/>
         <maxAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">35</maxAge>
         <minAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">25</minAge>
+        <rdfs:comment>Age between 25 and 35 years</rdfs:comment>
+        <rdfs:label>25-35</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1054,6 +1127,8 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/sws/ws2019/group1#SalaryRange"/>
         <maxSalary rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">299999</maxSalary>
         <minSalary rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">250000</minSalary>
+        <rdfs:comment>A salary of 250.000 to 299.999 USD per year</rdfs:comment>
+        <rdfs:label>250.000-299.999</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1064,6 +1139,8 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/sws/ws2019/group1#SalaryRange"/>
         <maxSalary rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3999</maxSalary>
         <minSalary rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3000</minSalary>
+        <rdfs:comment>A salary between 3.000 and 3.999 USD per year</rdfs:comment>
+        <rdfs:label>3.000-3.999</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1074,6 +1151,8 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/sws/ws2019/group1#SalaryRange"/>
         <maxSalary rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">39999</maxSalary>
         <minSalary rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">30000</minSalary>
+        <rdfs:comment>A salary between 30.000 and 39.999 USD per year</rdfs:comment>
+        <rdfs:label>30.000-39.999</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1084,6 +1163,8 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/sws/ws2019/group1#AgeRange"/>
         <maxAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">34</maxAge>
         <minAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">30</minAge>
+        <rdfs:comment>Age between 30 and 34 years</rdfs:comment>
+        <rdfs:label>30-34</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1094,6 +1175,8 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/sws/ws2019/group1#SalaryRange"/>
         <maxSalary rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">500000</maxSalary>
         <minSalary rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">300000</minSalary>
+        <rdfs:comment>A salary between 300.000 and 500.000 USD per year</rdfs:comment>
+        <rdfs:label>300.000-500.000</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1104,6 +1187,8 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/sws/ws2019/group1#AgeRange"/>
         <maxAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">44</maxAge>
         <minAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">35</minAge>
+        <rdfs:comment>Age between 35 and 44 years</rdfs:comment>
+        <rdfs:label>35-44</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1114,6 +1199,8 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/sws/ws2019/group1#AgeRange"/>
         <maxAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">39</maxAge>
         <minAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">35</minAge>
+        <rdfs:comment>Age between 35 and 39 yers</rdfs:comment>
+        <rdfs:label>35-39</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1124,6 +1211,8 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/sws/ws2019/group1#SalaryRange"/>
         <maxSalary rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4999</maxSalary>
         <minSalary rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4000</minSalary>
+        <rdfs:comment>A salary between 4.000 and 4.999 USD per year</rdfs:comment>
+        <rdfs:label>4.000-4.999</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1134,6 +1223,8 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/sws/ws2019/group1#SalaryRange"/>
         <maxSalary rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">49999</maxSalary>
         <minSalary rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">40000</minSalary>
+        <rdfs:comment>A salary between 40.000 and 49.999 USD per year</rdfs:comment>
+        <rdfs:label>40.000-49.999</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1144,6 +1235,8 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/sws/ws2019/group1#AgeRange"/>
         <maxAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">44</maxAge>
         <minAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">40</minAge>
+        <rdfs:comment>Age between 40 and 44 years</rdfs:comment>
+        <rdfs:label>40-44</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1154,6 +1247,8 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/sws/ws2019/group1#AgeRange"/>
         <maxAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">54</maxAge>
         <minAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">45</minAge>
+        <rdfs:comment>Age between 45 and 54 years</rdfs:comment>
+        <rdfs:label>45-54</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1164,6 +1259,8 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/sws/ws2019/group1#AgeRange"/>
         <maxAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">49</maxAge>
         <minAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">45</minAge>
+        <rdfs:comment>Age between 45 and 49 years</rdfs:comment>
+        <rdfs:label>45-49</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1174,6 +1271,8 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/sws/ws2019/group1#SalaryRange"/>
         <maxSalary rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7499</maxSalary>
         <minSalary rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5000</minSalary>
+        <rdfs:comment>A salary between 5.000 and 7.999 USD per year</rdfs:comment>
+        <rdfs:label>5.000-7.999</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1184,6 +1283,8 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/sws/ws2019/group1#SalaryRange"/>
         <maxSalary rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">59999</maxSalary>
         <minSalary rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">50000</minSalary>
+        <rdfs:comment>A salary between 50.000 and 59.999 USD per year</rdfs:comment>
+        <rdfs:label>50.000-59.999</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1194,6 +1295,8 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/sws/ws2019/group1#AgeRange"/>
         <maxAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">54</maxAge>
         <minAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">59</minAge>
+        <rdfs:comment>Age between 50 and 54 years</rdfs:comment>
+        <rdfs:label>50-54</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1204,6 +1307,8 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/sws/ws2019/group1#AgeRange"/>
         <maxAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">64</maxAge>
         <minAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">55</minAge>
+        <rdfs:comment>Age between 55 and 64 years</rdfs:comment>
+        <rdfs:label>55-64</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1214,6 +1319,8 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/sws/ws2019/group1#AgeRange"/>
         <maxAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">59</maxAge>
         <minAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">55</minAge>
+        <rdfs:comment>Age between 55 and 59 years</rdfs:comment>
+        <rdfs:label>55-59</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1224,6 +1331,8 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/sws/ws2019/group1#SalaryRange"/>
         <maxSalary rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">69999</maxSalary>
         <minSalary rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">60000</minSalary>
+        <rdfs:comment>A salary between 60.000 and 69.999 USD per year</rdfs:comment>
+        <rdfs:label>60.000-69.999</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1234,6 +1343,8 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/sws/ws2019/group1#AgeRange"/>
         <maxAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">69</maxAge>
         <minAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">60</minAge>
+        <rdfs:comment>Age between 60 and 69 years</rdfs:comment>
+        <rdfs:label>60-69</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1243,6 +1354,8 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#65%20years%20or%20older">
         <rdf:type rdf:resource="http://www.semanticweb.org/sws/ws2019/group1#AgeRange"/>
         <minAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">65</minAge>
+        <rdfs:comment>Age of 65 years or older</rdfs:comment>
+        <rdfs:label>65 years or older</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1253,6 +1366,8 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/sws/ws2019/group1#SalaryRange"/>
         <maxSalary rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9999</maxSalary>
         <minSalary rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7500</minSalary>
+        <rdfs:comment>A salary between 7.500 and 9.999 USD per year</rdfs:comment>
+        <rdfs:label>7.500-9.999</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1263,6 +1378,8 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/sws/ws2019/group1#SalaryRange"/>
         <maxSalary rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">79999</maxSalary>
         <minSalary rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">70000</minSalary>
+        <rdfs:comment>A salary between 70.000 and 79.999 USD per year</rdfs:comment>
+        <rdfs:label>70.000-79.999</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1272,6 +1389,8 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#70-">
         <rdf:type rdf:resource="http://www.semanticweb.org/sws/ws2019/group1#AgeRange"/>
         <minAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">70</minAge>
+        <rdfs:comment>Age of 70 years or older</rdfs:comment>
+        <rdfs:label>70 years or older</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1282,6 +1401,8 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/sws/ws2019/group1#SalaryRange"/>
         <maxSalary rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">89999</maxSalary>
         <minSalary rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">80000</minSalary>
+        <rdfs:comment>A salary between 80.000 and 89.999 USD per year</rdfs:comment>
+        <rdfs:label>80.000-89.999</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1292,6 +1413,8 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/sws/ws2019/group1#SalaryRange"/>
         <maxSalary rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">99999</maxSalary>
         <minSalary rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">90000</minSalary>
+        <rdfs:comment>A salary between 90.000 and 99.999 USD per year</rdfs:comment>
+        <rdfs:label>90.000-99.999</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1302,6 +1425,8 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/sws/ws2019/group1#AgeRange"/>
         <maxAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">17</maxAge>
         <minAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</minAge>
+        <rdfs:comment>Age of 18 years or younger</rdfs:comment>
+        <rdfs:label>Under 18 years old</rdfs:label>
     </owl:NamedIndividual>
 </rdf:RDF>
 
