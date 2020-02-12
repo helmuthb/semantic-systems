@@ -426,17 +426,6 @@
     
 
 
-    <!-- http://www.semanticweb.org/sws/ws2019/group1#ARAC -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#ARAC">
-        <rdf:type rdf:resource="http://www.semanticweb.org/sws/ws2019/group1#TU-Lecture"/>
-        <dealsWith rdf:resource="http://www.semanticweb.org/sws/ws2019/group1#Python"/>
-        <schema:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Advanced Super-Duper</schema:name>
-        <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ARAC is the new version of ARAC, this time dealing with Python instead of R.</description>
-        <ects rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</ects>
-    </owl:NamedIndividual>
-    
-
 
     <!-- http://www.semanticweb.org/sws/ws2019/group1#Assembly -->
 
@@ -671,20 +660,6 @@
     
 
 
-    <!-- http://www.semanticweb.org/sws/ws2019/group1#Laszlo_Kiraly -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Laszlo_Kiraly">
-        <rdf:type rdf:resource="http://www.semanticweb.org/sws/ws2019/group1#Developer"/>
-        <schema:gender rdf:resource="http://www.semanticweb.org/sws/ws2019/group1#Male"/>
-        <developsIn rdf:resource="http://www.semanticweb.org/sws/ws2019/group1#Python"/>
-        <hasAgeRange rdf:resource="http://www.semanticweb.org/sws/ws2019/group1#25-35"/>
-        <hasRole rdf:resource="http://www.semanticweb.org/sws/ws2019/group1#Senior_Developer"/>
-        <hasSalaryRange rdf:resource="http://www.semanticweb.org/sws/ws2019/group1#30%2C000-39%2C999"/>
-        <salary rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">100000</salary>
-    </owl:NamedIndividual>
-    
-
-
     <!-- http://www.semanticweb.org/sws/ws2019/group1#Lua -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Lua">
@@ -754,15 +729,6 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Perl">
         <rdf:type rdf:resource="http://schema.org/ComputerLanguage"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/sws/ws2019/group1#Peter_Filzmoser -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Peter_Filzmoser">
-        <rdf:type rdf:resource="http://www.semanticweb.org/sws/ws2019/group1#Lecturer"/>
-        <schema:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Peter Filzmoser</schema:name>
     </owl:NamedIndividual>
     
 
@@ -851,17 +817,6 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Student">
         <rdf:type rdf:resource="http://schema.org/Role"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/sws/ws2019/group1#Super-Repository -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sws/ws2019/group1#Super-Repository">
-        <rdf:type rdf:resource="http://www.semanticweb.org/sws/ws2019/group1#GitHubRepository"/>
-        <schema:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Super Repository</schema:name>
-        <issues rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">100</issues>
-        <popularity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">200</popularity>
     </owl:NamedIndividual>
     
 
