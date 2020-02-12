@@ -65,6 +65,12 @@ We have been decided on the following four data sources:
 
 ## Data 2: StackOverflow User Survey
 
+The survey results can be downloaded from https://insights.stackoverflow.com/survey/2018. The survey result consist of multiple rows representing a single survey instance of a specific user and columns representing each question of the survey and answer of the user. The original StackOverflow user survey results consists of a CSV file with over 90.000 entries and over 40 columns. Obviously, there were lots of data we didn't need for our application use case, therefore we removed unused columns such as "Do you program as a hobby?". Also, for the sake of simplicity and efficiency we stripped the 90.000+ entries down to around 700, which we decided to do because for the assignment it makes no difference how many entries we have.
+
+As we had another similar developer survey (Kaggle), we had to harmonize these data. For instance, we had the developer role "Software Engineer" in Kaggle and "Front-end developer" in StackOverflow. We decided to merge them to a single "Software Engineer" to have a simpler and better understandable ontology.
+
+Obtaining this dataset was as simple as going to the website and clicking download. It is available for free and easy to find and download.
+
 ## Data 3: GitHub Repositories Data
 
 To obtain the data we were considering two options:
@@ -179,6 +185,8 @@ The ontology developed is depicted in Figure \ref{fig:ontology}.
 ## Kaggle User Survey
 
 ## StackOverflow User Survey
+
+Every script used for the StackOverflow survey is located in `stackoverflow-survey-2018/individuals/scripts`. There is a `main.py` script that generates RDF files (in XML format) for e.g. country individuals, developer role individuals and age ranges. Which can easily be appended to the ontology file to have individuals defined in it. There is also a script `csv2ttl.py` that generates a Turtle file of the CSV file (filename: `stackoverflow_individuals.ttl`). It creates statements for each row in the results file. This ttl file can then be imported into the Apache Jena triple store.
 
 ## GitHub Repositories Data
 
