@@ -262,7 +262,9 @@ Biggest problem here was error reporting. Apache Jena is not very verbose
 in reporting errors on the UI, even though a helpful error message could often be
 found in the logfiles.
 
-## Construct Queries for Enrichment
+## Construct Queries
+
+### Internal Enrichment
 
 We created `CONSTRUCT` queries to enrich the
 knowledge graph with inverse relations to the ones created by the scripts.
@@ -293,6 +295,32 @@ INSERT {
 }
 WHERE {
   ?developer group1:hasAgeRange ?ageGroup
+}
+```
+
+## External Enrichment
+
+We were linking with `dbpedia` to get the name of the countries
+in English and German.
+
+```
+PREFIX dbpedia: <http://dbpedia.org/resource/>
+PREFIX schema: <http://schema.org/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+CONSTRUCT
+{ ?country rdfs:label ?countryName }
+WHERE {
+  { SELECT distinct ?country
+    WHERE {
+      ?developer schema:homeLocation ?country .
+    }
+  }
+  SERVICE <https://dbpedia.org/sparql> {
+    ?country rdfs:label ?countryName .
+    FILTER (lang(?countryName) = 'en' || lang(?countryName) = 'de')
+  }
+
 }
 ```
 
