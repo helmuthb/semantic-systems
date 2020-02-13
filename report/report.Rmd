@@ -144,6 +144,35 @@ id,url,description,language,forks,issues
 
 Overall, 95576 repositories from GitHub have been created as output in CSV format.
 
+### Github Graphql Example Query
+
+Documentation of the alternative way to get data from github, via sample query
+
+**Top 10 Starred Repositories**
+
+https://developer.github.com/v4/explorer
+```graphql
+query{
+  search(type: REPOSITORY, query: "language:python", first:10) {
+    userCount
+    edges {
+      node {
+        ... on Repository {
+          name
+          url
+          stargazers {
+            totalCount
+          }
+          owner{
+            login
+          }
+        }
+      }
+    }
+  }
+}
+```
+
 ## Data 4: TISS Lectures
 
 The data has been parsed from TISS and consists of lecture descriptions, lecturer information and occuring programming languages parsed from the lecture description.
