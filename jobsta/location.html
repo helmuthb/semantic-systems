@@ -92,6 +92,7 @@ LIMIT 25`;
       $(getLanguages);
       // Ask whether I should leave....
       async function askShallStay() {
+          $('#Answer').html('Searching ...');
           let role = $('#role').val();
           let country = $('#country').val();
           let language = $('#language').val();
@@ -106,10 +107,10 @@ WHERE {
   {
     SELECT ?country (AVG(?avgRange) as ?averageK)
     WHERE {
-        ?developer a group1:Developer .
-        ?developer group1:hasRole ?role .
-        ?developer schema:homeLocation ?country .
-        ?developer group1:developsIn ?language .
+      ?developer a group1:Developer .
+      ?developer group1:hasRole ?role .
+      ?developer schema:homeLocation ?country .
+      ?developer group1:developsIn ?language .
       ?developer group1:hasSalaryRange ?salaryRange .
       ?salaryRange group1:minSalary ?minSalary .
       ?salaryRange group1:maxSalary ?maxSalary.
@@ -132,12 +133,63 @@ WHERE {
   FILTER (?language = ${language} && ?country = ${country} && ?average > "${salary}"^^xsd:integer && ?role = ${role})
 }
 GROUP BY ?country ?average`;
+            // second query: where should I go to?
+            let qryWhere = `
+SELECT ?name
+WHERE {
+  ?developer a group1:Developer .
+  ?developer schema:homeLocation ?country .
+  ?developer group1:developsIn ?language .
+  ?developer group1:hasRole ?role .
+  {
+    SELECT ?country (AVG(?avgRange) as ?averageK)
+    WHERE {
+      ?developer a group1:Developer .
+      ?developer group1:hasRole ?role .
+      ?developer schema:homeLocation ?country .
+      ?developer group1:developsIn ?language .
+      ?developer group1:hasSalaryRange ?salaryRange .
+      ?salaryRange group1:minSalary ?minSalary .
+      ?salaryRange group1:maxSalary ?maxSalary.
+      BIND ((?minSalary + ?maxSalary)/2 AS ?avgRange)
+    }
+    GROUP BY ?country
+  }
+  {
+    SELECT ?country (AVG(?salaryValue) as ?averageS)
+    WHERE {
+      ?developer a group1:Developer .
+      ?developer group1:hasRole ?role .
+      ?developer schema:homeLocation ?country .
+      ?developer group1:developsIn ?language .
+      ?developer group1:salary ?salaryValue .
+    }
+    GROUP BY ?country
+  }
+  ?country rdfs:label ?name .
+  BIND ((?averageK + ?averageS)/2 as ?average)
+  FILTER (?language = ${language} && ?average > "${salary}"^^xsd:integer 
+          && ?role = ${role} && lang(?name) = 'en')
+}
+GROUP BY ?country ?average ?name
+ORDER BY DESC(?average)
+LIMIT 1`;
             const result = await askSPARQL(qry);
-            console.log(result)
+            console.log(result);
             if (result) {
               $('#Answer').html("You should stay!");
-            } else {                
-              $('#Answer').html("You should go!");
+            } else {
+              // you should move - but where to?
+              const result2 = await selectSPARQL(qryWhere);
+              console.log(result2);
+              if (result2.length > 0) {
+                // We found a good country
+                let countryName = result2[0];
+                $('#Answer').html(`You should go! I suggest ${countryName} for a try.`);
+              }
+              else {
+                $('#Answer').html("Sorry to break the news - that's not realistic anywhere.");
+              }
             }
         }
     </script>
