@@ -66,11 +66,12 @@ GROUP BY ?language
 ORDER BY DESC(AVG(?averageK))
 LIMIT 25
 `;
-        const languages = selectSPARQL(query);
+        const languages = await selectSPARQL(query);
         if (languages.length > 0) {
           let output = '';
           languages.forEach(lang => {
-            output += `<div class="result-row"><div class="lecture">${lang}</div></div>`;
+            let lang_name = lang.split('#')[1];
+            output += `<div class="result-row"><div class="lecture">${lang_name}</div></div>`;
           });
           $('#Answer').html(output);
         }
