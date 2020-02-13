@@ -8,46 +8,46 @@
     <link rel="stylesheet" href="css/styles.css">
     <script src="js/sparql.js"></script>
     <script>
-        async function query() {
-            console.log('query clicked')
-            let language = $('#language').val()
-            let qry = `
-            `
-            $.get(url+encodeURIComponent(qry_schema + qry)).then(function (result) {
-            // const result = JSON.parse(`{
-            //                           "head": {
-            //                             "vars": [ "name" , "programming_language" ]
-            //                           } ,
-            //                           "results": {
-            //                             "bindings": [
-            //                               {
-            //                                 "name": { "type": "literal" , "value": "Advanced Methods for Regression and Classification" } ,
-            //                                 "programming_language": { "type": "uri" , "value": "http://www.semanticweb.org/sws/ws2019/group1#R" }
-            //                               } ,
-            //                               {
-            //                                 "name": { "type": "literal" , "value": "Statistical Computing" } ,
-            //                                 "programming_language": { "type": "uri" , "value": "http://www.semanticweb.org/sws/ws2019/group1#R" }
-            //                               } ,
-            //                               {
-            //                                 "name": { "type": "literal" , "value": "Machine Learning" } ,
-            //                                 "programming_language": { "type": "uri" , "value": "http://www.semanticweb.org/sws/ws2019/group1#R" }
-            //                               } ,
-            //                               {
-            //                                 "name": { "type": "literal" , "value": "Technology exploitation" } ,
-            //                                 "programming_language": { "type": "uri" , "value": "http://www.semanticweb.org/sws/ws2019/group1#R" }
-            //                               } 
-            //                               ] 
-            //                             } 
-            //                           }`)
-              if (result && result.results && result.results.bindings.length > 0) {
-                let output = '';
-                result.results.bindings.forEach(element => {
-                  output += `<div class="result-row"><div class="lecture">${element.name.value}</div><div class="language">${element.programming_language.value}</div></div>`
-                });
-                $('#Answer').html(output)
-              }
-            });
+      // get list of programming languages used in repos
+      async function getLanguages() {
+        let qry = `
+SELECT distinct ?language
+WHERE {
+  ?repository group1:isDevelopedIn ?language .
+}
+GROUP BY ?language
+ORDER BY DESC(COUNT(?repository))
+LIMIT 25`;
+        let languages = await selectSPARQL(qry);
+        let output = '';
+        languages.forEach(language => {
+          let lang_name = language.split('#')[1];
+          let lang_id = "group1:" + lang_name;
+          output += `<option value="${lang_id}">${lang_name}</value>\n`;
+        });$('#language').html(output);
+      }
+      $(getLanguages);
+      // get list of repositories for this language
+      async function getRepositories() {
+        let language = $('#language').val();
+        let qry = `
+SELECT ?name
+WHERE {
+  ?repository group1:isDevelopedIn ${language} .
+  ?repository group1:popularity ?popularity .
+  ?repository schema:name ?name .
+}
+ORDER BY DESC(?popularity)
+LIMIT 25`;
+        const repos = await selectSPARQL(qry);
+        if (repos.length > 0) {
+          let output = '';
+          repos.forEach(repo => {
+            output += `<div class="result-row"><div class="lecture">${repo}</div></div>`;
+          });
+          $('#Answer').html(output);
         }
+      }
     </script>
   </head>
   <body>
@@ -67,10 +67,15 @@
           <h1 class="start-4 padding-05">Jobs</h1>
         </div>
         <div class="col-12 text-center query">
-            As a student I want to learn language <select id="language"><option value="group1:Python">Python</option><option value="group1:R">R</option></select>.<br/> Which courses should I take?
+          I want to practise language
+          <select id="language" class="form-control">
+            <!-- will be filled out via SPARQL -->  
+          </select>
+          Which repositories I should look at, as they are most popular
+          and written in this language?
         </div>
         <div class="col-12 text-center">
-          <button class="btn-primary btn-my-primary margin-top1 query" onclick="query()">Query</button>
+          <button class="btn-primary btn-my-primary margin-top1 query" onclick="getRepositories()">Query</button>
         </div>
         <div class="col-12 text-center">
             <h1 class="margin-top1">Answer</h1>
