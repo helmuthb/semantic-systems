@@ -439,8 +439,12 @@ LIMIT 25
 
 # Task 7: App Implementation
 
-We used `jquery` when implementing the app.
-The app is interacting with Apache Jena using SOH - _SPARQL over HTTP_.
+The app is a simple mobile-friendly web-based application.
+We used [Bootstrap](https://getbootstrap.com/) for the styling,
+[jQuery](https://jquery.com/) for the DOM manipulation and
+`fetch` together with `async/await` for HTTP calls.
+
+The interaction with Apache Jena is using SOH - _SPARQL over HTTP_.
 
 To avoid dealing with _CORS_ (Cross-Origin Resource Sharing) issues,
 we have deployed the app in the same server as Apache Jena.
@@ -450,3 +454,14 @@ to access the app (https://jena.helmuth.at/app) or the Jena Server (https://jena
 
 * **Username:** `group1`
 * **Password:** `gurus2020`
+
+## Auxiliary Queries
+
+The dropdown select boxes receive their options through separate _SPARQL_ queries.
+
+When the list of possible countries is presented, the following logic is used:
+
+* show the 10 countries with the most developers
+* show all member states of the European Union
+
+For this, a federated search is used, using the attribute `dbpedia:Category:Member_states_of_the_European_Union` from dbpedia.
