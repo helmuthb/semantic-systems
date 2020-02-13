@@ -34,7 +34,7 @@ Specifically we want it to be able to answer the following questions:
 * **[Study]** As a student I want to learn language _(programming language)_. Which courses should I take?
 * **[Location]** As a _(profession)_ I live in _(country)_ and I can program in _(programming language)_ and I want at least _(amount)_. Should I stay our should I go?
 * **[Money]** As a student, I live in _(country)_. I want to learn a language which offers the most salary prospect in my country. Which languages shall I consider?
-* **[Jobs]** I want to practise language _(programming language)_. Which repositories should I look at, as they are most popular and written in this language?
+* **[Jobs]** I want to practice language _(programming language)_. Which repositories should I look at, as they are most popular and written in this language?
 
 
 The app displays the four core questions as four tiles.
@@ -57,7 +57,14 @@ We have the following four data sources:
 * **TISS Lectures** (Gerald Weber)$\hfill\break$
   Lectures, Lecturer, Description, Programming Language
 
-## Data 1: Kaggle User Survey
+## Data 1: Kaggle ML & DS Survey
+
+The Kaggle survey\footnote{Kaggle survey: \url{https://www.kaggle.com/c/kaggle-survey-2019}, last checked 2020-02-13} states from 2019 and contains almost 20,000 individual and anomymized responses to a set of multiple choice and free text questions.  
+Since Kaggle is a competition platform for challenging machine learning problems, it comes to no surprise that the survey itself was presented within a competition with a prize pool of $30,000 for the most original data stories about the survey.  
+The multiple choice answers were reflected in 245 columns, where some of the answers had one column, e.g. age (range), gender, country and income, whereas others were one hot encoded, e.g. progam languages.  
+We aligned this dataset with the StackOverflow dataset regarding gender, program languages, and job role. Income was depicted as ordinal ranges in Kaggle but as continous value in StackOverflow.
+
+The analysis of the metadata was done in `preprocess_kaggle.ipynb` _Part I - Analyse and Generate Metadata_.
 
 ## Data 2: StackOverflow User Survey
 
@@ -176,7 +183,16 @@ The ontology developed is depicted in Figure \ref{fig:ontology}.
 
 # Task 4: Knowledge Graph
 
-## Kaggle User Survey
+## Kaggle ML & DS Survey
+
+The semi-automatic generation of the schema data was done in `preprocess_kaggle.ipynb` _Part I - Analyse and Generate Metadata_.  
+In order to deal with white spaces in uri's we decided to convert blanks to underscores, other special characters have been url encoded.
+The job roles, program languages and genders have been mapped to aligned ontology as designed in `mappings.md`.  
+The income/salary was modeled as ordinal ranges.  
+The resulting RDF schema can be found within `group1.rdf`.  
+
+The jupyter notebook `preprocess_kaggle.ipynb` also contains the fully automatic generation of individuals to turtle n-quad format in _Part II - Generate Instances_.
+Some country names have been mapped to match dbpedia, e.g. _United States of America_ to _United States_.  
 
 ## StackOverflow User Survey
 
