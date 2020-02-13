@@ -70,21 +70,21 @@ merged ontology
 - [x] presentation
 - [ ] finish app
   - [x] github data
-  - [ ] add 2 queries to app
+  - [x] add 2 queries to app
 - [ ] test app locally
 - [ ] report
-  - [ ] datasets
-    - [ ] Kaggle: Data Collection (source and format, data read, harmonization)
-    - [ ] Kaggle: Convert to RDF
-    - [ ] StackOverflow: Data Collection (source and format, data read, harmonization)
-    - [ ] StackOverflow: Convert to RDF
+  - [x] datasets
+    - [x] Kaggle: Data Collection (source and format, data read, harmonization)
+    - [x] Kaggle: Convert to RDF
+    - [x] StackOverflow: Data Collection (source and format, data read, harmonization)
+    - [x] StackOverflow: Convert to RDF
     - [x] GitHub: Data Collection (source and format, data read, harmonization)
     - [x] GitHub: Convert to RDF
-    - [ ] TISS: Data Collection (source and format, data read, harmonization)
-    - [ ] TISS: Convert to RDF
+    - [x] TISS: Data Collection (source and format, data read, harmonization)
+    - [x] TISS: Convert to RDF
   - [x] ontology
   - [x] webapp installation
-  - [ ] fill the gaps
+  - [x] fill the gaps
   - [ ] final size of jena datafile (after import of ontology + all 4 datasets) -> need to create as persistent store
 - [ ] package scripts, webapp, report and data (at least small samples)
 - [ ] tuwel upload
