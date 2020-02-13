@@ -39,7 +39,8 @@ SELECT distinct ?name ?country WHERE {
     GROUP BY ?name ?country
     ORDER BY ASC(?name)
   }
-}`;
+}
+ORDER BY ?name`;
         const countries = await selectSPARQL(qry);
         let output = '';
         countries.forEach(country => {
@@ -79,7 +80,7 @@ LIMIT 25
     </script>
   </head>
   <body>
-    <div class="container">
+    <div class="container money">
       <div class="row">
         <div class="col-12 text-center">          
             <a href="." class="subtitle">
@@ -101,7 +102,7 @@ LIMIT 25
           </select>
           I want to learn a language which offers the most salary prospect
           in my country.<br>
-          Which languages shall I consider?
+          Which languages shall I consider <small>(sorted by average income desc)</small>?
         </div>
         <div class="col-12 text-center">
           <button class="btn-primary btn-my-primary margin-top1 query" onclick="getLanguages()">Query</button>

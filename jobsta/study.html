@@ -15,6 +15,7 @@ SELECT distinct ?language
 WHERE {
   ?lecture group1:dealsWith ?language .
 }
+ORDER BY ?language
 LIMIT 25`;
         let languages = await selectSPARQL(qry);
         let output = '';
@@ -35,6 +36,7 @@ WHERE {
   ?lecture group1:dealsWith ?programming_language .
   FILTER (?programming_language = ${language})
 }
+ORDER BY ?name
 LIMIT 25`;
         const result = await selectSPARQL(qry);
         if (result.length > 0) {
@@ -48,7 +50,7 @@ LIMIT 25`;
     </script>
   </head>
   <body>
-    <div class="container">
+    <div class="container study">
       <div class="row">
         <div class="col-12 text-center">          
             <a href="." class="subtitle">

@@ -31,15 +31,11 @@ answer questions about location, income, lectures and programming languages.
 
 Specifically we want it to be able to answer the following questions:
 
-* I am living in _(country)_ and want to earn as much money as possible.
-  What programming language promises the most income?
-* I live in _(country)_, have experience in _(programming language)_
-  and want to earn at least _(amount)_ USD per year. Can I achieve this in
-  my country, or shall I consider relocating, and where shall I relocate to?
-* I can develop in _(programming language)_. Which repository is a good starting
-  point to practise?
-* I want to learn more about _(programming language)_. Which lectures
-  at TU Wien deal with this programming language?
+* **[Study]** As a student I want to learn language _(programming language)_. Which courses should I take?
+* **[Location]** As a _(profession)_ I live in _(country)_ and I can program in _(programming language)_ and I want at least _(amount)_. Should I stay our should I go?
+* **[Money]** As a student, I live in _(country)_. I want to learn a language which offers the most salary prospect in my country. Which languages shall I consider?
+* **[Jobs]** I want to practise language _(programming language)_. Which repositories should I look at, as they are most popular and written in this language?
+
 
 The app displays the four core questions as four tiles.
 When selecting a tile, the user is asked for details, like their knowledge, location,
@@ -50,7 +46,7 @@ Figure \ref{fig:app.mockup} shows a mockup of the start screen of the mobile app
 
 # Task 2: Data Collection
 
-We have been decided on the following four data sources:
+We have the following four data sources:
 
 * **Kaggle User Survey** (László Király)$\hfill\break$
   Data Scientists, Country, Job Role, Programming Language, Income
@@ -65,11 +61,9 @@ We have been decided on the following four data sources:
 
 ## Data 2: StackOverflow User Survey
 
-The survey results can be downloaded from https://insights.stackoverflow.com/survey/2018. The survey result consist of multiple rows representing a single survey instance of a specific user and columns representing each question of the survey and answer of the user. The original StackOverflow user survey results consists of a CSV file with over 90.000 entries and over 40 columns. Obviously, there were lots of data we didn't need for our application use case, therefore we removed unused columns such as "Do you program as a hobby?". Also, for the sake of simplicity and efficiency we stripped the 90.000+ entries down to around 700, which we decided to do because for the assignment it makes no difference how many entries we have.
+The 2018 survey results are publicly available\footnote{survey description: \url{https://insights.stackoverflow.com/survey/2018}, download page: \url{https://insights.stackoverflow.com/survey}, last seen on 2020-02-10} where each row represents a single survey instance of a specific user. Each column describes a question of the survey and the rows contain the answer of the user. The original StackOverflow user survey 2018 results consists of a CSV file with over 90.000 entries and over 40 columns. Obviously, there were lots of data we didn't need for our application use case, therefore we removed unused columns such as "Do you program as a hobby?". Also, for the sake of simplicity and efficiency we stripped the 90.000+ entries down to around 700, which we decided to do so because it makes no difference for the ontology how many instances we use.
 
 As we had another similar developer survey (Kaggle), we had to harmonize these data. For instance, we had the developer role "Software Engineer" in Kaggle and "Front-end developer" in StackOverflow. We decided to merge them to a single "Software Engineer" to have a simpler and better understandable ontology.
-
-Obtaining this dataset was as simple as going to the website and clicking download. It is available for free and easy to find and download.
 
 ## Data 3: GitHub Repositories Data
 
@@ -336,23 +330,24 @@ WHERE {
 
 These are just two sample SPARQL queries we have been developing.
 
-### Query 1: Which TU lectures deal with a specific programming language?
+### Query 1: [Study] As a student I want to learn language _(programming language)_. Which courses should I take?
 
 ```
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX group1: <http://www.semanticweb.org/sws/ws2019/group1#>
 PREFIX schema: <http://schema.org/>
 
-SELECT ?name ?programming_language
+SELECT ?name
 WHERE {
   ?lecture schema:name ?name .
   ?lecture group1:dealsWith ?programming_language .
   FILTER (?programming_language = ${language})
 }
+ORDER BY ?name
 LIMIT 25
 ```
 
-### Query 2: With my income wish, role and programming language skills - shall I stay or shall I go?
+### Query 2: [Location] As a _(profession)_ I live in _(country)_ and I can program in _(programming language)_ and I want at least _(amount)_. Should I stay our should I go?  
 
 ```
 PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
@@ -395,10 +390,50 @@ WHERE {
     GROUP BY ?country
   }
   BIND ((?averageK + ?averageS)/2 as ?average)
-  FILTER (?language = ${language} && ?country = ${country} &&
-          ?average > "${salary}"^^xsd:integer && ?role = ${role})
+  FILTER (?language = ${language} && ?country = ${country} && ?average > "${salary}"^^xsd:integer && ?role = ${role})
 }
 GROUP BY ?country ?average
+```
+
+
+### Query 3: [Money] As a student, I live in _(country)_. I want to learn a language which offers the most salary prospect in my country. Which languages shall I consider? 
+
+```
+PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX group1:<http://www.semanticweb.org/sws/ws2019/group1#>
+PREFIX schema:<http://schema.org/>
+
+SELECT distinct ?language
+WHERE {
+  ?developer a group1:Developer .
+  ?developer schema:homeLocation ${country} .
+  ?developer group1:developsIn ?language .
+  ?developer group1:hasSalaryRange ?salaryRange .
+  ?salaryRange group1:minSalary ?minSalary .
+  ?salaryRange group1:maxSalary ?maxSalary .
+  BIND ((?minSalary + ?maxSalary)/2 AS ?avgRange)
+}
+GROUP BY ?language
+ORDER BY DESC(AVG(?averageK))
+LIMIT 25
+```
+
+
+### Query 4: [Jobs] I want to practise language _(programming language)_. Which repositories should I look at, as they are most popular and written in this language?
+
+```
+PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX group1:<http://www.semanticweb.org/sws/ws2019/group1#>
+PREFIX schema:<http://schema.org/>
+
+SELECT ?name
+WHERE {
+  ?repository group1:isDevelopedIn ${language} .
+  ?repository group1:popularity ?popularity .
+  ?repository schema:name ?name .
+}
+ORDER BY DESC(?popularity)
+LIMIT 25
 ```
 
 

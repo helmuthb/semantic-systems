@@ -60,7 +60,8 @@ SELECT distinct ?name ?country WHERE {
     GROUP BY ?name ?country
     ORDER BY ASC(?name)
   }
-}`;
+}
+ORDER BY ?name`;
         const countries = await selectSPARQL(qry);
         let output = '';
         countries.forEach(country => {
@@ -85,7 +86,8 @@ LIMIT 25`;
           let lang_name = language.split('#')[1];
           let lang_id = "group1:" + lang_name;
           output += `<option value="${lang_id}">${lang_name}</value>\n`;
-        });$('#language').html(output);
+        });
+        $('#language').html(output);
       }
       $(getLanguages);
       // Ask whether I should leave....
@@ -141,7 +143,7 @@ GROUP BY ?country ?average`;
     </script>
   </head>
   <body>
-    <div class="container">
+    <div class="container location">
       <div class="row">
         <div class="col-12 text-center">          
             <a href="." class="subtitle">
@@ -166,13 +168,13 @@ GROUP BY ?country ?average`;
                <!-- will be filled out via SPARQL -->
              </select>
              <br>
-            and I can program in
+            and I can program in <small>(sorted by # of users)</small>
             <select id="language" class="form-control">
               <!-- will be filled out via SPARQL -->  
             </select>
             <br/>
             and I want at least
-            <input id="salary" class="salary form-control" type="number" value="55000">
+            <div><input id="salary" class="salary form-control" type="number" value="55000"></div>
         </div>
         <div class="col-12 text-center">
           <button class="btn-primary btn-my-primary margin-top1 query" onclick="askShallStay()">Query</button>
