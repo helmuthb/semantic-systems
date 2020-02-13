@@ -50,6 +50,7 @@ SELECT distinct ?name ?country WHERE {
       $(getCountries);
       // give list of high-paid languages
       async function getLanguages() {
+        let country = $('#country').val();
         let query = `
 SELECT distinct ?language
 WHERE {
@@ -57,15 +58,14 @@ WHERE {
   ?developer schema:homeLocation ${country} .
   ?developer group1:developsIn ?language .
   ?developer group1:hasSalaryRange ?salaryRange .
-  ?developer group1:minSalary ?minSalary .
-  ?developer group1:maxSalary ?maxSalary .
+  ?salaryRange group1:minSalary ?minSalary .
+  ?salaryRange group1:maxSalary ?maxSalary .
   BIND ((?minSalary + ?maxSalary)/2 AS ?avgRange)
 }
 GROUP BY ?language
 ORDER BY DESC(AVG(?averageK))
 LIMIT 25
 `;
-        let country = $('#country').val();
         const languages = selectSPARQL(query);
         if (languages.length > 0) {
           let output = '';
