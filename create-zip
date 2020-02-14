@@ -1,0 +1,35 @@
+#! /bin/sh
+
+# create temporary folder with content of submission
+FOLDER=/tmp/semsys$$
+mkdir $FOLDER
+
+# copy all files for submission to temporary folder
+
+# single files: RDF, Kaggle-SO mapping, enrichments
+cp group1.rdf $FOLDER
+cp kaggle-stackoverflow-mappings.md $FOLDER
+cp internal-enrichment.qry $FOLDER
+cp external-enrichment.qry $FOLDER
+
+# no report - according to instructions the PDF is outside
+
+# the four dataset scripts
+cp -r kaggle-survey-2019 $FOLDER
+cp -r stackoverflow-survey-2018 $FOLDER
+cp -r github-data $FOLDER
+cp -r tuwel-scraping $FOLDER
+
+# the final app - called "app"
+cp -r jobsta/. $FOLDER/app
+
+# clean up any "__MACOSX" or ".DS_Store" artifacts
+find $FOLDER -name __MACOSX -delete
+find $FOLDER -name .DS_Store -delete
+
+# create ZIP file according to naming convention
+DIR=`pwd`
+(cd $FOLDER && zip -r $DIR/SS_2019_project_01.zip .)
+
+# remove temporary folder
+rm -rf $FOLDER
