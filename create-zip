@@ -27,7 +27,8 @@ cp kaggle-stackoverflow-mappings.md $FOLDER
 cp internal-enrichment.qry $FOLDER
 cp external-enrichment.qry $FOLDER
 
-# no report - according to instructions the PDF is outside
+# move report to temporary folder
+mv SS_2019_project_01.pdf $FOLDER
 
 # the four dataset scripts
 cp -r kaggle-survey-2019 $FOLDER
@@ -51,6 +52,5 @@ rm -rf $FOLDER
 
 echo
 echo
-echo "All done - now please upload both files,"
-echo "SS_2019_project_01.zip and SS_2019_project_01.pdf,"
+echo "All done - now please upload the file 'SS_2019_project_01.zip'"
 echo "to TUWEL."
