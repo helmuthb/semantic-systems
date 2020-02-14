@@ -72,6 +72,7 @@ merged ontology
   - [x] github data
   - [x] add 2 queries to app
 - [x] test app locally
+- [ ] enrichment queries (as part of source)
 - [ ] report
   - [x] datasets
     - [x] Kaggle: Data Collection (source and format, data read, harmonization)
@@ -85,7 +86,7 @@ merged ontology
   - [x] ontology
   - [x] webapp installation
   - [ ] fill the gaps
-    - [ ] Three queries per student
+    - [x] Three queries per student
   - [ ] final size of jena datafile (after import of ontology + all 4 datasets) -> need to create as persistent store
 - [ ] package scripts, webapp, report and data (at least small samples)
 - [ ] tuwel upload
