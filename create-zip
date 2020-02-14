@@ -49,6 +49,8 @@ DIR=`pwd`
 # remove temporary folder
 rm -rf $FOLDER
 
-echo "All done - now please uplodate both files,"
+echo
+echo
+echo "All done - now please upload both files,"
 echo "SS_2019_project_01.zip and SS_2019_project_01.pdf,"
 echo "to TUWEL."
