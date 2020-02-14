@@ -103,7 +103,7 @@ To obtain the data we were considering two options:
 Both options have their advantages and disadvantages.   
 For using the live data to build the knowledge graph
 we would have used _GraphQL_ queries like this, as can be
-experimented at `https://developer.github.com/v4/explorer`:
+tried out at `https://developer.github.com/v4/explorer`:
 ```graphql
 query{
   search(type: REPOSITORY, query: "language:python", first:10) {
@@ -395,11 +395,10 @@ INSERT {
   ?ageGroup group1:ageHasDevelopers ?developer
 }
 WHERE {
-  ?developer a group1:Developer,
+  ?developer a group1:Developer ;
              group1:hasAgeRange ?ageGroup .
   ?ageGroup a group1:AgeRange .
 }
-
 ```
 
 ### External Enrichment
@@ -484,6 +483,9 @@ WHERE {
 ORDER BY ?name
 LIMIT 25
 ```
+
+In this query `${language}` has to be replaced with the URI of a specific programming language,
+e.g. `group1:Python`.
 
 ## Query 3: Which developer roles are most frequently specified in the surveys?
 
@@ -603,6 +605,11 @@ WHERE {
 GROUP BY ?country ?average
 ```
 
+In this query `${language}` has to be replaced with the URI of a specific programming language,
+e.g. `group1:Python`, `${country}` with the URI of a specific country,
+e.g. `dbpedia:Austria`, `${salary}` with a yearly salary in USD, e.g. `50000`, and
+`${role}` with the URL of a specific role, e.g. `group1:Software_Engineer`.
+
 ## Query 7: As a _(profession)_ I can program in _(programming language)_ and I want at least _(amount)_ USD per year. In which countries can I achieve this, which has the highest prospect?
 
 ```
@@ -655,6 +662,10 @@ ORDER BY DESC(?average)
 LIMIT 1
 ```
 
+In this query `${language}` has to be replaced with the URI of a specific programming language,
+e.g. `group1:Python`, `${salary}` with a yearly salary in USD, e.g. `50000`, and
+`${role}` with the URL of a specific role, e.g. `group1:Software_Engineer`.
+
 ## Query 8: As a student, I live in _(country)_. I want to learn a language which offers the most salary prospect in my country. Which languages shall I consider? 
 
 ```
@@ -677,10 +688,13 @@ ORDER BY DESC(AVG(?averageK))
 LIMIT 25
 ```
 
+In this query `${country}` has to be replaced with the URL of a specific country, e.g. `dbpedia:Austria`.
+
 ## Query 9: Which programming languages are most often used in GitHub repositories?
 
 ```
 PREFIX group1:<http://www.semanticweb.org/sws/ws2019/group1#>
+PREFIX schema:<http://schema.org/>
 
 SELECT distinct ?language
 WHERE {
@@ -708,6 +722,9 @@ WHERE {
 ORDER BY DESC(?popularity)
 LIMIT 25
 ```
+
+In this query, `${language}` has to be replaced with the URI of a specific programming language,
+e.g. `group1:Csharp`.
 
 ## Query 11: Which repositories in GitHub have more than 100 issues and are most popular?
 
@@ -802,7 +819,6 @@ WHERE {
 GROUP BY ?language
 LIMIT 25
 ```
-
 
 # Task 7: App Implementation
 

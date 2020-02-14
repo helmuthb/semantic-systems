@@ -72,8 +72,8 @@ merged ontology
   - [x] github data
   - [x] add 2 queries to app
 - [x] test app locally
-- [ ] enrichment queries (as part of source)
-- [ ] report
+- [x] enrichment queries (as part of source)
+- [x] report
   - [x] datasets
     - [x] Kaggle: Data Collection (source and format, data read, harmonization)
     - [x] Kaggle: Convert to RDF
@@ -85,10 +85,10 @@ merged ontology
     - [x] TISS: Convert to RDF
   - [x] ontology
   - [x] webapp installation
-  - [ ] fill the gaps
+  - [x] fill the gaps
     - [x] Three queries per student
-  - [ ] final size of jena datafile (after import of ontology + all 4 datasets) -> need to create as persistent store
-- [ ] package scripts, webapp, report and data (at least small samples)
-- [ ] tuwel upload
+  - [x] final size of jena datafile (after import of ontology + all 4 datasets) -> need to create as persistent store
+- [x] package scripts, webapp and data (at least small samples)
+- [ ] tuwel upload: ZIP file + report, following naming convention `SS_2019_project_01.pdf` and `SS_2019_project_01.zip`
 
 
