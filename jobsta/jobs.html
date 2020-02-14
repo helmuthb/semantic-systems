@@ -14,6 +14,7 @@
 SELECT distinct ?language
 WHERE {
   ?repository group1:isDevelopedIn ?language .
+  ?language a schema:ComputerLanguage .
 }
 GROUP BY ?language
 ORDER BY DESC(COUNT(?repository))
@@ -34,9 +35,9 @@ LIMIT 25`;
         let qry = `
 SELECT ?name
 WHERE {
-  ?repository group1:isDevelopedIn ${language} .
-  ?repository group1:popularity ?popularity .
-  ?repository schema:name ?name .
+  ?repository group1:isDevelopedIn ${language} ;
+              group1:popularity ?popularity ;
+              schema:name ?name .
 }
 ORDER BY DESC(?popularity)
 LIMIT 25`;
@@ -44,7 +45,7 @@ LIMIT 25`;
         if (repos.length > 0) {
           let output = '';
           repos.forEach(repo => {
-            output += `<div class="result-row"><div class="lecture">${repo}</div></div>`;
+            output += `<div class="result-row"><div class="lecture"><a href="https://github.com/${repo}" target="_blank">${repo}</a></div></div>`;
           });
           $('#Answer').html(output);
         }
