@@ -68,10 +68,10 @@ merged ontology
 
 - [x] web app for presentation
 - [x] presentation
-- [ ] finish app
+- [x] finish app
   - [x] github data
   - [x] add 2 queries to app
-- [ ] test app locally
+- [x] test app locally
 - [ ] report
   - [x] datasets
     - [x] Kaggle: Data Collection (source and format, data read, harmonization)
@@ -84,7 +84,8 @@ merged ontology
     - [x] TISS: Convert to RDF
   - [x] ontology
   - [x] webapp installation
-  - [x] fill the gaps
+  - [ ] fill the gaps
+    - [ ] Three queries per student
   - [ ] final size of jena datafile (after import of ontology + all 4 datasets) -> need to create as persistent store
 - [ ] package scripts, webapp, report and data (at least small samples)
 - [ ] tuwel upload
