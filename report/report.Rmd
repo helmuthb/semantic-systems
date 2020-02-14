@@ -259,9 +259,21 @@ Some country names have been mapped to match dbpedia, e.g. _United States of Ame
 ## StackOverflow User Survey
 
 Every script used for the StackOverflow survey is located in `stackoverflow-survey-2018/individuals/scripts`.
-There is a `main.py` script that generates RDF files (in XML format)
+There is a `main.py` script that generates RDF-like files, as XML fragments,
 for e.g. country individuals, developer role individuals and age ranges.
-Which can easily be appended to the ontology file to have individuals defined in it.
+While these files cannot be loaded directly into a triple store,
+we have manually added the corresponding lines into the main RDF file, loaded
+it into Protégé, and then exported the resulting `group1.rdf` file.
+
+The following files were inserted in this way into `group1.rdf`:
+
+* `generated_age_ranges.xml`
+* `generated_comp_languages.xml`
+* `generated_genders.xml`
+
+The other generated XML fragments were not actually inserted into the knowledge graph as
+they were not needed.
+
 There is also a script `csv2ttl.py` that generates a Turtle file of the CSV file
 (filename: `stackoverflow_individuals.ttl`).
 It creates statements for each row in the results file.
@@ -364,7 +376,9 @@ CONSTRUCT {
   ?ageGroup group1:ageHasDevelopers ?developer
 }
 WHERE {
-  ?developer group1:hasAgeRange ?ageGroup
+  ?developer a group1:Developer ;
+             group1:hasAgeRange ?ageGroup .
+  ?ageGroup a group1:AgeRange .
 }
 LIMIT 25
 ```
@@ -381,8 +395,11 @@ INSERT {
   ?ageGroup group1:ageHasDevelopers ?developer
 }
 WHERE {
-  ?developer group1:hasAgeRange ?ageGroup
+  ?developer a group1:Developer,
+             group1:hasAgeRange ?ageGroup .
+  ?ageGroup a group1:AgeRange .
 }
+
 ```
 
 ### External Enrichment
@@ -413,6 +430,20 @@ WHERE {
 
 A similar `INSERT` query has been used to store the additional triplets in
 the knowledge graph.
+
+## Uploads to Jena Fuseki
+
+We created a persistent dataset on Apache Jena Fuseki, called `jobsta`.
+All data was uploaded into the default graph.
+The following files were uploaded, in this order, into the Triple Store:
+
+* `group1.rdf` - the ontology and salary ranges, total 538 triples
+* `kaggle-survey-2019/kaggle_individuals.ttl` - Kaggle survey data, total 147,574 triples
+* `stackoverflow-survey-2018/individuals/generated/stackoverflow_individuals.ttl` - StackOverflow survey data, total 8,650 triples,
+* `github-data/repos.ttl` - GitHub repositories, total 477,800 triples
+* `tuwel-scraping/tuwel-data-science.ttl` - TISS lectures, total 1,946 triples
+* `internal-enrichment.ttl` - creation of triples for inverse properties, total ??? triples
+* `external-enrichment.ttl` - creation of triples for country names, total ??? triples
 
 # Task 6: SPARQL Queries
 
@@ -712,7 +743,7 @@ GROUP BY ?language ?totalRepos
 LIMIT 25
 ```
 
-### Query 13: Who are the top lecturers in regard to the number of ECTS taught?
+## Query 13: Who are the top lecturers in regard to the number of ECTS taught?
 
 ```
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
@@ -732,7 +763,7 @@ ORDER BY DESC(?sum)
 LIMIT 25
 ```
 
-### Query 14: What are the top lectures in regard to the number of ECTS?
+## Query 14: What are the top lectures in regard to the number of ECTS?
 
 ```
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
