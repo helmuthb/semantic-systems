@@ -11,19 +11,19 @@
       // get list of job roles
       async function getJobRoles() {
         let qry = `
-SELECT distinct ?role
+SELECT distinct ?role ?name
 WHERE {
   ?developer group1:hasRole ?role .
+  ?role rdfs:label ?name
 }
-GROUP BY ?role
+GROUP BY ?role ?name
 ORDER BY DESC(COUNT(?developer))
 LIMIT 25`;
         let roles = await selectSPARQL(qry);
         let output = '';
         roles.forEach(role => {
-          let role_name = role.split('#')[1];
-          let role_id = "group1:" + role_name;
-          role_name = role_name.split("_").join(" ");
+          let role_name = role.name;
+          let role_id = "&lt;" + role.role + "&gt;";
           output += `<option value="${role_id}">${role_name}</value>\n`;
         });
         $('#role').html(output);
