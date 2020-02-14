@@ -59,7 +59,7 @@ We have the following four data sources:
 
 ## Data 1: Kaggle ML & DS Survey
 
-The Kaggle survey\footnote{Kaggle survey: \url{https://www.kaggle.com/c/kaggle-survey-2019}, last checked 2020-02-13}
+The Kaggle survey\footnote{Kaggle survey: \url{https://www.kaggle.com/c/kaggle-survey-2019}, last seen on 2020-02-13}
 is from 2019 and contains almost 20,000 individual and anomymized responses
 to a set of multiple choice and free text questions.  
 Since Kaggle is a competition platform for challenging machine learning problems,
@@ -76,7 +76,7 @@ The analysis of the metadata was done in `preprocess_kaggle.ipynb` _Part I - Ana
 
 ## Data 2: StackOverflow User Survey
 
-The 2018 survey results are publicly available\footnote{survey description: \url{https://insights.stackoverflow.com/survey/2018}, download page: \url{https://insights.stackoverflow.com/survey}, last seen on 2020-02-10}
+The 2018 survey results are publicly available\footnote{StackOverflow survey description: \url{https://insights.stackoverflow.com/survey/2018}, download page: \url{https://insights.stackoverflow.com/survey}, last seen on 2020-02-10}
 where each row represents a single survey instance of a specific user.
 Each column describes a question of the survey and the rows contain the answer of the user.
 The original StackOverflow user survey 2018 results consists of a CSV file with
@@ -192,9 +192,9 @@ in the submission (`projects_sample.csv` and `issues_sample.csv`)
 
 ## Data 4: TISS Lectures
 
-The data has been parsed from TISS and consists of lecture descriptions, lecturer information and occuring programming languages parsed from the lecture description.
+The data has been parsed from TISS curriculum *Data Science* of winter term 2019 and consists of lecture descriptions, ECTS, lecturer information and occuring programming languages (extracted from the lecture description).
 The entry point of the parse task is the list of available
-curriculums\footnote{\url{https://tiss.tuwien.ac.at/curriculum/studyCodes.xhtml?locale=en}, last seen on 2020-02-10}
+curriculums \footnote{\url{https://tiss.tuwien.ac.at/curriculum/studyCodes.xhtml?locale=en}, last seen on 2020-02-10}
 which is not available as simple HTML file.
 The endpoint presents a HTML based _shell_ which loads the data from the backend via REST calls.
 To parse the information we used Python with Selenium to interact with the
@@ -211,7 +211,7 @@ which languages are dealt with in which lecture.
 
 # Task 3: Ontology
 
-```{r ontology, fig.cap="Ontology Diagram", out.width="100%"}
+```{r, ontology, fig.cap="Ontology Diagram", out.width="100%"}
 knitr::include_graphics('../presentation/ontology_new.png')
 ```
 
