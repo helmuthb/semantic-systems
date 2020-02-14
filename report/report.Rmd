@@ -437,6 +437,28 @@ LIMIT 25
 ```
 
 
+### Query 5: Who are the top lecturers in regard to the number of ECTS taught?
+
+```
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX group1: <http://www.semanticweb.org/sws/ws2019/group1#>
+PREFIX schema: <http://schema.org/>
+
+SELECT ?name ?url (SUM(?ects) as ?sum)
+WHERE {
+  ?lecture a group1:TU-Lecture .
+  ?lecture group1:instructor ?instructor .
+  ?lecture group1:ects ?ects .
+  ?instructor schema:name ?name .
+  ?instructor schema:URL ?url
+}
+GROUP BY ?name ?url
+ORDER BY DESC(?sum)
+LIMIT 25
+```
+
+
+
 # Task 7: App Implementation
 
 We used `jquery` when implementing the app.
