@@ -732,6 +732,37 @@ ORDER BY DESC(?sum)
 LIMIT 25
 ```
 
+### Query 14: What are the top lectures in regard to the number of ECTS?
+
+```
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX group1: <http://www.semanticweb.org/sws/ws2019/group1#>
+PREFIX schema: <http://schema.org/>
+
+SELECT ?name ?lecture ?ects
+WHERE {
+  ?lecture a group1:TU-Lecture .
+  ?lecture schema:name ?name .
+  ?lecture group1:ects ?ects .
+}
+ORDER BY DESC(?ects) ?name
+LIMIT 25
+```
+
+## Query 15: What are the top languages taught according to the number of lectures that deal with them?
+
+```
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX group1: <http://www.semanticweb.org/sws/ws2019/group1#>
+PREFIX schema: <http://schema.org/>
+
+SELECT ?language (COUNT(?lecture) as ?lecture_count)
+WHERE {
+  ?lecture group1:dealsWith ?language
+}
+GROUP BY ?language
+LIMIT 25
+```
 
 
 # Task 7: App Implementation
