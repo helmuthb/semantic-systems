@@ -416,9 +416,23 @@ the Knowledge Tree.
 
 # Task 6: SPARQL Queries
 
-These are the main SPARQL queries we have been developing for the app.
+We have developed the following set of queries.
+Unfortunately we worked as a team here, and it's not possible to assign queries to specific participants.
 
-### Query 1: [Study] As a student I want to learn language _(programming language)_. Which courses should I take?
+### Query 1: Which languages are dealt with in lectures at TU Wien?
+
+```
+PREFIX group1: <http://www.semanticweb.org/sws/ws2019/group1#>
+
+SELECT distinct ?language
+WHERE {
+  ?lecture group1:dealsWith ?language .
+}
+ORDER BY ?language
+LIMIT 25
+```
+
+### Query 2: As a student I want to learn language _(programming language)_. Which courses should I take?
 
 ```
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
@@ -435,7 +449,75 @@ ORDER BY ?name
 LIMIT 25
 ```
 
-### Query 2: [Location] As a _(profession)_ I live in _(country)_ and I can program in _(programming language)_ and I want at least _(amount)_ USD per year. Should I stay our should I go?  
+### Query 3: Which developer roles are most frequently specified in the surveys?
+
+```
+PREFIX group1: <http://www.semanticweb.org/sws/ws2019/group1#>
+
+SELECT distinct ?role
+WHERE {
+  ?developer group1:hasRole ?role .
+}
+GROUP BY ?role
+ORDER BY DESC(COUNT(?developer))
+LIMIT 25
+```
+
+### Query 4: Which countries are either in the European Union, or are most frequently specified in the surveys?
+
+```
+PREFIX group1: <http://www.semanticweb.org/sws/ws2019/group1#>
+PREFIX rdfs:<http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema:<http://schema.org/>
+PREFIX dbpedia:<http://dbpedia.org/resource/>
+
+SELECT distinct ?name ?country WHERE {
+  {
+    SELECT distinct ?name ?country WHERE {
+      ?developer schema:homeLocation ?country .
+      ?country rdfs:label ?name .
+      FILTER (lang(?name) = 'en')
+    }
+    GROUP BY ?name ?country
+    ORDER BY DESC(COUNT(?developer))
+    LIMIT 10
+  }
+  UNION
+  {
+    SELECT distinct ?name ?country WHERE {
+      {
+        SELECT distinct ?country WHERE {
+	      ?developer schema:homeLocation ?country .
+        }
+      }
+      ?country rdfs:label ?name .
+      SERVICE <https://dbpedia.org/sparql> {
+        ?country <http://purl.org/dc/terms/subject> dbpedia:Category:Member_states_of_the_European_Union .
+      }
+      FILTER (lang(?name) = 'en')
+    }
+    GROUP BY ?name ?country
+    ORDER BY ASC(?name)
+  }
+}
+ORDER BY ?name
+```
+
+### Query 5: Which programming languages are most often specified in the surveys?
+
+```
+PREFIX group1: <http://www.semanticweb.org/sws/ws2019/group1#>
+
+SELECT distinct ?language
+WHERE {
+  ?developer group1:developsIn ?language .
+}
+GROUP BY ?language
+ORDER BY DESC(COUNT(?developer))
+LIMIT 25
+```
+
+### Query 6: As a _(profession)_ I live in _(country)_ and I can program in _(programming language)_ and I want at least _(amount)_ USD per year. Can I achieve this in my home country?
 
 ```
 PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
@@ -483,8 +565,59 @@ WHERE {
 GROUP BY ?country ?average
 ```
 
+### Query 7: As a _(profession)_ I can program in _(programming language)_ and I want at least _(amount)_ USD per year. In which countries can I achieve this, which has the highest prospect?
 
-### Query 3: [Money] As a student, I live in _(country)_. I want to learn a language which offers the most salary prospect in my country. Which languages shall I consider? 
+```
+PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX group1:<http://www.semanticweb.org/sws/ws2019/group1#>
+PREFIX schema:<http://schema.org/>
+PREFIX dbpedia:<http://dbpedia.org/resource/>
+PREFIX rdfs:<http://www.w3.org/2000/01/rdf-schema#>
+PREFIX sc:<http://purl.org/science/owl/sciencecommons/>
+PREFIX xsd:<http://www.w3.org/2001/XMLSchema#>
+
+SELECT ?name
+WHERE {
+  ?developer a group1:Developer .
+  ?developer schema:homeLocation ?country .
+  ?developer group1:developsIn ?language .
+  ?developer group1:hasRole ?role .
+  {
+    SELECT ?country (AVG(?avgRange) as ?averageK)
+    WHERE {
+      ?developer a group1:Developer .
+      ?developer group1:hasRole ?role .
+      ?developer schema:homeLocation ?country .
+      ?developer group1:developsIn ?language .
+      ?developer group1:hasSalaryRange ?salaryRange .
+      ?salaryRange group1:minSalary ?minSalary .
+      ?salaryRange group1:maxSalary ?maxSalary.
+      BIND ((?minSalary + ?maxSalary)/2 AS ?avgRange)
+    }
+    GROUP BY ?country
+  }
+  {
+    SELECT ?country (AVG(?salaryValue) as ?averageS)
+    WHERE {
+      ?developer a group1:Developer .
+      ?developer group1:hasRole ?role .
+      ?developer schema:homeLocation ?country .
+      ?developer group1:developsIn ?language .
+      ?developer group1:salary ?salaryValue .
+    }
+    GROUP BY ?country
+  }
+  ?country rdfs:label ?name .
+  BIND ((?averageK + ?averageS)/2 as ?average)
+  FILTER (?language = ${language} && ?average > "${salary}"^^xsd:integer 
+          && ?role = ${role} && lang(?name) = 'en')
+}
+GROUP BY ?country ?average ?name
+ORDER BY DESC(?average)
+LIMIT 1
+```
+
+### Query 8: As a student, I live in _(country)_. I want to learn a language which offers the most salary prospect in my country. Which languages shall I consider? 
 
 ```
 PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
@@ -506,8 +639,21 @@ ORDER BY DESC(AVG(?averageK))
 LIMIT 25
 ```
 
+### Query 9: Which programming languages are most often used in GitHub repositories?
 
-### Query 4: [Jobs] I want to practise language _(programming language)_. Which repositories should I look at, as they are most popular and written in this language?
+```
+PREFIX group1:<http://www.semanticweb.org/sws/ws2019/group1#>
+
+SELECT distinct ?language
+WHERE {
+  ?repository group1:isDevelopedIn ?language .
+}
+GROUP BY ?language
+ORDER BY DESC(COUNT(?repository))
+LIMIT 25
+```
+
+### Query 10: I want to practise language _(programming language)_. Which repositories should I look at, as they are most popular and written in this language?
 
 ```
 PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
