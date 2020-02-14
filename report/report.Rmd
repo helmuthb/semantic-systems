@@ -489,12 +489,14 @@ LIMIT 25
 
 ```
 PREFIX group1: <http://www.semanticweb.org/sws/ws2019/group1#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
-SELECT distinct ?role
+SELECT distinct ?role ?name
 WHERE {
   ?developer group1:hasRole ?role .
+  ?role rdfs:label ?name
 }
-GROUP BY ?role
+GROUP BY ?role ?name
 ORDER BY DESC(COUNT(?developer))
 LIMIT 25
 ```
@@ -683,6 +685,7 @@ PREFIX group1:<http://www.semanticweb.org/sws/ws2019/group1#>
 SELECT distinct ?language
 WHERE {
   ?repository group1:isDevelopedIn ?language .
+  ?language a schema:ComputerLanguage .
 }
 GROUP BY ?language
 ORDER BY DESC(COUNT(?repository))
