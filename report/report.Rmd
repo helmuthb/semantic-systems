@@ -442,8 +442,13 @@ The following files were uploaded, in this order, into the Triple Store:
 * `stackoverflow-survey-2018/individuals/generated/stackoverflow_individuals.ttl` - StackOverflow survey data, total 8,650 triples,
 * `github-data/repos.ttl` - GitHub repositories, total 477,800 triples
 * `tuwel-scraping/tuwel-data-science.ttl` - TISS lectures, total 1,946 triples
-* `internal-enrichment.ttl` - creation of triples for inverse properties, total ??? triples
-* `external-enrichment.ttl` - creation of triples for country names, total ??? triples
+
+In addition, the following queries were inserted into the _query_ text box of Apache Jena Fuseki:
+
+* `internal-enrichment.qry` - creation of triples for inverse properties
+* `external-enrichment.qry` - creation of triples for country names
+
+The resulting folder on the server had a size of 133MB, and the dataset contains 787,400 triples.
 
 # Task 6: SPARQL Queries
 

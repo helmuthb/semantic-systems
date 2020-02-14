@@ -1,0 +1,17 @@
+PREFIX dbpedia: <http://dbpedia.org/resource/>
+PREFIX schema: <http://schema.org/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+INSERT
+{ ?country rdfs:label ?countryName }
+WHERE {
+  { SELECT distinct ?country
+    WHERE {
+      ?developer schema:homeLocation ?country .
+    }
+  }
+  SERVICE <https://dbpedia.org/sparql> {
+    ?country rdfs:label ?countryName .
+    FILTER (lang(?countryName) = 'en' || lang(?countryName) = 'de')
+  }
+}

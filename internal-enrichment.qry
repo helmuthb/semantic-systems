@@ -1,0 +1,57 @@
+PREFIX group1: <http://www.semanticweb.org/sws/ws2019/group1#>
+PREFIX schema: <http://schema.org/>
+
+INSERT {
+  ?ageGroup group1:ageHasDevelopers ?developer
+}
+WHERE {
+  ?developer a group1:Developer ;
+             group1:hasAgeRange ?ageGroup .
+  ?ageGroup a group1:AgeRange .
+};
+
+INSERT {
+  ?language group1:isDealtIn ?lecture
+}
+WHERE {
+  ?lecture a group1:TU-Lecture ;
+           group1:dealsWith ?language .
+  ?language a schema:ComputerLanguage .
+};
+
+INSERT {
+  ?language group1:isUsedBy ?developer
+}
+WHERE {
+  ?developer a group1:Developer ;
+             group1:developsIn ?language .
+  ?language a schema:ComputerLanguage .
+};
+
+INSERT {
+  ?role group1:roleHasDevelopers ?developer
+}
+WHERE {
+  ?developer a group1:Developer ;
+             group1:hasRole ?role .
+  ?role a schema:Role .
+};
+
+INSERT {
+  ?range group1:salaryRangeHasDevelopers ?developer
+}
+WHERE {
+  ?developer a group1:Developer ;
+             group1:hasSalaryRange ?range .
+  ?range a group1:SalaryRange .
+};
+
+INSERT {
+  ?language group1:isUsedIn ?repository
+}
+WHERE {
+  ?repository a group1:GitHubRepository ;
+              group1:isDevelopedIn ?language .
+  ?language a schema:ComputerLanguage .
+}
+
