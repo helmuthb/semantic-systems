@@ -419,7 +419,7 @@ the Knowledge Tree.
 We have developed the following set of queries.
 Unfortunately we worked as a team here, and it's not possible to assign queries to specific participants.
 
-### Query 1: Which languages are dealt with in lectures at TU Wien?
+## Query 1: Which languages are dealt with in lectures at TU Wien?
 
 ```
 PREFIX group1: <http://www.semanticweb.org/sws/ws2019/group1#>
@@ -432,7 +432,7 @@ ORDER BY ?language
 LIMIT 25
 ```
 
-### Query 2: As a student I want to learn language _(programming language)_. Which courses should I take?
+## Query 2: As a student I want to learn language _(programming language)_. Which courses should I take?
 
 ```
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
@@ -449,7 +449,7 @@ ORDER BY ?name
 LIMIT 25
 ```
 
-### Query 3: Which developer roles are most frequently specified in the surveys?
+## Query 3: Which developer roles are most frequently specified in the surveys?
 
 ```
 PREFIX group1: <http://www.semanticweb.org/sws/ws2019/group1#>
@@ -463,7 +463,7 @@ ORDER BY DESC(COUNT(?developer))
 LIMIT 25
 ```
 
-### Query 4: Which countries are either in the European Union, or are most frequently specified in the surveys?
+## Query 4: Which countries are either in the European Union, or are most frequently specified in the surveys?
 
 ```
 PREFIX group1: <http://www.semanticweb.org/sws/ws2019/group1#>
@@ -503,7 +503,7 @@ SELECT distinct ?name ?country WHERE {
 ORDER BY ?name
 ```
 
-### Query 5: Which programming languages are most often specified in the surveys?
+## Query 5: Which programming languages are most often specified in the surveys?
 
 ```
 PREFIX group1: <http://www.semanticweb.org/sws/ws2019/group1#>
@@ -517,7 +517,7 @@ ORDER BY DESC(COUNT(?developer))
 LIMIT 25
 ```
 
-### Query 6: As a _(profession)_ I live in _(country)_ and I can program in _(programming language)_ and I want at least _(amount)_ USD per year. Can I achieve this in my home country?
+## Query 6: As a _(profession)_ I live in _(country)_ and I can program in _(programming language)_ and I want at least _(amount)_ USD per year. Can I achieve this in my home country?
 
 ```
 PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
@@ -565,7 +565,7 @@ WHERE {
 GROUP BY ?country ?average
 ```
 
-### Query 7: As a _(profession)_ I can program in _(programming language)_ and I want at least _(amount)_ USD per year. In which countries can I achieve this, which has the highest prospect?
+## Query 7: As a _(profession)_ I can program in _(programming language)_ and I want at least _(amount)_ USD per year. In which countries can I achieve this, which has the highest prospect?
 
 ```
 PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
@@ -617,7 +617,7 @@ ORDER BY DESC(?average)
 LIMIT 1
 ```
 
-### Query 8: As a student, I live in _(country)_. I want to learn a language which offers the most salary prospect in my country. Which languages shall I consider? 
+## Query 8: As a student, I live in _(country)_. I want to learn a language which offers the most salary prospect in my country. Which languages shall I consider? 
 
 ```
 PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
@@ -639,7 +639,7 @@ ORDER BY DESC(AVG(?averageK))
 LIMIT 25
 ```
 
-### Query 9: Which programming languages are most often used in GitHub repositories?
+## Query 9: Which programming languages are most often used in GitHub repositories?
 
 ```
 PREFIX group1:<http://www.semanticweb.org/sws/ws2019/group1#>
@@ -653,7 +653,7 @@ ORDER BY DESC(COUNT(?repository))
 LIMIT 25
 ```
 
-### Query 10: I want to practise language _(programming language)_. Which repositories should I look at, as they are most popular and written in this language?
+## Query 10: I want to practise language _(programming language)_. Which repositories should I look at, as they are most popular and written in this language?
 
 ```
 PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
@@ -670,6 +670,47 @@ ORDER BY DESC(?popularity)
 LIMIT 25
 ```
 
+## Query 11: Which repositories in GitHub have more than 100 issues and are most popular?
+
+```
+PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX group1:<http://www.semanticweb.org/sws/ws2019/group1#>
+PREFIX schema:<http://schema.org/>
+
+SELECT ?name
+WHERE {
+  ?repository group1:popularity ?popularity .
+  ?repository group1:issues ?issues .
+  ?repository schema:name ?name .
+  FILTER (?issues > 100)
+}
+ORDER BY DESC(?popularity)
+LIMIT 25
+```
+
+## Query 12: For which programming languages exist more than 1,000,000 repositories, counting in the number of forks? How popular were they in the surveys?
+
+```
+PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX group1:<http://www.semanticweb.org/sws/ws2019/group1#>
+PREFIX schema:<http://schema.org/>
+
+SELECT ?language ?totalRepos (COUNT(?developer) as ?developerCount)
+WHERE {
+  { SELECT distinct ?language (SUM(?popularity) as ?totalRepos)
+    WHERE {
+      ?repository group1:popularity ?popularity ;
+                  group1:isDevelopedIn ?language ;
+                  group1:issues ?issues .
+    }
+    GROUP BY ?language
+    HAVING (SUM(?popularity) > 1000000)
+  }
+  ?developer group1:developsIn ?language .
+}
+GROUP BY ?language ?totalRepos
+LIMIT 25
+```
 
 # Task 7: App Implementation
 
