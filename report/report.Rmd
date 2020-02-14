@@ -9,7 +9,7 @@ author: |
   | Helmuth Breitenfellner (08725866)
   | László Király (09227679)
   | Gerald Weber (00125536)
-date: "13 February 2020"
+date: "14 February 2020"
 output: pdf_document
 ---
 
@@ -34,7 +34,7 @@ Specifically we want it to be able to answer the following questions:
 * **[Study]** As a student I want to learn language _(programming language)_. Which courses should I take?
 * **[Location]** As a _(profession)_ I live in _(country)_ and I can program in _(programming language)_ and I want at least _(amount)_. Should I stay our should I go?
 * **[Money]** As a student, I live in _(country)_. I want to learn a language which offers the most salary prospect in my country. Which languages shall I consider?
-* **[Jobs]** I want to practise language _(programming language)_. Which repositories should I look at, as they are most popular and written in this language?
+* **[Jobs]** I want to practice language _(programming language)_. Which repositories should I look at, as they are most popular and written in this language?
 
 
 The app displays the four core questions as four tiles.
@@ -57,13 +57,41 @@ We have the following four data sources:
 * **TISS Lectures** (Gerald Weber)$\hfill\break$
   Lectures, Lecturer, Description, Programming Language
 
-## Data 1: Kaggle User Survey
+## Data 1: Kaggle ML & DS Survey
+
+The Kaggle survey\footnote{Kaggle survey: \url{https://www.kaggle.com/c/kaggle-survey-2019}, last checked 2020-02-13}
+is from 2019 and contains almost 20,000 individual and anomymized responses
+to a set of multiple choice and free text questions.  
+Since Kaggle is a competition platform for challenging machine learning problems,
+it comes to no surprise that the survey itself was presented within a competition
+with a prize pool of $30,000 for the most original data stories about the survey.  
+The multiple choice answers were reflected in 245 columns, where some of the answers
+had one column, e.g. age (range), gender, country and income,
+whereas others were one hot encoded, e.g. progamming languages.  
+We aligned this dataset with the StackOverflow dataset regarding
+gender, programming languages, and job role.
+Income was depicted as ordinal ranges in Kaggle but as continous value in StackOverflow.
+
+The analysis of the metadata was done in `preprocess_kaggle.ipynb` _Part I - Analyse and Generate Metadata_.
 
 ## Data 2: StackOverflow User Survey
 
-The 2018 survey results are publicly available\footnote{survey description: \url{https://insights.stackoverflow.com/survey/2018}, download page: \url{https://insights.stackoverflow.com/survey}, last seen on 2020-02-10} where each row represents a single survey instance of a specific user. Each column describes a question of the survey and the rows contain the answer of the user. The original StackOverflow user survey 2018 results consists of a CSV file with over 90.000 entries and over 40 columns. Obviously, there were lots of data we didn't need for our application use case, therefore we removed unused columns such as "Do you program as a hobby?". Also, for the sake of simplicity and efficiency we stripped the 90.000+ entries down to around 700, which we decided to do so because it makes no difference for the ontology how many instances we use.
+The 2018 survey results are publicly available\footnote{survey description: \url{https://insights.stackoverflow.com/survey/2018}, download page: \url{https://insights.stackoverflow.com/survey}, last seen on 2020-02-10}
+where each row represents a single survey instance of a specific user.
+Each column describes a question of the survey and the rows contain the answer of the user.
+The original StackOverflow user survey 2018 results consists of a CSV file with
+over 90,000 entries and over 40 columns.
+Obviously, there were lots of data we did not need for our application use case,
+therefore we removed unused columns such as _"Do you program as a hobby?"._
+Also, for the sake of simplicity and efficiency we stripped the 90,000+ entries
+down to around 700, which we decided to do so because it makes no difference for
+the ontology how many instances we use.
 
-As we had another similar developer survey (Kaggle), we had to harmonize these data. For instance, we had the developer role "Software Engineer" in Kaggle and "Front-end developer" in StackOverflow. We decided to merge them to a single "Software Engineer" to have a simpler and better understandable ontology.
+As we had another similar developer survey (Kaggle), we had to harmonize these data.
+For instance, we had the developer role "Software Engineer" in Kaggle and
+"Front-end developer" in StackOverflow.
+We decided to merge them to a single "Software Engineer"
+to have a simpler and better understandable ontology.
 
 ## Data 3: GitHub Repositories Data
 
@@ -72,15 +100,39 @@ To obtain the data we were considering two options:
 * gathering live data from GitHub, using e.g. the GraphQL API
 * downloading collected data from e.g. `ghtorrent.org`.
 
-Both options have their advantages and disadvantages.
+Both options have their advantages and disadvantages.   
+For using the live data to build the knowledge graph
+we would have used _GraphQL_ queries like this, as can be
+experimented at `https://developer.github.com/v4/explorer`:
+```graphql
+query{
+  search(type: REPOSITORY, query: "language:python", first:10) {
+    userCount
+    edges {
+      node {
+        ... on Repository {
+          name
+          url
+          stargazers {
+            totalCount
+          }
+          owner{
+            login
+          }
+        }
+      }
+    }
+  }
+}
+```
+
 At the end we went for downloading collected data, as this required less
 manual work (compared to performing one query per language) and
 also makes more data available for other questions which might be asked.
 
 The biggest issue was dealing with the large amount of data from `ghtorrent.org`.
 The download consists of a file with size 100GB compressed, which then had to be
-extracted and analysed.
-
+extracted and analysed.   
 The download contains the following files:
 ```
 -rw-rw-r-- 1 helmuth idc           310 Jun  1  2019 ORDER
@@ -113,16 +165,13 @@ The download contains the following files:
 
 ```
 
-Relevant for our use case are the files `projects.csv` and `issues.csv`.
-
+Relevant for our use case are the files `projects.csv` and `issues.csv`.   
 As a first step, the data was filtered and merged, using an _R_ script.
 This script is called `transform.R`.
-
 Only original repositories (not forked ones)
 were taken into account, and only those which have
 been forked more than 50 times (as a measure of _popularity_)
 were looked at.
-
 Similarly the issues per repository were counted.
 Only repositories with at least one issue are considered.
 
@@ -137,12 +186,28 @@ id,url,description,language,forks,issues
 
 Overall, 95576 repositories from GitHub have been created as output in CSV format.
 
+To keep the submission size reasonable, only the resulting `repos_issues.csv` file
+has been provided. From the original source a small filtered subset is
+in the submission (`projects_sample.csv` and `issues_sample.csv`)
+
 ## Data 4: TISS Lectures
 
 The data has been parsed from TISS and consists of lecture descriptions, lecturer information and occuring programming languages parsed from the lecture description.
-The entry point of the parse task is the list of available  curriculums\footnote{\url{https://tiss.tuwien.ac.at/curriculum/studyCodes.xhtml?locale=en}, last seen on 2020-02-10} which is not available as simple HTML file. The endpoint presents a HTML based _shell_ which loads the data from the backend via REST calls. To parse the information we used Python with Selenium to interact with the browser and extract the data.
-Parsing consists of lookups - for HTML tags with specific class names and content - and clicks - navigate to the interesting content - to extract the required information.
-Finally, each linked lecture in the data science curriculum is clicked, loaded and parsed to get the information.
+The entry point of the parse task is the list of available
+curriculums\footnote{\url{https://tiss.tuwien.ac.at/curriculum/studyCodes.xhtml?locale=en}, last seen on 2020-02-10}
+which is not available as simple HTML file.
+The endpoint presents a HTML based _shell_ which loads the data from the backend via REST calls.
+To parse the information we used Python with Selenium to interact with the
+browser and extract the data.
+Parsing consists of lookups - for HTML tags with specific class names and content - 
+and clicks - navigate to the interesting content - to extract the required information.
+Finally, each linked lecture in the data science curriculum is clicked,
+loaded and parsed to get the information.
+
+The data set does not contain specific information about programming languages
+which are dealt with in the lectures.
+To link this information we have used a set of regular expressions for identifying
+which languages are dealt with in which lecture.
 
 # Task 3: Ontology
 
@@ -170,17 +235,37 @@ of `schema:Course`.
 as subclasses of `schema:Person`.
 * `schema:Role`: The developer and data scientiest roles are modelled as subclasses of `schema:Role`.
 
-We have specified attributes like inverse, functional or range and domain for all relations.
-
+We have specified attributes like inverse, functional or range and domain for all relations.   
 The ontology developed is depicted in Figure \ref{fig:ontology}.
+The resulting RDF file is stored in `group1.rdf`.
 
 # Task 4: Knowledge Graph
 
-## Kaggle User Survey
+## Kaggle ML & DS Survey
+
+The semi-automatic generation of the schema data was done in `preprocess_kaggle.ipynb` _Part I - Analyse and Generate Metadata_.  
+In order to deal with white spaces in URIs we decided to convert blanks to underscores,
+and other special characters have been url encoded.
+The job roles, programming languages and genders have been mapped to aligned
+ontology as designed in `mappings.md`.
+The income/salary was modeled as ordinal ranges.
+The resulting RDF instances for the salary ranges were manually added to
+the ontology file `group1.rdf`.  
+
+The Jupyter Notebook `preprocess_kaggle.ipynb` also contains the fully automatic
+generation of individuals to Turtle N-Quad format in _Part II - Generate Instances_.
+Some country names have been mapped to match dbpedia, e.g. _United States of America_ to _United States_.  
 
 ## StackOverflow User Survey
 
-Every script used for the StackOverflow survey is located in `stackoverflow-survey-2018/individuals/scripts`. There is a `main.py` script that generates RDF files (in XML format) for e.g. country individuals, developer role individuals and age ranges. Which can easily be appended to the ontology file to have individuals defined in it. There is also a script `csv2ttl.py` that generates a Turtle file of the CSV file (filename: `stackoverflow_individuals.ttl`). It creates statements for each row in the results file. This ttl file can then be imported into the Apache Jena triple store.
+Every script used for the StackOverflow survey is located in `stackoverflow-survey-2018/individuals/scripts`.
+There is a `main.py` script that generates RDF files (in XML format)
+for e.g. country individuals, developer role individuals and age ranges.
+Which can easily be appended to the ontology file to have individuals defined in it.
+There is also a script `csv2ttl.py` that generates a Turtle file of the CSV file
+(filename: `stackoverflow_individuals.ttl`).
+It creates statements for each row in the results file.
+This Turtle file can then be imported into the Apache Jena triple store.
 
 ## GitHub Repositories Data
 
@@ -209,14 +294,16 @@ Below the RDF Turtle representation of two repositories:
 ```
 
 The most tedious task of the cleanup was to make the programming languages of
-GitHub match with them from the other data sources.
+GitHub match with these from the other data sources.
 E.g. what in GitHub is written as `C++` appears in the other data sources
 as `Cplusplus`.
 
 ## TISS Lectures
 
 The script which is extracting the data is directly
-exporting into Turtle format via (RDFLib\footnote{\url{https://github.com/RDFLib/rdflib}, last seen on 2020-01-10}) and writes the results to disk (file: `tuwel-data-science.ttl`).
+exporting into Turtle format via
+RDFLib\footnote{\url{https://github.com/RDFLib/rdflib}, last seen on 2020-01-10}
+and writes the results to disk (file: `tuwel-data-science.ttl`).
 This output was directly imported into Apache Jena/Fuseki server via the provided web interface.
 
 Two example lectures extracted and exported into TTL format:
@@ -256,11 +343,10 @@ Two example lectures extracted and exported into TTL format:
 # Task 5: Triple Store
 
 For storing the data we were using [Jena](https://jena.apache.org).
-We have installed an instance on the Internet for easier collaboration and app deployment.
-
-The upload to Apache Jena was performed using the web interface, which
+We have installed an instance on the Internet for easier collaboration and app deployment.   
+The upload to Apache Jena Fuseki server was performed using the web interface, which
 turned out to be easy.
-Biggest problem here was error reporting. Apache Jena is not very verbose
+Biggest problem here was error reporting. Fuseki is not very verbose
 in reporting errors on the UI, even though a helpful error message could often be
 found in the logfiles.
 
@@ -269,8 +355,7 @@ found in the logfiles.
 ### Internal Enrichment
 
 We created `CONSTRUCT` queries to enrich the
-knowledge graph with inverse relations to the ones created by the scripts.
-
+knowledge graph with inverse relations to the ones created by the scripts.   
 Here one example:
 ```
 PREFIX group1: <http://www.semanticweb.org/sws/ws2019/group1#>
@@ -300,7 +385,7 @@ WHERE {
 }
 ```
 
-## External Enrichment
+### External Enrichment
 
 We were linking with `dbpedia` to get the name of the countries
 in English and German.
@@ -326,11 +411,28 @@ WHERE {
 }
 ```
 
+A similar `INSERT` query has been used to store the additional triplets in
+the knowledge graph.
+
 # Task 6: SPARQL Queries
 
-These are just two sample SPARQL queries we have been developing.
+We have developed the following set of queries.
+Unfortunately we worked as a team here, and it's not possible to assign queries to specific participants.
 
-### Query 1: [Study] As a student I want to learn language _(programming language)_. Which courses should I take?
+## Query 1: Which languages are dealt with in lectures at TU Wien?
+
+```
+PREFIX group1: <http://www.semanticweb.org/sws/ws2019/group1#>
+
+SELECT distinct ?language
+WHERE {
+  ?lecture group1:dealsWith ?language .
+}
+ORDER BY ?language
+LIMIT 25
+```
+
+## Query 2: As a student I want to learn language _(programming language)_. Which courses should I take?
 
 ```
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
@@ -347,7 +449,75 @@ ORDER BY ?name
 LIMIT 25
 ```
 
-### Query 2: [Location] As a _(profession)_ I live in _(country)_ and I can program in _(programming language)_ and I want at least _(amount)_. Should I stay our should I go?  
+## Query 3: Which developer roles are most frequently specified in the surveys?
+
+```
+PREFIX group1: <http://www.semanticweb.org/sws/ws2019/group1#>
+
+SELECT distinct ?role
+WHERE {
+  ?developer group1:hasRole ?role .
+}
+GROUP BY ?role
+ORDER BY DESC(COUNT(?developer))
+LIMIT 25
+```
+
+## Query 4: Which countries are either in the European Union, or are most frequently specified in the surveys?
+
+```
+PREFIX group1: <http://www.semanticweb.org/sws/ws2019/group1#>
+PREFIX rdfs:<http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema:<http://schema.org/>
+PREFIX dbpedia:<http://dbpedia.org/resource/>
+
+SELECT distinct ?name ?country WHERE {
+  {
+    SELECT distinct ?name ?country WHERE {
+      ?developer schema:homeLocation ?country .
+      ?country rdfs:label ?name .
+      FILTER (lang(?name) = 'en')
+    }
+    GROUP BY ?name ?country
+    ORDER BY DESC(COUNT(?developer))
+    LIMIT 10
+  }
+  UNION
+  {
+    SELECT distinct ?name ?country WHERE {
+      {
+        SELECT distinct ?country WHERE {
+	      ?developer schema:homeLocation ?country .
+        }
+      }
+      ?country rdfs:label ?name .
+      SERVICE <https://dbpedia.org/sparql> {
+        ?country <http://purl.org/dc/terms/subject> dbpedia:Category:Member_states_of_the_European_Union .
+      }
+      FILTER (lang(?name) = 'en')
+    }
+    GROUP BY ?name ?country
+    ORDER BY ASC(?name)
+  }
+}
+ORDER BY ?name
+```
+
+## Query 5: Which programming languages are most often specified in the surveys?
+
+```
+PREFIX group1: <http://www.semanticweb.org/sws/ws2019/group1#>
+
+SELECT distinct ?language
+WHERE {
+  ?developer group1:developsIn ?language .
+}
+GROUP BY ?language
+ORDER BY DESC(COUNT(?developer))
+LIMIT 25
+```
+
+## Query 6: As a _(profession)_ I live in _(country)_ and I can program in _(programming language)_ and I want at least _(amount)_ USD per year. Can I achieve this in my home country?
 
 ```
 PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
@@ -395,8 +565,59 @@ WHERE {
 GROUP BY ?country ?average
 ```
 
+## Query 7: As a _(profession)_ I can program in _(programming language)_ and I want at least _(amount)_ USD per year. In which countries can I achieve this, which has the highest prospect?
 
-### Query 3: [Money] As a student, I live in _(country)_. I want to learn a language which offers the most salary prospect in my country. Which languages shall I consider? 
+```
+PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX group1:<http://www.semanticweb.org/sws/ws2019/group1#>
+PREFIX schema:<http://schema.org/>
+PREFIX dbpedia:<http://dbpedia.org/resource/>
+PREFIX rdfs:<http://www.w3.org/2000/01/rdf-schema#>
+PREFIX sc:<http://purl.org/science/owl/sciencecommons/>
+PREFIX xsd:<http://www.w3.org/2001/XMLSchema#>
+
+SELECT ?name
+WHERE {
+  ?developer a group1:Developer .
+  ?developer schema:homeLocation ?country .
+  ?developer group1:developsIn ?language .
+  ?developer group1:hasRole ?role .
+  {
+    SELECT ?country (AVG(?avgRange) as ?averageK)
+    WHERE {
+      ?developer a group1:Developer .
+      ?developer group1:hasRole ?role .
+      ?developer schema:homeLocation ?country .
+      ?developer group1:developsIn ?language .
+      ?developer group1:hasSalaryRange ?salaryRange .
+      ?salaryRange group1:minSalary ?minSalary .
+      ?salaryRange group1:maxSalary ?maxSalary.
+      BIND ((?minSalary + ?maxSalary)/2 AS ?avgRange)
+    }
+    GROUP BY ?country
+  }
+  {
+    SELECT ?country (AVG(?salaryValue) as ?averageS)
+    WHERE {
+      ?developer a group1:Developer .
+      ?developer group1:hasRole ?role .
+      ?developer schema:homeLocation ?country .
+      ?developer group1:developsIn ?language .
+      ?developer group1:salary ?salaryValue .
+    }
+    GROUP BY ?country
+  }
+  ?country rdfs:label ?name .
+  BIND ((?averageK + ?averageS)/2 as ?average)
+  FILTER (?language = ${language} && ?average > "${salary}"^^xsd:integer 
+          && ?role = ${role} && lang(?name) = 'en')
+}
+GROUP BY ?country ?average ?name
+ORDER BY DESC(?average)
+LIMIT 1
+```
+
+## Query 8: As a student, I live in _(country)_. I want to learn a language which offers the most salary prospect in my country. Which languages shall I consider? 
 
 ```
 PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
@@ -418,8 +639,21 @@ ORDER BY DESC(AVG(?averageK))
 LIMIT 25
 ```
 
+## Query 9: Which programming languages are most often used in GitHub repositories?
 
-### Query 4: [Jobs] I want to practise language _(programming language)_. Which repositories should I look at, as they are most popular and written in this language?
+```
+PREFIX group1:<http://www.semanticweb.org/sws/ws2019/group1#>
+
+SELECT distinct ?language
+WHERE {
+  ?repository group1:isDevelopedIn ?language .
+}
+GROUP BY ?language
+ORDER BY DESC(COUNT(?repository))
+LIMIT 25
+```
+
+## Query 10: I want to practise language _(programming language)_. Which repositories should I look at, as they are most popular and written in this language?
 
 ```
 PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
@@ -436,6 +670,47 @@ ORDER BY DESC(?popularity)
 LIMIT 25
 ```
 
+## Query 11: Which repositories in GitHub have more than 100 issues and are most popular?
+
+```
+PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX group1:<http://www.semanticweb.org/sws/ws2019/group1#>
+PREFIX schema:<http://schema.org/>
+
+SELECT ?name
+WHERE {
+  ?repository group1:popularity ?popularity .
+  ?repository group1:issues ?issues .
+  ?repository schema:name ?name .
+  FILTER (?issues > 100)
+}
+ORDER BY DESC(?popularity)
+LIMIT 25
+```
+
+## Query 12: For which programming languages exist more than 1,000,000 repositories, counting in the number of forks? How popular were they in the surveys?
+
+```
+PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX group1:<http://www.semanticweb.org/sws/ws2019/group1#>
+PREFIX schema:<http://schema.org/>
+
+SELECT ?language ?totalRepos (COUNT(?developer) as ?developerCount)
+WHERE {
+  { SELECT distinct ?language (SUM(?popularity) as ?totalRepos)
+    WHERE {
+      ?repository group1:popularity ?popularity ;
+                  group1:isDevelopedIn ?language ;
+                  group1:issues ?issues .
+    }
+    GROUP BY ?language
+    HAVING (SUM(?popularity) > 1000000)
+  }
+  ?developer group1:developsIn ?language .
+}
+GROUP BY ?language ?totalRepos
+LIMIT 25
+```
 
 ### Query 5: Who are the top lecturers in regard to the number of ECTS taught?
 
@@ -461,8 +736,12 @@ LIMIT 25
 
 # Task 7: App Implementation
 
-We used `jquery` when implementing the app.
-The app is interacting with Apache Jena using SOH - _SPARQL over HTTP_.
+The app is a simple mobile-friendly web-based application.
+We used [Bootstrap](https://getbootstrap.com/) for the styling,
+[jQuery](https://jquery.com/) for the DOM manipulation and
+`fetch` together with `async/await` for HTTP calls.
+
+The interaction with Apache Jena is using SOH - _SPARQL over HTTP_.
 
 To avoid dealing with _CORS_ (Cross-Origin Resource Sharing) issues,
 we have deployed the app in the same server as Apache Jena.
@@ -472,3 +751,50 @@ to access the app (https://jena.helmuth.at/app) or the Jena Server (https://jena
 
 * **Username:** `group1`
 * **Password:** `gurus2020`
+
+## Auxiliary Queries
+
+The dropdown select boxes receive their options through separate _SPARQL_ queries.
+
+### Country Lists
+
+When the list of possible countries is presented, the following logic is used:
+
+* show the 10 countries with the most developers
+* show all member states of the European Union
+
+For this, a federated search is used, using the attribute `dbpedia:Category:Member_states_of_the_European_Union` from dbpedia.
+
+### Programming Languages & Roles
+
+When showing a select list of programming languages, the values which are
+present for the main query are displayed, usually sorted by usage and
+limited to 25 values.   
+For example, for _Study_, the list of programming languages is restricted to
+those for which actual lectures exist.
+
+Similarly for roles, the 25 most frequently specified roles (according to the
+surveys) in the world are offered as options in the dropdown boxes.
+
+## Location Query
+
+For the _Location_ part of the application we have implemented *two* main queries.
+The first `ASK` query identifies whether the desired income level in the home location
+is feasible.
+If not, it identifies with a `SELECT` query countries with sufficient income level,
+and from these the one country with the highest income level.
+
+Depending on the results the answer is then one of:
+
+* **You should stay!** - should the desired level be achievable in the home country
+* **You should go! I suggest _country_ for a try.** - should the desired level
+only be achievable in another country than the home country
+* **Sorry to break the news - that's not realistic anywhere.** - should the desired
+level not be achievable in any country
+
+## Source Code
+
+The source code of the app is in the submission package.   
+At the end we were not offering the code in a public repository, as
+the survey data is not licensed for redistribution.
+Therefore the corresponding button on the app is not working.
