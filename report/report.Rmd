@@ -712,7 +712,7 @@ GROUP BY ?language ?totalRepos
 LIMIT 25
 ```
 
-### Query 5: Who are the top lecturers in regard to the number of ECTS taught?
+### Query 13: Who are the top lecturers in regard to the number of ECTS taught?
 
 ```
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
