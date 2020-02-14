@@ -1,5 +1,20 @@
 #! /bin/sh
 
+# copy report.pdf into delivery file
+if [ "report/report.Rmd" -nt "report.pdf" ]
+then
+    if [ ! -f "report/report.pdf" ] ||
+       [ "report/report.Rmd" -nt "report/report.pdf" ]
+    then
+        echo "Please compile the report using Rmd to have the latest version!"
+        exit 1
+    else
+        cp report/report.pdf SS_2019_project_01.pdf
+    fi
+else
+    cp report.pdf SS_2019_project_01.pdf
+fi
+
 # create temporary folder with content of submission
 FOLDER=/tmp/semsys$$
 mkdir $FOLDER
@@ -33,3 +48,7 @@ DIR=`pwd`
 
 # remove temporary folder
 rm -rf $FOLDER
+
+echo "All done - now please uplodate both files,"
+echo "SS_2019_project_01.zip and SS_2019_project_01.pdf,"
+echo "to TUWEL."
